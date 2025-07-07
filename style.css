@@ -1662,10 +1662,10 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 
 /* Specific backgrounds for each card */
 .bg-machining {
-  background-image: url('../assets/images/background/tile2/1.png');
+  background-image: url('assets/images/background/tile2/1.png');
 }
 .bg-assembly {
-  background-image: url('../assets/images/background/tile2/2.png');
+  background-image: url('assets/images/background/tile2/2.png');
 }
 .bg-ndt {
   background-image: url('../assets/images/background/tile2/3.png');
