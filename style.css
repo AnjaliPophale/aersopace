@@ -1654,7 +1654,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   color: #fff;
   transform: rotateY(180deg);
   z-index: 1;
-  font-size: 14px;
+  font-size: 18px;
   padding: 1.2rem;
   text-align: center;
 }
