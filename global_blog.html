@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Social Responsibilities</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+    
+</head>
+<body>
+     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+                    <!-- <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
+                    </li> -->
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                     <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                         Home
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                         About Us 
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
+                            onclick="toggleMegaMenu(event)">Capabilities
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                                    <ul>
+                                        <li><a href="#">Machining</a></li>
+                                        <li><a href="#">Assembly</a></li>
+                                        <li><a href="#">NDT & Welding</a></li>
+                                        <li><a href="#">Metrology & Tooling</a></li> 
+                                        <li><a href="#">Raw Material Management</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
+                            onclick="toggleMegaMenu(event)">
+                           Products 
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="#">Complex Engine Parts</a></li>
+                                        <li><a href="#">Structural Parts</a></li>
+                                        <li><a href="#">System Parts</a></li>
+                                        <li><a href="#">Horizontal Deployments</a></li>
+
+
+                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                               
+                             
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            Engineering Excellence 
+                            <span class="d-lg-none">+</span>
+                        </a>  
+                    </li>
+                   
+                    <li class="nav-item has-mega-menu">
+  <a class="nav-link d-flex justify-content-between align-items-center" href="people.html" onclick="toggleMegaMenu(event)">
+    AeroSphere
+    <span class="d-lg-none">+</span>
+  </a>
+  <div class="mega-menu">
+    <div class="mega-menu-content">
+      
+      <div class="mega-menu-column d-none d-lg-block">
+        <h4>AeroSphere</h4>
+      </div>
+
+      <div class="mega-menu-column">
+        <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
+        <ul>
+          <li><a href="sustainability.html">Sustainability & ESG</a></li>
+          <li><a href="csr.html">CSR & Impact</a></li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="#">Blogs & Insights</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                       
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <img class="banner" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Blog Banner">
+  <header>
+    <h1>Latest Blog</h1>
+    <p> Global Aerospace Supply Chain 4.0 – What Tier 1 Suppliers Must Know</p>
+  </header>
+  <div class="container_blog">
+    
+    <main>
+  <h1>Global Aerospace Supply Chain 4.0 – What Tier 1 Suppliers Must Know</h1>
+  <p>In an industry that defines precision and performance, the aerospace supply chain is undergoing its most radical transformation in decades. As global OEMs push the boundaries of innovation and efficiency, Tier 1 suppliers are under increasing pressure to evolve—not just with better processes, but with smarter, faster, and more sustainable systems.</p>
+  <p>Welcome to Supply Chain 4.0—where digital convergence, resilience, traceability, and ESG accountability converge to form the future of aerospace manufacturing.</p>
+  <p>This blog dives into the key aspects Tier 1 suppliers must understand, adapt to, and lead in to remain competitive and trusted in a globalized aerospace ecosystem.</p>
+
+  <h2>1. From Linear to Digital-Integrated: Rethinking the Traditional Model</h2>
+  <p>Aerospace supply chains have traditionally followed a linear, functionally siloed model—from design to machining, assembly, QA, and delivery. But in Supply Chain 4.0, the lines blur. Real-time data, digital twins, and integrated PLM (Product Lifecycle Management) are enabling suppliers to move toward collaborative, circular value chains.</p>
+  <p>Tier 1 suppliers must now integrate:</p>
+  <ul>
+    <li>IoT-enabled shop floors with cloud-based analytics</li>
+    <li>SAP S/4HANA or ERP systems for end-to-end transparency</li>
+    <li>Digital twins and simulation tools (e.g., Vericut, Siemens NX) for design-to-manufacturing alignment</li>
+  </ul>
+  <p><strong>Insight:</strong> Integration isn’t optional—it’s foundational. OEMs are prioritizing suppliers who can offer full digital traceability, real-time performance data, and interoperability.</p>
+
+  <h2>2. Globalization Meets Geo-Political Risk: The Case for Supply Chain Resilience</h2>
+  <p>From semiconductor shortages to war-time disruptions, the past few years have taught aerospace OEMs a harsh truth: efficiency cannot come at the cost of resilience.</p>
+  <p>Tier 1 suppliers must:</p>
+  <ul>
+    <li>Build multi-source procurement strategies</li>
+    <li>Invest in localization and near-shoring capabilities</li>
+    <li>Establish redundancy in critical processes and parts</li>
+    <li>Use AI and predictive analytics for demand and risk forecasting</li>
+  </ul>
+  <p><strong>Example:</strong> Many OEMs are shifting contracts to suppliers who can show scenario planning models, supplier diversity, and disaster recovery protocols.</p>
+
+  <h2>3. Compliance and Certification as a Competitive Differentiator</h2>
+  <p>NADCAP, AS9100, ISO 14001—certifications are no longer just about compliance. They are markers of process maturity, data readiness, and supplier credibility.</p>
+  <p>What Tier 1 suppliers must do:</p>
+  <ul>
+    <li>Maintain live audit dashboards for QA/QC processes</li>
+    <li>Align with customer-specific traceability and documentation standards</li>
+    <li>Embrace digital documentation systems to accelerate PPAP and FAI approvals</li>
+  </ul>
+  <p><strong>Competitive Edge:</strong> Digitally matured suppliers are shortening product qualification cycles and reduction in cost of quality (COQ), both of which appeal to cost-sensitive, time-bound OEM programs.</p>
+
+  <h2>4. ESG and Sustainability: The New Global Mandate</h2>
+  <p>Environmental and social governance (ESG) is no longer a checkbox—it’s a procurement criterion. OEMs are being evaluated on their Scope 3 emissions, and Tier 1 suppliers fall directly within that scope.</p>
+  <p>What Tier 1 suppliers must adopt:</p>
+  <ul>
+    <li>Carbon footprint reporting and reduction plans (e.g., ISO 14001)</li>
+    <li>Use of recycled raw materials and waste minimization</li>
+    <li>Workforce inclusion and safety metrics</li>
+    <li>Digital ESG dashboards to report real-time impact</li>
+  </ul>
+  <p><strong>Emerging Trend:</strong> Sustainable suppliers are now being given preferred vendor status across global RFQs.</p>
+
+  <h2>5. Supplier Collaboration: From Vendor to Strategic Partner</h2>
+  <p>Supply Chain 4.0 demands not just speed—but smart, collaborative agility.</p>
+  <ul>
+    <li>Co-designing products with OEMs using shared 3D models and virtual prototypes</li>
+    <li>Sharing shop floor and supply data for real-time updates on capacity and risk</li>
+    <li>Participating in joint improvement programs and innovation partnerships</li>
+  </ul>
+  <p><strong>What’s Changing:</strong> Tier 1s are now being measured on their collaboration quotient, not just delivery timelines. Strategic alignment is key.</p>
+
+  <h2>How JK Maini Is Adapting to Supply Chain 4.0</h2>
+  <p>At JK Maini Global Aerospace, we’ve already begun reengineering our supply chain infrastructure with the future in mind:</p>
+  <ul>
+    <li>IoT-enabled shop floors with real-time monitoring</li>
+    <li>Full ERP integration via SAP S/4HANA</li>
+    <li>Digital twin workflows for design validation</li>
+    <li>Active ESG roadmap till 2030, ISO 14001 certified</li>
+    <li>NADCAP accreditation in NDT and welding</li>
+    <li>A dedicated NPD Cell and 24/6 operation model for faster turnarounds</li>
+  </ul>
+  <p>We understand that Tier 1 status is earned through capability, compliance, and commitment—and we are proud to be leading the way for Indian aerospace on the global stage.</p>
+
+  <h2>Conclusion: Tier 1 is No Longer About Just Tiering Up—It’s About Leveling Up</h2>
+  <p>In Supply Chain 4.0, the differentiators are clear: digitization, sustainability, transparency, and strategic agility.</p>
+  <p>Tier 1 suppliers must become enablers of OEM vision—not just executors of specs. The future belongs to those who can engineer precision with resilience, deliver performance with accountability, and scale with sustainability.</p>
+
+  <p><strong>Want to learn how JK Maini can support your next-gen aerospace programs?</strong><br>
+  👉 Talk to Our Experts</p>
+</main>
+
+    <div class="sidebar-right">
+     
+      <h3>Blog Posts</h3>
+      <ul class="blog-list">
+        <li>
+          <img class="blog-thumb" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=50&q=80" alt="Welcome to My Blog">
+          <a href="#">NADCAP Certification</a>
+        </li>
+        <li>
+          <img class="blog-thumb" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=50&q=80" alt="Another Blog Post">
+          <a href="#">Global Aerospace Supply Chain 4.0</a>
+        </li>
+        <li>
+          <img class="blog-thumb" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=50&q=80" alt="NADCAP Certification">
+          <a href="#">5-Axis Machining</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+  <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-3 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid" src="./assets/images/JK Aerospace Logo.svg"
+                            alt="JK Maini Precision Technology"></a>
+                    <p>Leading manufacturer and supplier of high-quality industrial products and solutions since 1965.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">About Us</a></li>
+                        
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Company</h5>
+                    <ul class="list-unstyled">
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Capabilities</a></li>
+                        
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">AeroSphere</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3 section-title-footer">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial Area,
+Off Hosur Road, Bangalore - 560099 </li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <!-- <div class="col-md-3 mb-4">
+                    <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Designed by Probus Studio. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+
+        var swiper = new Swiper(".csr-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+    </script>
+</body>
+</html>

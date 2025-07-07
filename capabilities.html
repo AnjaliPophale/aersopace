@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+     <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+                    <!-- <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
+                    </li> -->
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                     <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                         Home
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                         About Us 
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
+                            onclick="toggleMegaMenu(event)">Capabilities
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                                    <ul>
+                                        <li><a href="#">Machining</a></li>
+                                        <li><a href="#">Assembly</a></li>
+                                        <li><a href="#">NDT & Welding</a></li>
+                                        <li><a href="#">Metrology & Tooling</a></li> 
+                                        <li><a href="#">Raw Material Management</a></li> 
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
+                            onclick="toggleMegaMenu(event)">
+                           Products 
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="#">Complex Engine Parts</a></li>
+                                        <li><a href="#">Structural Parts</a></li>
+                                        <li><a href="#">System Parts</a></li>
+                                        <li><a href="#">Horizontal Deployments</a></li>
+
+
+                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
+                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
+                                    </ul>
+                                </div>
+                               
+                             
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            Engineering Excellence 
+                            <span class="d-lg-none">+</span>
+                        </a>  
+                    </li>
+                   
+                    <li class="nav-item has-mega-menu">
+  <a class="nav-link d-flex justify-content-between align-items-center" href="people.html" onclick="toggleMegaMenu(event)">
+    AeroSphere
+    <span class="d-lg-none">+</span>
+  </a>
+  <div class="mega-menu">
+    <div class="mega-menu-content">
+      
+      <div class="mega-menu-column d-none d-lg-block">
+        <h4>AeroSphere</h4>
+      </div>
+
+      <div class="mega-menu-column">
+        <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
+        <ul>
+          <li><a href="sustainability.html">Sustainability & ESG</a></li>
+          <li><a href="csr.html">CSR & Impact</a></li>
+          <li><a href="#">News & Events</a></li>
+          <li><a href="blog.html">Blogs & Insights</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+                       
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/automobile-bg.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="text-center mt-5">
+                                <h1>Capabilities</h1>
+                                <p class="mt-3 mb-4">
+                                    Crafting the Future of Flight—With Every Detail Engineered
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <button class="hero-button d-flex align-items-center">
+                                        Visit Site <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="about-auto my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="header">
+                        <h6 class="section-title">JK Maini</h6>
+                        <h2>Precision Machining
+                        </h2>
+                        <p>At JK Maini, we bring over two decades of expertise in high-precision aerospace machining. With a fleet of 180+ state-of-the-art CNC machines and the capability to handle 1,200+ unique SKUs, we deliver complex, tight-tolerance components that power modern aviation.
+                        </p>
+                        <p>Turbine and compressor parts.
+                        </p>
+                       
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-container">
+                        <img src="./assets/images/about-auto.png" style="width: 100%;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+  
+
+
+<!-- Full-Width Precision Machining Section -->
+
+
+    <section class="py-5" style="background-color: #f9f9f9;">
+  <div class="container-fluid px-lg-5 px-md-4 px-3">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2>Precision Machining</h2>
+      <p class="mx-auto" style="max-width: 900px;">
+        At JK Maini, we bring over two decades of expertise in high-precision aerospace machining. With a fleet of 180+ state-of-the-art CNC machines and the capability to handle 1,200+ unique SKUs, we deliver complex, tight-tolerance components that power modern aviation.
+      </p>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="row text-center justify-content-center">
+
+      <!-- Item 1 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Turbine" class="img-fluid rounded" alt="Turbine parts">
+          <small class="d-block text-muted mt-2">Turbine Image</small>
+          <h6 class="fw-semibold mt-3">Turbine and compressor parts</h6>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Casings" class="img-fluid rounded" alt="Engine casings">
+          <small class="d-block text-muted mt-2">Engine Casings Image</small>
+          <h6 class="fw-semibold mt-3">Engine casings and structural components</h6>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Prismatic" class="img-fluid rounded" alt="Prismatic ops">
+          <small class="d-block text-muted mt-2">Prismatic Operation</small>
+          <h6 class="fw-semibold mt-3">Prismatic and turning operations across aluminum, titanium, Inconel, and stainless steel</h6>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=5-axis" class="img-fluid rounded" alt="5-axis machining">
+          <small class="d-block text-muted mt-2">5-Axis Machining</small>
+          <h6 class="fw-semibold mt-3">3-axis to 5-axis machining for high-complexity geometries</h6>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Inspection" class="img-fluid rounded" alt="In-process inspection">
+          <small class="d-block text-muted mt-2">Inspection Image</small>
+          <h6 class="fw-semibold mt-3">100% traceability and in-process inspection</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2>NDT &amp; Welding (NADCAP Approved)</h2>
+      <p>
+        We are NADCAP-accredited for both Non-Destructive Testing (NDT) and specialized aerospace welding, ensuring compliance with the most demanding global aerospace standards.
+      </p>
+    </div>
+
+    <!-- NDT Capabilities Row -->
+    <h4 class="mb-4">NDT Capabilities</h4>
+    <div class="row mb-5">
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/600x300?text=FPI+Image" class="card-img-top" alt="FPI">
+          <div class="card-body">
+            <h5 class="card-title">Fluorescent Penetrant Inspection (FPI)</h5>
+            <p class="card-text">
+              Level 2 & 3 certified technicians
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/600x300?text=MPI+Image" class="card-img-top" alt="MPI">
+          <div class="card-body">
+            <h5 class="card-title">Magnetic Particle Inspection (MPI)</h5>
+            <p class="card-text">
+              For ferromagnetic materials and weld integrity
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Welding Expertise Row -->
+    <h4 class="mb-4">Welding Expertise</h4>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/600x300?text=TIG+Welding" class="card-img-top" alt="TIG Welding">
+          <div class="card-body">
+            <h5 class="card-title">TIG Welding (GTAW)</h5>
+            <p class="card-text">
+              for high-strength, precision-critical joints
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/600x300?text=RSW" class="card-img-top" alt="RSW Welding">
+          <div class="card-body">
+            <h5 class="card-title">Resistance Spot Welding (RSW)</h5>
+            <p class="card-text">
+              for sheet metal components
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img src="https://via.placeholder.com/600x300?text=Certified+Welders" class="card-img-top" alt="AWS D17.1">
+          <div class="card-body">
+            <h5 class="card-title">Welders certified to AWS D17.1 </h5>
+            <p class="card-text">
+              other aerospace standards
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5" style="background-color: #f9f9f9;">
+  <div class="container-fluid px-lg-5 px-md-4 px-3">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2>Mechanical Assembly</h2>
+      <p>We specialize in aerospace mechanical sub-assemblies, built with precision, durability, and compliance in mind. Our facilities support:</p>
+    </div>
+
+    <!-- Feature Image Grid -->
+    <div class="row text-center justify-content-center">
+      <!-- Box 1 -->
+      <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Riveting" class="img-fluid rounded" alt="Riveting operations">
+          <small class="d-block text-muted mt-2">Riveting Image</small>
+          <h6 class="fw-semibold mt-3">Riveting operations (solid, blind, Hi-Lok, and more)</h6>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Bush+Helicoil" class="img-fluid rounded" alt="Bush and Helicoil insertions">
+          <small class="d-block text-muted mt-2">Bush & Helicoil Image</small>
+          <h6 class="fw-semibold mt-3">Bush and Helicoil insertions using aerospace-grade fixtures</h6>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Sealing" class="img-fluid rounded" alt="Sealing operations">
+          <small class="d-block text-muted mt-2">Sealing Image</small>
+          <h6 class="fw-semibold mt-3">Sealing operations with qualified personnel and certified materials</h6>
+        </div>
+      </div>
+
+      <!-- Box 4 -->
+      <div class="col-6 col-sm-6 col-md-3 col-lg-2 mb-4">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Hydraulic+Pressing" class="img-fluid rounded" alt="Hydraulic pressing">
+          <small class="d-block text-muted mt-2">Hydraulic Pressing Image</small>
+          <h6 class="fw-semibold mt-3">Hydraulic pressing with programmable force and depth controls</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paragraph Below Grid -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <p class="mt-4">
+          Each assembly follows strict process validation and FAI protocols. Our team ensures consistency from prototype to production scale.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5" style="background-color: #f9f9f9;">
+  <div class="container-fluid px-lg-5 px-md-4 px-3">
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2>Metrology &amp; Tooling</h2>
+      <p>Accuracy is the cornerstone of aerospace manufacturing. Our dedicated metrology lab ensures every part meets exact specifications using:</p>
+    </div>
+
+    <!-- Grid Row (5 Columns) -->
+    <div class="row text-center justify-content-center g-4">
+      
+      <!-- Item 1 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Gauge+Calibration" class="img-fluid rounded" alt="Gauge Calibration">
+          <small class="d-block text-muted mt-2">Gauge Calibration Image</small>
+          <h6 class="fw-semibold mt-3">Gauge calibration systems traceable to international standards</h6>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Optical+Inspection" class="img-fluid rounded" alt="Optical Inspection">
+          <small class="d-block text-muted mt-2">Optical Inspection Image</small>
+          <h6 class="fw-semibold mt-3">High-zoom optical inspection systems (10x and above)</h6>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=CMM" class="img-fluid rounded" alt="CMM Scanning">
+          <small class="d-block text-muted mt-2">CMM Machine Image</small>
+          <h6 class="fw-semibold mt-3">CMM (Coordinate Measuring Machine) with scanning capabilities</h6>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=Tooling+Jigs" class="img-fluid rounded" alt="Custom Jigs">
+          <small class="d-block text-muted mt-2">Custom Jig Image</small>
+          <h6 class="fw-semibold mt-3">Custom jigs and tooling for complex inspection routines</h6>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded shadow-sm h-100">
+          <img src="https://via.placeholder.com/300x200?text=SPC+GRR" class="img-fluid rounded" alt="SPC and GR&R">
+          <small class="d-block text-muted mt-2">SPC / GR&R Image</small>
+          <h6 class="fw-semibold mt-3">SPC and GR&amp;R analysis for statistical confidence</h6>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- <section class="numbers my-5 py-5">
+        <div class="container">
+            <div class="d-flex gap-2">
+                <div class="number-card text-center">
+                    <img class="mb-2" src="./assets/images/product-sku.png" alt="Product SKUs">
+                    <h2>750+</h2>
+                    <p>PRODUCT SKUs</p>
+                </div>
+                <div class="number-card text-center">
+                    <img class="mb-2" src="./assets/images/ring-gears.png" alt="Ring Gears">
+                    <h2>8 Mn+</h2>
+                    <p>RING GEAR</p>
+                </div>
+                <div class="number-card text-center">
+                    <img class="mb-2" src="./assets/images/total-plants.png" alt="plants">
+                    <h2>3</h2>
+                    <p>PLANTS</p>
+                </div>
+                <div class="number-card text-center">
+                    <img class="mb-2" src="./assets/images/warehouse-colored.jpg" alt="warehouses">
+                    <h2>5</h2>
+                    <p>WAREHOUSES</p>
+                </div>
+                <div class="number-card text-center">
+                    <img class="mb-2" src="./assets/images/customers.png" alt="customers">
+                    <h2>100+</h2>
+                    <p>CUSTOMERS</p>
+                </div>
+                <div class="number-card text-center">
+                    <img class="mb-2" src="./assets/images/countries.png" alt="countries">
+                    <h2>18+</h2>
+                    <p>COUNTRIES</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="products my-5">
+        <div class="container">
+            <div class="header text-center">
+                <h6 class="section-title">Products</h6>
+                <h2>Explore Our Products
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <div class="d-flex flex-column justify-content-between">
+                            <div>
+                                <img src="./assets/images/ring-gear.png" class="img-fluid" alt="">
+                                <h2>Ring Gears</h2>
+                                <p>Manufacturing Range
+                                    150 mm to 1500 mm (OD)</p>
+                            </div>
+                            <div><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <img src="./assets/images/Water Pump Bearings.png" class="img-fluid" alt="">
+                        <h2>Water Pump Bearings</h2>
+                        <p>Manufacturing Range
+                            20 to 60 mm sleeve diameter and 12 to 28 mm shaft</p>
+                        <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <img src="./assets/images/Flexplates.png" class="img-fluid" alt="">
+                        <h2>Flexplates</h2>
+                        <p>Manufacturing Range
+                            180 mm to 450 mm (OD)</p>
+                        <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <div class="d-flex flex-column">
+                            <div class="">
+                                <img src="./assets/images/Sensor Rings.png" class="img-fluid" alt="">
+                                <h2>Sensor Rings</h2>
+                                <p>Manufacturing Range
+                                    150 -1500mm</p>
+                            </div>
+                            <div class=""><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <div class="d-flex flex-column justify-content-between">
+                            <div>
+                                <img src="./assets/images/Legacy.jpg" class="img-fluid" alt="">
+                                <h2 class="mt-3">Legacy automotive</h2>
+                                
+                            </div>
+                            <div><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <img src="./assets/images/product2.jpg" class="img-fluid" alt="">
+                        <h2 class="mt-3">Agriculture</h2>
+                        
+                        <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <img src="./assets/images/product4.jpg" class="img-fluid" alt="">
+                        <h2 class="mt-3">Hydraulics and industrial</h2>
+                        
+                        <a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card h-100">
+                        <div class="d-flex flex-column">
+                            <div class="">
+                                <img src="./assets/images/product5.jpg" class="img-fluid" alt="">
+                                <h2 class="mt-3">Clean Powertrain</h2>
+                                
+                            </div>
+                            <div class=""><a href="">Explore Products <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- <section class="automobile-segments">
+        <div class="container">
+            <div class="header text-center">
+                <h6 class="section-title">From Highways to Hybrids </h6>
+                <h2>Engineering Excellence Across Every Segment</h2>
+                <p>We power the future of mobility with high-precision components engineered for excellence across all
+                    automotive segments. Whether it's the rugged demands of commercial vehicles, the performance
+                    expectations of passenger cars, or the evolving needs of electric and hybrid platforms—we deliver
+                    uncompromising quality, reliability, and innovation.</p>
+                <p>Our precision manufacturing capabilities support OEMs and Tier-1 suppliers globally with components
+                    built for durability, efficiency, and next-gen mobility. With segment-specific expertise and a deep
+                    understanding of drivetrain, powertrain, and e-mobility systems, we help move the world—one
+                    component at a time.</p>
+            </div>
+
+            <div class="tab-buttons mt-4">
+                <button class="tab-btn active" data-tab="commercial">Commercial Vehicles</button>
+                <button class="tab-btn" data-tab="passenger">Passenger Vehicles</button>
+                <button class="tab-btn" data-tab="ev">Electric & Hybrid Vehicles</button>
+                <button class="tab-btn" data-tab="industrial-hydraulics">Industrail Hydraulics</button>
+            </div>
+
+            <div class="tab-content my-5 active" id="commercial">
+                <div class="header">
+                    <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                    <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
+                        and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
+                        reliability.</p>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="sub-tab-buttons d-flex flex-column mt-4">
+                                <button class="sub-tab-btn active" data-subtab="engine">Engine</button>
+                                <button class="sub-tab-btn" data-subtab="chasis">Steering Chasis Filters</button>
+                                <button class="sub-tab-btn" data-subtab="fuel-injection">Fuel Injection</button>
+                                <button class="sub-tab-btn" data-subtab="transmission">Transmission</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="sub-tab-content active" id="engine">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/Bearing journal.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Bearing journal
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/body tens refernce photo.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                body tens
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/Body Tens.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Body Tens
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/Flange Shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Flange Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/Flinger Sleeve.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Flinger Sleeve
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/Hand Primer.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Hand Primer 
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/Hub Idler.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Hub Idler 
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0029.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0029 
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0042 (3).png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0042 (3) 
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0046.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0046 
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0087.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0087
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0123.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0123
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0124.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0124
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0126.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0126
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0130.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0130
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Engine/IMG_0136.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0136
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="chasis">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/filter.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Filter
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/IMG_0024.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0024
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/IMG_0168.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0168
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/IMG_0170.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0170
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/IMG_0174.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0174
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/IMG_0175.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0175
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/IMG_0180.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0180
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/Pitman arm.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Pitman arm
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/Steering&Chassis.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Steering&Chassis
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/steering chasis filters/Tie rod Arm.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Tie rod Arm
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="fuel-injection">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Fuel Injection/fuel injection.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Fuel Injection
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Fuel Injection/MDV.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                MDV
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Fuel Injection/needle.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Needle
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Fuel Injection/nozzle retainer.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Nozzle retainer
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Fuel Injection/Pressure Release Valve.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Pressure Release Valve
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/Fuel Injection/Seat retainer.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Seat Retainer
+                                            </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="transmission">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/cross bar shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Cross Bar Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/Cross Shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Cross Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/ELSD Housing.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                ELSD Housing
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/Gear Shift shafts.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Gear Shift Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0092.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0092
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0093.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0093
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0094.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0094
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0144.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0144
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0145.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0145
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0147.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0147
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/IMG_0148.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0148
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/Release yoke assem.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Release yoke assem
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/Roller Yoke Assembly.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Roller Yoke Assembly
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/cv/transmission/Valve Spool.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Valve Spool
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="tab-content my-5" id="passenger">
+                <div class="header">
+                    <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                    <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
+                        and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
+                        reliability.</p>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="sub-tab-buttons d-flex flex-column mt-4">
+                                <button class="sub-tab-btn active" data-subtab="pv-engine">Engine</button>
+                                <button class="sub-tab-btn" data-subtab="pv-chasis">Steering Chasis Filters</button>
+                                <button class="sub-tab-btn" data-subtab="pv-fuel-injection">Fuel Injection</button>
+                                <button class="sub-tab-btn" data-subtab="pv-transmission">Transmission</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="sub-tab-content active" id="pv-engine">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Engine/Bypass Shafts.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Bypass Shaft
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Engine/Hex shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Hex Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Engine/IMG_0088.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0088
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Engine/Selector Shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Selector Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Engine/VCT - 2.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                VCT-2
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Engine/VCT - 4.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                VCT-4 
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="pv-chasis">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/steering chasis filters/filter.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Filter
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/steering chasis filters/pitman arm - first 2 photos correct.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                pitman arm
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="pv-fuel-injection">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/02.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                02
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/IMG_0054.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0054
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/IMG_0057.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0057
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/php1.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                php1
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/php6'.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                php'
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/php6.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                php6
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/Fuel Injection/Pump Body.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Pump Body
+                                            </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="pv-transmission">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/Automatic Manual Transmission.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Automatic Manual Transmission
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/IMG-20200909-WA0002.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG-20200909-WA0002
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/IMG_0090.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0090
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/IMG_0154.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0154
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/IMG_0155.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0155
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/IMG_0156.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                IMG_0156
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/pv/transmission/Piston Body.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Piston Body
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="tab-content my-5" id="ev">
+                <div class="header">
+                    <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                    <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
+                        and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
+                        reliability.</p> 
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="sub-tab-buttons d-flex flex-column mt-4">
+                                <button class="sub-tab-btn active" data-subtab="ev-motor&battery">Motor & Battery Pack</button>
+                                <button class="sub-tab-btn" data-subtab="ev-transmission">Transmission</button>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="sub-tab-content active" id="ev-motor&battery">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/Motor and battery pack/hub cover.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Hub cover
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/Motor and battery pack/hub covers.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Hub Covers
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/Motor and battery pack/motor shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Motor Shaft
+                                            </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/Motor and battery pack/Shaft.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Shaft
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/Motor and battery pack/spider.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Spider
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                            </div>
+                            <div class="sub-tab-content" id="ev-transmission">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/transmission/Clutch Flange.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Clutch Flange
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/transmission/Input shaft for referance.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Input shaft for referance
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/transmission/Lever arm.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Lever Arm
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/transmission/oil sleeve.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Oil Sleeve
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/transmission/Park pawl.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Park Pawl
+                                        </div>
+                                    </div>
+                                    <div class="flex-basis-30 part-img-container overlay-container">
+                                        <img src="./assets/images/automobile-parts/ev/transmission/Support Bracket.png"
+                                            class="img-fluid popup-image" alt="">
+                                            <div class="custom-overlay-text">
+                                                Support Bracket
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- <div class="tab-content my-5" id="industrial-hydraulics">
+                <div class="header">
+                    <h2>Engineered for Endurance. Built to Haul Heavy Duty.</h2>
+                    <p>Precision components designed for high-load, long-cycle performance. Supporting trucks, buses,
+                        and industrial fleets with robust gears, shafts, and drivetrain parts built for uptime and
+                        reliability.</p> 
+
+                    <div class="row">
+                        
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap justify-content-between">
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/03.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            03
+                                    </div>
+                                </div>
+                                
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/IMG_0012 (2) - Copy.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            IMG_0012
+                                    </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/IMG_0013.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            IMG_0013
+                                        </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/IMG_0114.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            IMG_0114
+                                    </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/IMG_2098.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            IMG_2098
+                                    </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/IMG_2198.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            IMG_2198
+                                    </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/IMG_2307.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            IMG_2307
+                                    </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/Power Tools.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            Power Tools
+                                    </div>
+                                </div>
+                                <div class="flex-basis-30 part-img-container overlay-container">
+                                    <img src="./assets/images/automobile-parts/industrial Hydraulics/Wheel Fork.png"
+                                        class="img-fluid popup-image" alt="">
+                                        <div class="custom-overlay-text">
+                                            Wheel Fork
+                                    </div>
+                                </div>
+                                
+                                
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ -->
+     <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <!-- <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> -->
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+<section class="get-in-touch-section py-5 text-center">
+  <div class="container">
+    <h6 class="section-title">Get in Touch</h6>
+    <h2>Want to collaborate on your next aerospace innovation?</h2>
+
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
+      <button class="hero-button btn-contact">Contact Us</button>
+    </div>
+  </div>
+</section>
+
+    <section class="contact-footer">
+        <!-- <div class="container py-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mail-box d-flex align-items-center ">
+                        <img src="./assets/images/mdi_gmail.png" alt="">
+                        <div class="text ms-2">
+                            <h2 class="m-0">Why Choose JK Maini?</h2>
+                            <p class="m-0">Stay tuned for the latest company news.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="email-form">
+                        <form action="">
+                            <input type="text" name="" id="" placeholder="Enter Your Email">
+                            <button>Sign me up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations around the world and find contact details for your nearest office.</p>
+                        <a href="">Locate the Nearest Office</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a href="">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <p>Learn more about us and find resources that will help you with all of our products</p>
+                        <a href="">Open a Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-3 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid" src="./assets/images/JK Aerospace Logo.svg"
+                            alt="JK Maini Precision Technology"></a>
+                    <p>Leading manufacturer and supplier of high-quality industrial products and solutions since 1965.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">About Us</a></li>
+                        
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Company</h5>
+                    <ul class="list-unstyled">
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Capabilities</a></li>
+                        
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">AeroSphere</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3 section-title-footer">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial Area,
+Off Hosur Road, Bangalore - 560099 </li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none;"
+                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope me-2"></i><a style="text-decoration: none;"
+                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a></li>
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <!-- <div class="col-md-3 mb-4">
+                    <h5 class="mb-3 section-title">Newsletter</h5>
+                    <p>Subscribe to our newsletter for updates and news.</p>
+                    <form class="mt-3">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Designed by Probus Studio. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+
+
+        var swiper = new Swiper(".csr-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+    </script>
+
+<script>
+    // Outer Tabs
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        tabButtons.forEach(b => b.classList.remove("active"));
+        tabContents.forEach(c => c.classList.remove("active"));
+
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+
+        // Reset sub-tabs when changing main tab
+        const newSubBtns = document.querySelector(`#${btn.dataset.tab} .sub-tab-buttons .sub-tab-btn`);
+        const newSubContents = document.querySelectorAll(`#${btn.dataset.tab} .sub-tab-content`);
+        newSubContents.forEach(c => c.classList.remove("active"));
+        newSubBtns.classList.add("active");
+        const firstSubTabId = newSubBtns.dataset.subtab;
+        document.getElementById(firstSubTabId).classList.add("active");
+      });
+    });
+
+    // Inner Tabs
+    const allSubTabButtons = document.querySelectorAll(".sub-tab-btn");
+
+    allSubTabButtons.forEach(subBtn => {
+      subBtn.addEventListener("click", () => {
+        const parentTab = subBtn.closest(".tab-content");
+        const subTabButtons = parentTab.querySelectorAll(".sub-tab-btn");
+        const subTabContents = parentTab.querySelectorAll(".sub-tab-content");
+
+        subTabButtons.forEach(b => b.classList.remove("active"));
+        subTabContents.forEach(c => c.classList.remove("active"));
+
+        subBtn.classList.add("active");
+        document.getElementById(subBtn.dataset.subtab).classList.add("active");
+      });
+    });
+  </script>
+
+</body>
+
+</html>
