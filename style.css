@@ -3393,14 +3393,11 @@ ul, ol {
 /* Optional Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-
-
 .awards-wrapper {
   padding: 60px 20px;
   background: #fff;
   text-align: center;
 }
-
 .awards-heading {
   font-size: 32px;
   font-weight: 700;
@@ -3408,7 +3405,6 @@ ul, ol {
   color: #333;
   position: relative;
 }
-
 .awards-heading::after {
   content: "";
   width: 60px;
@@ -3418,14 +3414,13 @@ ul, ol {
   margin: 10px auto 0;
   border-radius: 5px;
 }
-
 .award-section {
   display: grid;
   gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  grid-template-columns: repeat(1, 1fr); /* default mobile - 1 column */
+  grid-template-columns: repeat(1, 1fr); 
 }
 
 .award-box {
