@@ -3101,120 +3101,7 @@ ul, ol {
 
 
  /* product   --------------------------------------------------------------*/
-/* .col-img{
-  float:left;
-  width: 33.33333333333333%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  box-sizing: border-box;
-  
-}
-.outerfit{
-  overflow:hidden;
-  position:relative;
-  width: 239px;
-  height: 200px;
-  background-color: #f8f8f8;
-  font-family: 'Open Sans',arial,sans-serif;
-  font-size: 14px;
-  border-bottom: 1px solid #c6c6c6;
-  border-right: 1px solid #c6c6c6;
-  border-top:1px solid #fff;
-}
-.outerfit .img{
-  margin:0 auto;
-  border: solid 1px #ddd;
-  margin: -1px;
-  background-color: #ccc;
-  position:absolute;
-  left:10px;
-  top:10px;
-}
-.outerfit .title{
-  top: 156px;
-  width: 211px;
-  position:absolute;
-  left:19px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  font-weight: bold;
-}
-.outerfit .shortdesc{
-  font-size:11px;
-  position:absolute;
-  width: 150px;
-  top: 174px;
-  left: 19px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  color: #888;
-}
 
-.outerfit .next{
-  margin-top:70px;
-  z-index:2;
-}
-.outerfit .fill_a{
-  
-  background-color:#f8f8f8;
-  position:relative;
-  height:200px;
-}
-
-@media (max-width: 991px) {
-  .col-img {
-    width: 50%;
-  }
-}
-
-
-@media (max-width: 576px) {
-  .col-img {
-    width: 100%;
-    margin-bottom: 20px; 
-    float: none; 
-  }
-
-  .outerfit {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 0 auto;
-  }
-
-  .outerfit .img {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-    background-color: #ccc;
-    margin: 0 auto;
-  }
-
-  .outerfit .title,
-  .outerfit .shortdesc {
-    position: relative;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    top: auto;
-    margin-top: 5px;
-  }
-} */
-
-/*DELETE THIS */
-/* .product-img{
-  display: block;
-  height:142px;
-  width:222px;    background:url('data:image/png;base64,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')
-    
-} */
 
 /* Product Section Container */
 #product-section .container {
@@ -3368,6 +3255,211 @@ ul, ol {
     width: 100%;
   }
 }
+
+
+#product-section .product-sidebar ul li a .active {
+  background-color: #d35400;   
+  color: #fff;
+  font-weight: bold;
+  border-left: 4px solid #b84300;
+}
+
+
+
+/*----------------------------------zoomeffect---------------------------------------------------------- */
+
+/* #product-section .product-img img {
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+#product-section .product-img:hover img {
+  transform: scale(1.5); 
+  z-index: 10;
+} */
+
+
+/*----------------------------------zoomeffect---------------------------------------------------------- */
+
+/* #product-section .product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+#product-section .product-img img {
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
+  cursor: zoom-in;
+  display: block;
+  z-index: 1;
+}
+
+#product-section .product-img:hover img {
+  transform: scale(1.5);
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+} */
+
+
+/*----------------------------------zoomeffect---------------------------------------------------------- */
+/* .col-img {
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+}
+
+.col-img:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+.product-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.col-img:hover .product-img img {
+  transform: scale(1.1); 
+} */
+/*----------------------------------zoomeffect---------------------------------------------------------- */
+/* @keyframes zoomInCard {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+
+
+.col-img {
+  animation: zoomInCard 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+  transform: scale(1);
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+
+.col-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+
+.product-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.col-img:hover .product-img img {
+  transform: scale(1.1);
+}
+
+
+.col-img:nth-child(1) { animation-delay: 0.2s; }
+.col-img:nth-child(2) { animation-delay: 0.4s; }
+.col-img:nth-child(3) { animation-delay: 0.6s; } */
+
+/*----------------------------------zoomeffect---------------------------------------------------------- */
+/* @keyframes rotateZoomInCard {
+  0% {
+    transform: scale(0.8) rotate(-10deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.05) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+
+.col-img {
+  animation: rotateZoomInCard 0.8s ease-out forwards;
+  animation-delay: 0.3s;
+  transform: scale(1);
+  opacity: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+
+.col-img:hover {
+  transform: scale(1.08) rotate(1deg);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+}
+
+
+.product-img img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.col-img:hover .product-img img {
+  transform: scale(1.1);
+}
+
+
+.col-img:nth-child(1) { animation-delay: 0.2s; }
+.col-img:nth-child(2) { animation-delay: 0.4s; }
+.col-img:nth-child(3) { animation-delay: 0.6s; }
+ */
+/*----------------------------------zoomeffect---------------------------------------------------------- */
+/* Container */
+#zoomResult {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Image inside */
+#zoomResult .product-img {
+  overflow: hidden;
+  position: relative;
+  cursor: crosshair;
+}
+
+/* Zoomed image lens (hidden on default) */
+#zoomLens {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #000;
+  background-color: rgba(255, 255, 255, 0.4);
+  pointer-events: none;
+  display: none;
+  z-index: 10;
+}
+
+/* Zoomed background preview */
+#zoomResult::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: 800px auto;
+  border: 1px solid #ccc;
+  display: none;
+  z-index: 5;
+}
+/* Add this to your CSS */
+
+
+
 
 /* awards---------------------------------------------- */
 

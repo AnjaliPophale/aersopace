@@ -243,7 +243,7 @@
         <div class="product-grid">
 
          <!--------------------------------- Complex Engine Parts ---------------------------- -->
-          <div class="col-img" data-category="engine">
+          <div class="col-img" id="zoomResult" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
                 <div class="product-img"><img src="assets/images/complex-engine-parts/Turbine _Vanes.png" alt="Engine Part"></div>
@@ -252,7 +252,7 @@
             </div>
           </div>
 
-          <div class="col-img" data-category="engine">
+          <div class="col-img" id="zoomResult" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
                 <div class="product-img"><img src="assets/images/complex-engine-parts/Housing Assembly.png" alt="Engine Part"></div>
@@ -864,6 +864,92 @@
   });
 });
 
+</script>
+<!------------ active tab ---------------------------- -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.product-sidebar ul li a');
+
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent link default
+
+        // Remove active from all links
+        links.forEach(l => l.classList.remove('active'));
+
+        // Add active to clicked link
+        this.classList.add('active');
+      });
+    });
+  });
+</script>
+
+
+<!------------ zoom effect ---------------------------- -->
+<script>
+  const zoomCard = document.getElementById("zoomResult");
+  const image = zoomCard.querySelector(".product-img img");
+
+  // Create zoom lens
+  const lens = document.createElement("div");
+  lens.id = "zoomLens";
+  zoomCard.querySelector(".product-img").appendChild(lens);
+
+  // Set zoom preview in ::after
+  zoomCard.style.setProperty('--zoom-image', `url(${image.src})`);
+
+  const zoomResult = zoomCard;
+
+  const ratio = 2.5;
+
+  image.addEventListener("mouseenter", () => {
+    lens.style.display = "block";
+    zoomResult.classList.add("zooming");
+    zoomResult.style.setProperty("--bg-image", `url(${image.src})`);
+    zoomResult.style.setProperty("--zoom", `${ratio}`);
+    zoomResult.style.setProperty("--display", "block");
+    zoomCard.style.setProperty('--zoom-show', 'block');
+    zoomCard.style.setProperty('--zoom-src', `url(${image.src})`);
+    zoomCard.style.setProperty('--zoom-size', `${image.width * ratio}px auto`);
+    zoomCard.style.setProperty('--zoom-bg', `url(${image.src})`);
+    zoomCard.style.setProperty('--zoom-x', '0px');
+    zoomCard.style.setProperty('--zoom-y', '0px');
+    zoomCard.style.setProperty('--zoom-display', 'block');
+    zoomCard.style.setProperty('--zoom-opacity', '1');
+    zoomCard.style.setProperty('--zoom-pointer', 'none');
+
+    zoomCard.style.setProperty('--zoomResult-after-display', 'block');
+    zoomCard.style.setProperty('--zoomResult-after-bg-image', `url(${image.src})`);
+  });
+
+  image.addEventListener("mouseleave", () => {
+    lens.style.display = "none";
+    zoomCard.style.removeProperty('--zoomResult-after-display');
+  });
+
+  image.addEventListener("mousemove", function (e) {
+    const rect = image.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    x = x - lens.offsetWidth / 2;
+    y = y - lens.offsetHeight / 2;
+
+    // Prevent going out of bounds
+    x = Math.max(0, Math.min(x, rect.width - lens.offsetWidth));
+    y = Math.max(0, Math.min(y, rect.height - lens.offsetHeight));
+
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+
+    // Set background preview in ::after
+    zoomCard.style.setProperty('--zoomResult-after-bg-position',
+      `-${x * ratio}px -${y * ratio}px`);
+    zoomCard.style.setProperty('--zoomResult-after-display', 'block');
+    zoomCard.style.setProperty('--zoomResult-after-background-image', `url(${image.src})`);
+    zoomCard.style.setProperty('--zoomResult-after-background-size', `${image.width * ratio}px auto`);
+  });
 </script>
 
 
