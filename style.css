@@ -3265,65 +3265,8 @@ ul, ol {
 }
 
 
-
 /*----------------------------------zoomeffect---------------------------------------------------------- */
-
-/* #product-section .product-img img {
-  transition: transform 0.3s ease;
-  cursor: zoom-in;
-}
-
-#product-section .product-img:hover img {
-  transform: scale(1.5); 
-  z-index: 10;
-} */
-
-
-/*----------------------------------zoomeffect---------------------------------------------------------- */
-
-/* #product-section .product-img {
-  position: relative;
-  overflow: hidden;
-}
-
-#product-section .product-img img {
-  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease;
-  cursor: zoom-in;
-  display: block;
-  z-index: 1;
-}
-
-#product-section .product-img:hover img {
-  transform: scale(1.5);
-  z-index: 10;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-} */
-
-
-/*----------------------------------zoomeffect---------------------------------------------------------- */
-/* .col-img {
-  transition: transform 0.4s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  z-index: 1;
-  position: relative;
-}
-
-.col-img:hover {
-  transform: scale(1.05);
-  z-index: 10;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-}
-.product-img img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.col-img:hover .product-img img {
-  transform: scale(1.1); 
-} */
-/*----------------------------------zoomeffect---------------------------------------------------------- */
-/* @keyframes zoomInCard {
+@keyframes zoomInCard {
   0% {
     transform: scale(0.8);
     opacity: 0;
@@ -3333,8 +3276,6 @@ ul, ol {
     opacity: 1;
   }
 }
-
-
 .col-img {
   animation: zoomInCard 0.8s ease-out forwards;
   animation-delay: 0.3s;
@@ -3345,120 +3286,106 @@ ul, ol {
   position: relative;
   z-index: 1;
 }
-
-
-.col-img:hover {
-  transform: scale(1.08);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-  z-index: 10;
-}
-
-
-.product-img img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.col-img:hover .product-img img {
-  transform: scale(1.1);
-}
-
-
 .col-img:nth-child(1) { animation-delay: 0.2s; }
 .col-img:nth-child(2) { animation-delay: 0.4s; }
-.col-img:nth-child(3) { animation-delay: 0.6s; } */
+.col-img:nth-child(3) { animation-delay: 0.6s; } 
+/* --------------------eye overlay------------------------------- */
 
-/*----------------------------------zoomeffect---------------------------------------------------------- */
-/* @keyframes rotateZoomInCard {
-  0% {
-    transform: scale(0.8) rotate(-10deg);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1.05) rotate(0deg);
-    opacity: 1;
-  }
-}
-
-
-.col-img {
-  animation: rotateZoomInCard 0.8s ease-out forwards;
-  animation-delay: 0.3s;
-  transform: scale(1);
-  opacity: 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.view-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 50%;
   cursor: pointer;
-  position: relative;
-  z-index: 1;
-}
-
-
-.col-img:hover {
-  transform: scale(1.08) rotate(1deg);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-  z-index: 10;
-}
-
-
-.product-img img {
-  width: 100%;
-  display: block;
-  transition: transform 0.3s ease;
-}
-
-.col-img:hover .product-img img {
-  transform: scale(1.1);
-}
-
-
-.col-img:nth-child(1) { animation-delay: 0.2s; }
-.col-img:nth-child(2) { animation-delay: 0.4s; }
-.col-img:nth-child(3) { animation-delay: 0.6s; }
- */
-/*----------------------------------zoomeffect---------------------------------------------------------- */
-/* Container */
-#zoomResult {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Image inside */
-#zoomResult .product-img {
-  overflow: hidden;
-  position: relative;
-  cursor: crosshair;
-}
-
-/* Zoomed image lens (hidden on default) */
-#zoomLens {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  border: 2px solid #000;
-  background-color: rgba(255, 255, 255, 0.4);
-  pointer-events: none;
-  display: none;
-  z-index: 10;
-}
-
-/* Zoomed background preview */
-#zoomResult::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 300px;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: 800px auto;
-  border: 1px solid #ccc;
-  display: none;
+  font-size: 16px;
   z-index: 5;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Prevent icon from shifting */
+  line-height: 0;
 }
-/* Add this to your CSS */
 
 
+
+.view-icon:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+
+
+
+#imageModal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#imageModal img {
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid #fff;
+  border-radius: 8px;
+}
+
+#imageModal .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+} */
+.modal-overlay {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 35px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 10000;
+}
+
+
+
+.product-img {
+  position: relative;
+}
+
+.product-img:hover .view-icon {
+  display: block;
+}
 
 
 /* awards---------------------------------------------- */
