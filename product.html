@@ -13,6 +13,11 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <!-- Add in <head> -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     
 </head>
 
@@ -114,10 +119,6 @@
                                         <li><a href="#">Structural Parts</a></li>
                                         <li><a href="#">System Parts</a></li>
                                         <li><a href="#">Horizontal Deployments</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
                                
@@ -197,12 +198,7 @@
                                 <h1>Aerospace Precision Engineering<br>
                                     Redefining Possibility in the Sky
                                 </h1>
-                                <!-- <p class="mt-3 mb-4">
-                                    At JK Maini, we specialize in precision manufacturing of high-quality automobile
-                                    parts that power the vehicles of today and tomorrow. Our advanced engineering
-                                    processes and rigorous quality control ensure every component meets the demanding
-                                    standards of the automotive industry.
-                                </p> -->
+                               
                                 <div class="d-flex justify-content-center">
                                     <button class="hero-button d-flex align-items-center">
                                         Visit Site <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
@@ -244,63 +240,79 @@
 
          <!--------------------------------- Complex Engine Parts ---------------------------- -->
 
-   <div class="col-img" data-category="engine">
+ 
+
+
+
+
+<div class="col-img" data-category="engine">
   <div class="outerfit">
     <div class="fill_a">
       <div class="product-img">
-        <!-- Small thumbnail image -->
-        <img src="assets/images/complex-engine-parts/Turbine _Vanes.png" alt="Engine Part"
-             data-large="assets/images/JK Map.png"> <!-- Different large image -->
+        <img src="assets/images/complex-engine-parts/Turbine _Vanes.png"
              
-        <!-- Eye icon for viewing -->
-        <span class="view-icon" onclick="openImagePopup(this)">
-          <i class="fa fa-eye"></i>
-        </span>
+             data-large="assets/images/complex-engine-parts/cat1/Turbine _Vanes.png"
+             alt="Turbine Vanes"
+             class="zoom-img">
+        <div class="view-icon" onclick="openModal(this)">
+          <i class="fas fa-eye"></i>
+        </div>
       </div>
-      <div class="title">Turbine Vanes</div>
+      <div class="title">Turbine</div>
     </div>
   </div>
 </div>
 
-<!-- Image Modal -->
-<div id="imageModal" class="modal-overlay" style="display:none;">
-  <span class="close-button" onclick="closeImagePopup()">&times;</span>
-  <img id="modalImage" class="modal-img" />
+
+<div class="col-img" data-category="engine">
+  <div class="outerfit">
+    <div class="fill_a">
+      <div class="product-img">
+        <img src="assets/images/complex-engine-parts/Housing Assembly.png"
+             data-large="assets/images/complex-engine-parts/cat1/Housing Assembly.png"
+             alt="Housing Assembly"
+             class="zoom-img">
+        <div class="view-icon" onclick="openModal(this)">
+          <i class="fas fa-eye"></i>
+        </div>
+      </div>
+      <div class="title">Housing Assembly</div>
+    </div>
+  </div>
 </div>
 
 
 
-          <!-- <div class="col-img" id="zoomResult" data-category="engine">
+  <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Turbine _Vanes.png" alt="Engine Part"></div>
-                <div class="title">Turbine Vanes</div>
-              </div>
-            </div>
-          </div> -->
-
-          <div class="col-img" id="zoomResult" data-category="engine">
-            <div class="outerfit">
-              <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Housing Assembly.png" alt="Engine Part"></div>
-                <div class="title">Housing Assembly</div>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-img" data-category="engine">
-            <div class="outerfit">
-              <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Fuel System Cylinder.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Fuel System Cylinder.png" 
+                  alt="Fuel System Cylinder"
+                  class="zoom-img"
+                  data-large="assets/images/complex-engine-parts/cat1/Fuel System Cylinder.png">
+                  <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Fuel System Cylinder</div>
               </div>
             </div>
-          </div>
+  </div>
 
-            <div class="col-img" data-category="engine">
+
+   <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Stator Blade.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Stator Blade.png" 
+                  alt="Stator Blade"
+                  class="zoom-img"
+                  data-large="assets/images/complex-engine-parts/cat1/Stator Blade.png">
+                  <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Stator Blade</div>
               </div>
             </div>
@@ -309,16 +321,31 @@
            <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Fuel Control Assembly.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Fuel Control Assembly.png"
+                   alt="Fuel Control Assembly"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Fuel Control Assembly.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Fuel Control Assembly</div>
               </div>
             </div>
           </div>
 
-           <div class="col-img" data-category="engine">
+            <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Body insert Assembly.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Body insert Assembly.png" alt="Body Insert Assembly"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Body insert Assembly.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Body Insert Assembly</div>
               </div>
             </div>
@@ -327,26 +354,32 @@
            <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Lever Throttle.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Lever Throttle.png" alt="Lever Throttle"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Lever Throttle.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Lever Throttle</div>
               </div>
             </div>
           </div>
 
-          <div class="col-img" data-category="engine">
-            <div class="outerfit">
-              <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/TGB Mount.png" alt="Engine Part"></div>
-                <div class="title">TGB Mount</div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-img" data-category="engine">
+            <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Inlet.png" alt="Engine Part"></div>
-                <div class="title">Inlet</div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/TGB Mount.png" alt="TGB Mount"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/TGB Mount.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
+                <div class="title">TGB Mount</div>
               </div>
             </div>
           </div>
@@ -354,16 +387,47 @@
            <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Gear Train  support plate.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Inlet.png" alt="Inlet"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Inlet.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
+                <div class="title">Inlet</div>
+              </div>
+            </div>
+          </div>
+
+            <div class="col-img" data-category="engine">
+            <div class="outerfit">
+              <div class="fill_a">
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Gear Train  support plate.png" alt="Gear Train Support Plate"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Gear Train  support plate.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Gear Train  support plate</div>
               </div>
             </div>
           </div>
 
+
           <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Tie Rod Assembly.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Tie Rod Assembly.png" alt="Tie Rod Assembly"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Tie Rod Assembly.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Tie Rod Assembly</div>
               </div>
             </div>
@@ -372,18 +436,40 @@
           <div class="col-img" data-category="engine">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/complex-engine-parts/Mount Bracket.png" alt="Engine Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/complex-engine-parts/Mount Bracket.png" alt="Mount Bracket"
+                   class="zoom-img"
+                   data-large="assets/images/complex-engine-parts/cat1/Mount Bracket.png">
+                   <div class="view-icon" onclick="openModal(this)">
+                      <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Mount Bracket</div>
               </div>
             </div>
           </div>
+
+
+
+
+
+        
+         
       
           <!--------------------------------- Structural Parts ---------------------------- -->
           <div class="col-img" data-category="structure">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/structure-parts/Swinging Links.png" alt="Structure Part"></div>
-                <div class="title">Structure Part</div>
+                <div class="product-img">
+                  <img src="assets/images/structure-parts/Swinging Links.png" 
+                   data-large="assets/images/structure-parts/cat2/Swinging Links.png"
+                    alt="Swinging Links" 
+                    class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                       <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+                <div class="title">Swinging Links</div>
               </div>
             </div>
           </div>
@@ -391,7 +477,15 @@
           <div class="col-img" data-category="structure">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/structure-parts/Tank Drag Strut Assembly.png" alt="Structure Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/structure-parts/Tank Drag Strut Assembly.png" 
+                   data-large="assets/images/structure-parts/cat2/Tank Drag Strut Assembly.png"
+                  alt="Tank Drag Strut Assembly"
+                  class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Tank Drag Strut Assembly</div>
               </div>
             </div>
@@ -400,47 +494,87 @@
           <div class="col-img" data-category="structure">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/structure-parts/Hook Assembly.png" alt="Structure Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/structure-parts/Hook Assembly.png"
+                    data-large="assets/images/structure-parts/cat2/Hook Assembly.png" 
+                  alt="Hook Assembly" 
+                  class="zoom-img">
+                  <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Hook Assembly</div>
               </div>
             </div>
           </div>
 
-
           <div class="col-img" data-category="structure">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/structure-parts/Rings.png" alt="Structure Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/structure-parts/Rings.png" 
+                  data-large="assets/images/structure-parts/cat2/Rings.png"
+                  alt="Rings" 
+                  class="zoom-img">
+                  <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Rings</div>
               </div>
             </div>
           </div>
 
-
           <div class="col-img" data-category="structure">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/structure-parts/Pylon.png" alt="Structure Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/structure-parts/Pylon.png" 
+                   data-large="assets/images/structure-parts/cat2/Pylon.png"
+                   alt="Pylon" 
+                   class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Pylon</div>
               </div>
             </div>
           </div>
+
+        
 
 
           <!--------------------------------- System Part ---------------------------- -->
           <div class="col-img" data-category="system">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/system-parts/Manifolds.png" alt="System Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/system-parts/Manifolds.png"
+                   data-large="assets/images/system-parts/cat3/Manifolds.png" 
+                    alt="Manifolds" 
+                    class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Manifolds</div>
               </div>
             </div>
           </div>
 
-          <div class="col-img" data-category="system">
+            <div class="col-img" data-category="system">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/system-parts/Clevis.png" alt="System Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/system-parts/Clevis.png" 
+                   data-large="assets/images/system-parts/cat3/Clevis.png"
+                   alt="Clevis" 
+                   class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Clevis</div>
               </div>
             </div>
@@ -449,7 +583,15 @@
           <div class="col-img" data-category="system">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/system-parts/Flange Tube.png" alt="System Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/system-parts/Flange Tube.png" 
+                   data-large="assets/images/system-parts/cat3/Flange Tube.png"
+                   alt="Flange Tube" 
+                   class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Flange Tube</div>
               </div>
             </div>
@@ -458,35 +600,63 @@
           <div class="col-img" data-category="system">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/system-parts/TIR Holder.png" alt="System Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/system-parts/TIR Holder.png" 
+                   data-large="assets/images/system-parts/cat3/TIR Holder.png"
+                   alt="TIR Holder" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">TIR Holder</div>
               </div>
             </div>
           </div>
 
-          <div class="col-img" data-category="system">
+            <div class="col-img" data-category="system">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/system-parts/Lighting System Housings.png" alt="System Part"></div>
+                <div class="product-img">
+                  <img src="assets/images/system-parts/Lighting System Housings.png" 
+                   data-large="assets/images/system-parts/cat3/Lighting System Housings.png"
+                   alt="Lighting System Housings" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Lighting System Housings</div>
               </div>
             </div>
           </div>
-
-          <div class="col-img" data-category="system">
+          
+           <div class="col-img" data-category="system">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/system-parts/Housing cover.png" alt="System Part"></div>
+                <div class="product-img"><img src="assets/images/system-parts/Housing cover.png"
+                   data-large="assets/images/system-parts/cat3/Housing cover.png"
+                   alt="Housing Cover" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Housing Cover</div>
               </div>
             </div>
           </div>
-
+          
           <!--------------------------------- Horizontal Deployments ---------------------------- -->
           <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/Flap track.png" alt="Horizontal Deployments"></div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/Flap track.png" 
+                   data-large="assets/images/horizontal-parts/cat4/Flap track.png"
+                   alt="Horizontal Deployments" 
+                   class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Flap track</div>
               </div>
             </div>
@@ -495,16 +665,30 @@
            <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/braking-system-hub.png" alt="Horizontal Deployments"></div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/braking-system-hub.png"
+                   data-large="assets/images/horizontal-parts/cat4/braking-system-hub.png"
+                   alt="Braking System Hub" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Braking System Hub</div>
               </div>
             </div>
           </div>
 
-          <div class="col-img" data-category="horizontal">
+            <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/salt-track.png" alt="Horizontal Deployments"></div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/salt-track.png" 
+                   data-large="assets/images/horizontal-parts/cat4/salt-track.png"
+                   alt="Salt Track" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Salt Track</div>
               </div>
             </div>
@@ -513,26 +697,64 @@
           <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/landing-gear-beam.png" alt="Horizontal Deployments"></div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/landing-gear-beam.png"
+                   data-large="assets/images/horizontal-parts/cat4/landing-gear-beam.png"
+                   alt="Landing Gear Beam" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Landing Gear Beam</div>
               </div>
             </div>
           </div>
+          
 
-           <div class="col-img" data-category="horizontal">
+          <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/frame-ribs.png" alt="Horizontal Deployments"></div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/frame-ribs.png" 
+                   data-large="assets/images/horizontal-parts/cat4/frame-ribs.png"
+                   alt="Frame Ribs" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Frame Ribs</div>
               </div>
             </div>
           </div>
 
+            <div class="col-img" data-category="horizontal">
+            <div class="outerfit">
+              <div class="fill_a">
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/wing-ribs.png" 
+                   data-large="assets/images/horizontal-parts/cat4/wing-ribs.png"
+                   alt="Wing Ribs" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
+                <div class="title">Wing Ribs</div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/wing-ribs.png" alt="Horizontal Deployments"></div>
-                <div class="title">Wing Ribs</div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/slider-for-main-landing-gear.png" 
+                   data-large="assets/images/horizontal-parts/cat4/slider-for-main-landing-gear.png"
+                   alt="Slider for Main Landing Gear" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
+                <div class="title">Slider for Main Landing Gear</div>
               </div>
             </div>
           </div>
@@ -540,8 +762,15 @@
            <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/slider-for-main-landing-gear.png" alt="Horizontal Deployments"></div>
-                <div class="title">Slider for Main Landing Gear</div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/pylon-bracket.png" 
+                   data-large="assets/images/horizontal-parts/cat4/pylon-bracket.png"
+                   alt="Pylon Bracket for Aircraft wings" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
+                <div class="title">Pylon Bracket for Aircraft wings</div>
               </div>
             </div>
           </div>
@@ -549,56 +778,81 @@
           <div class="col-img" data-category="horizontal">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/pylon-bracket.png" alt="Horizontal Deployments"></div>
-                <div class="title">Pylon Bracket for Aircraft wings</div>
-              </div>
-            </div>
-          </div>
-
-
-            <div class="col-img" data-category="horizontal">
-            <div class="outerfit">
-              <div class="fill_a">
-                <div class="product-img"><img src="assets/images/horizontal-parts/nose-gear.png" alt="Horizontal Deployments"></div>
+                <div class="product-img">
+                  <img src="assets/images/horizontal-parts/nose-gear.png" 
+                   data-large="assets/images/horizontal-parts/cat4/nose-gear.png"
+                   alt="Nose Gear Strut Housing" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Nose Gear Strut Housing</div>
               </div>
             </div>
           </div>
+           
+
    
           <!--------------------------------- Vanes ---------------------------- -->
           <div class="col-img" data-category="vanes">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/vanes-family/rotary-blades.png" alt="Vanes"></div>
+                <div class="product-img">
+                  <img src="assets/images/vanes-family/rotary-blades.png" 
+                   data-large="assets/images/vanes-family/cat5/rotary-blades.png"
+                    alt="Vanes" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Rotary Blades</div>
               </div>
             </div>
           </div>
 
-             <div class="col-img" data-category="vanes">
+            <div class="col-img" data-category="vanes">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/vanes-family/cast-stationary-vanes.png" alt="Vanes"></div>
+                <div class="product-img">
+                  <img src="assets/images/vanes-family/cast-stationary-vanes.png" 
+                    data-large="assets/images/vanes-family/cat5/cast-stationary-vanes.png"
+                  alt="Cast Stationary Vanes" class="zoom-img">
+                  <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Cast Stationary Vanes</div>
               </div>
             </div>
           </div>
 
-
              <div class="col-img" data-category="vanes">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/vanes-family/impeller for apu.png" alt="Vanes"></div>
+                <div class="product-img">
+                  <img src="assets/images/vanes-family/impeller for apu.png"
+                   data-large="assets/images/vanes-family/cat5/impeller for apu.png"
+                   alt="Impeller for APU" class="zoom-img">
+                  <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Impeller for APU</div>
               </div>
             </div>
           </div>
 
-
-            <div class="col-img" data-category="vanes">
+           <div class="col-img" data-category="vanes">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/vanes-family/cross-slot-edm.png" alt="Vanes"></div>
+                <div class="product-img">
+                  <img src="assets/images/vanes-family/cross-slot-edm.png" 
+                   data-large="assets/images/vanes-family/cat5/cross-slot-edm.png"
+                   alt="Cross Slot EDM machined & assembled vanes" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Cross Slot EDM machined & assembled vanes</div>
               </div>
             </div>
@@ -607,17 +861,35 @@
           <div class="col-img" data-category="vanes">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/vanes-family/blisk.png" alt="Vanes"></div>
+                <div class="product-img">
+                  <img src="assets/images/vanes-family/blisk.png" 
+                   data-large="assets/images/vanes-family/cat5/blisk.png"
+                  alt="Blisk" class="zoom-img">
+                  <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                  </div>
+                </div>
                 <div class="title">Blisk</div>
               </div>
             </div>
           </div>
+          
+         
+           
 
           <!--------------------------------- Casings ---------------------------- -->
           <div class="col-img" data-category="casings">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/casings-family/combustion-chamber-casing.png" alt="Casings"></div>
+                <div class="product-img">
+                  <img src="assets/images/casings-family/combustion-chamber-casing.png" 
+                   data-large="assets/images/casings-family/cat6/combustion-chamber-casing.png"
+                    alt="Combustion Chamber Casings" 
+                    class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                    <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Combustion Chamber Casings</div>
               </div>
             </div>
@@ -626,7 +898,15 @@
           <div class="col-img" data-category="casings">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/casings-family/bearing-support.png" alt="Casings"></div>
+                <div class="product-img">
+                  <img src="assets/images/casings-family/bearing-support.png" 
+                   data-large="assets/images/casings-family/cat6/bearing-support.png"
+                   alt="Bearing Support" 
+                   class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Bearing Support</div>
               </div>
             </div>
@@ -635,35 +915,66 @@
           <div class="col-img" data-category="casings">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/casings-family/shround-support.png" alt="Casings"></div>
+                <div class="product-img">
+                  <img src="assets/images/casings-family/shround-support.png" 
+                   data-large="assets/images/casings-family/cat6/shround-support.png"
+                   alt="Shroud Support" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Shroud Support</div>
               </div>
             </div>
           </div>
 
-          <div class="col-img" data-category="casings">
+           <div class="col-img" data-category="casings">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/casings-family/front-frame.png" alt="Casings"></div>
+                <div class="product-img">
+                  <img src="assets/images/casings-family/front-frame.png" 
+                   data-large="assets/images/casings-family/cat6/front-frame.png"
+                   alt="Front Frame" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Front Frame</div>
               </div>
             </div>
           </div>
 
+
           <div class="col-img" data-category="casings">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/casings-family/stub-shaft.png" alt="Casings"></div>
+                <div class="product-img">
+                  <img src="assets/images/casings-family/stub-shaft.png" 
+                   data-large="assets/images/casings-family/cat6/stub-shaft.png"
+                   alt="Stub Shaft" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Stub Shaft</div>
               </div>
             </div>
           </div>
+
+          
           
           <!--------------------------------- Disc ---------------------------- -->
           <div class="col-img" data-category="disc">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/disc-family/disc-1.png" alt="Disc"></div>
+                <div class="product-img">
+                  <img src="assets/images/disc-family/disc-1.png" 
+                   data-large="assets/images/disc-family/cat7/disc-1.png"
+                    alt="Disc" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                    </div>
+                </div>
                 <div class="title">Disc</div>
               </div>
             </div>
@@ -672,27 +983,75 @@
            <div class="col-img" data-category="disc">
             <div class="outerfit">
               <div class="fill_a">
-                <div class="product-img"><img src="assets/images/disc-family/disc-2.png" alt="Disc"></div>
+                <div class="product-img">
+                  <img src="assets/images/disc-family/disc-2.png" 
+                   data-large="assets/images/disc-family/cat7/disc-2.png"
+                   alt="Disc" class="zoom-img">
+                   <div class="view-icon" onclick="openModal(this)">
+                     <i class="fas fa-eye"></i>
+                   </div>
+                </div>
                 <div class="title">Disc</div>
               </div>
             </div>
           </div>
 
+          
         </div>
       </div>
 
 
-      <!-- Modal -->
-<div id="imageModal" class="modal-overlay" style="display:none;">
-  <span class="close-button" onclick="closeImagePopup()">&times;</span>
-  <img id="modalImage" class="modal-img" />
-  <a class="prev" onclick="showPrevImage()">&#10094;</a>
-  <a class="next" onclick="showNextImage()">&#10095;</a>
-</div>
+     
     </div>
   </div>
 </section>
-    
+
+
+
+<!-- <div id="imgModal" class="img-modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="captionText"></div>
+  <button class="prev" onclick="changeImage(-1)">❮</button>
+  <button class="next" onclick="changeImage(1)">❯</button>
+</div> -->
+
+ <!-- <div id="imgModal" class="img-modal">
+  <span class="close" id="modalClose">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="captionText"></div>
+  <button class="prev" id="modalPrev">❮</button>
+  <button class="next" id="modalNext">❯</button>
+</div> -->
+<div id="imgModal" class="img-modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="captionText"></div>
+
+  <div class="arrows-container">
+    <!-- <a href="#" class="arrow left" onclick="changeImage(-1, event)">
+  <i></i>
+  <svg><use xlink:href="#circle"></use></svg>
+</a>
+<a href="#" class="arrow right" onclick="changeImage(1, event)">
+  <i></i>
+  <svg><use xlink:href="#circle"></use></svg>
+</a> -->
+<a href="#" class="arrow left" onclick="changeImage(-1, event)">
+  <i class="fa fa-chevron-left"></i>
+  <svg><use xlink:href="#circle"></use></svg>
+</a>
+
+<a href="#" class="arrow right" onclick="changeImage(1, event)">
+  <i class="fa fa-chevron-right"></i>
+  <svg><use xlink:href="#circle"></use></svg>
+</a>
+
+
+  </div>
+</div>
+
+
 
   
 <section class="contact-footer">
@@ -752,9 +1111,9 @@
                         <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none">About Us</a></li>
                         
-                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li> -->
+                        
                         <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li>
-                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li> -->
+                       
                         <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
                         
                     </ul>
@@ -762,11 +1121,11 @@
                 <div class="col-md-3 mb-4 quick-links">
                     <h5 class="mb-3 section-title-footer">Company</h5>
                     <ul class="list-unstyled">
-                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li> -->
+                        
                         <li class="mb-2"><a href="#" class="text-decoration-none">Capabilities</a></li>
                         
                         <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
-                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li> -->
+            
                         <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none">AeroSphere</a></li>
                         
@@ -785,21 +1144,11 @@
                          <i class="fa-solid fa-envelope me-2"></i>
                          <a style="text-decoration: none; color: black;" href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a></li>
 
-                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                        
                     </ul>
                 </div>
 
-                <!-- Newsletter Column -->
-                <!-- <div class="col-md-3 mb-4">
-                    <h5 class="mb-3 section-title">Newsletter</h5>
-                    <p>Subscribe to our newsletter for updates and news.</p>
-                    <form class="mt-3">
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                            <button class="btn newsletter-btn" type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div> -->
+                
             </div>
         </div>
         <div class="copyright py-2">
@@ -851,33 +1200,7 @@
     </script>
 
 
-<!-- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll("#tabs ul li a");
-    const articles = document.querySelectorAll(".tabs-content article");
 
-    tabs.forEach(tab => {
-      tab.addEventListener("click", function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute("href").substring(1);
-
-        // Hide all articles
-        articles.forEach(article => article.classList.remove("active"));
-
-        // Remove active class from tabs
-        tabs.forEach(t => t.classList.remove("active"));
-
-        // Activate current
-        document.getElementById(targetId).classList.add("active");
-        this.classList.add("active");
-      });
-    });
-
-    // Show first tab by default
-    tabs[0].classList.add("active");
-    articles[0].classList.add("active");
-  });
-</script> -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".product-sidebar a");
@@ -901,27 +1224,111 @@
 
 </script>
 
+
+
 <!-- ------------------------image-large ------------------------------>
-
 <script>
-  function openImagePopup(elem) {
-    const imgTag = elem.closest('.product-img').querySelector('img');
-    const largeImg = imgTag.getAttribute('data-large'); // correctly fetch data-large
-    
-    // If data-large is missing or empty, fallback to the original src
-    document.getElementById('modalImage').src = largeImg || imgTag.src;
+  const modal = document.getElementById("imgModal");
+  const modalImg = document.getElementById("modalImage");
+  const captionText = document.getElementById("captionText");
 
-    // Display the modal
-    document.getElementById('imageModal').style.display = 'flex';
+  let currentIndex = 0;
+  let zoomImages = [];
+
+  // Open modal when clicking the eye icon
+  window.openModal = function (icon) {
+    zoomImages = Array.from(document.querySelectorAll(".zoom-img"));
+    const clickedImg = icon.previousElementSibling;
+
+    currentIndex = zoomImages.indexOf(clickedImg);
+
+    if (currentIndex !== -1) {
+      showImage(currentIndex);
+      modal.style.display = "block";
+    } else {
+      console.warn("Image not found in zoomImages list.");
+    }
+  };
+
+  // Show image by index
+  function showImage(index) {
+    if (!zoomImages.length) return;
+
+    if (index < 0) index = zoomImages.length - 1;
+    if (index >= zoomImages.length) index = 0;
+
+    currentIndex = index;
+
+    const selectedImage = zoomImages[currentIndex];
+    const largeSrc = selectedImage.getAttribute("data-large") || selectedImage.src;
+
+    modalImg.src = largeSrc;
+    captionText.textContent = selectedImage.alt || "";
   }
 
-  function closeImagePopup() {
-    document.getElementById('imageModal').style.display = 'none';
-  }
+  // Change image (prev/next)
+  window.changeImage = function (step, event) {
+    if (event) event.preventDefault(); // prevent anchor behavior
+    const newIndex = currentIndex + step;
+    showImage(newIndex);
+  };
+
+  // Close modal
+  window.closeModal = function () {
+    modal.style.display = "none";
+  };
+
+  // Close on background click
+  modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  // Optional: ESC key to close modal
+  document.addEventListener("keydown", function (e) {
+    if (modal.style.display === "block") {
+      if (e.key === "Escape") {
+        closeModal();
+      } else if (e.key === "ArrowLeft") {
+        changeImage(-1);
+      } else if (e.key === "ArrowRight") {
+        changeImage(1);
+      }
+    }
+  });
+</script>
+<script>
+  document.querySelectorAll('.arrow').forEach(function(arrow) {
+    arrow.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        if (!this.classList.contains('animate')) {
+            this.classList.add('animate');
+            setTimeout(() => {
+                this.classList.remove('animate');
+            }, 1600);
+        }
+    });
+
+    arrow.addEventListener('touch', function(e) {
+        e.preventDefault();
+
+        if (!this.classList.contains('animate')) {
+            this.classList.add('animate');
+            setTimeout(() => {
+                this.classList.remove('animate');
+            }, 1600);
+        }
+    });
+});
 </script>
 
-
-
+<svg style="display: none;">
+  <symbol viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
+    <circle r="20" cy="22" cx="22"></circle>
+  </symbol>
+</svg>
 
 </body>
 
