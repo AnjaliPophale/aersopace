@@ -3953,3 +3953,95 @@ ul, ol {
   .custom-link:hover {
     color: #f48220;
   }
+  /* -----------------------------.accordion-body------------------------------------- */
+.accordion-body ul {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.accordion-body li {
+  position: relative;
+  padding-left: 30px;
+  list-style: none;
+  margin-bottom: 8px;
+}
+
+.accordion-body li::before {
+  content: '\f00c'; 
+  font-family: 'Font Awesome 6 Free'; 
+  font-weight: 900; 
+  color: black; 
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+.accordion-button {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.accordion-body p,
+.accordion-body li {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  .accordion-button {
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .accordion-body {
+    font-size: 0.9rem;
+  }
+}
+
+.accordion-item {
+  border: 1px solid #ffc280; 
+}
+
+.accordion-button:not(.collapsed) {
+  border-bottom: none; 
+}
+
+.accordion-body {
+  border-top: none;
+}
+.accordion-item {
+  border: 1px solid #ffc280; 
+  border-radius: 4px;
+}
+
+.accordion-button {
+  background-color: #fff7f0; 
+  color: #000;
+  border: 1px solid #ffc280; 
+  box-shadow: none;
+}
+
+
+.accordion-button:hover {
+  background-color: #ffebcc; 
+  color: #000;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffe0b3 !important; 
+  color: #000;
+  box-shadow: none !important;
+  border: 1px solid #ffc280; 
+  border-bottom: none; 
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: #ffc280;
+}
+
+.accordion-body {
+  border-top: none;
+  background-color: #fffdf9; 
+}
