@@ -4071,3 +4071,9 @@ ul, ol {
 .csr-text {
   padding-left: 15px; /* Adjust if needed */
 }
+p.engg_excellence {
+    text-align: justify;
+}
+ul.engg_excellence li {
+    text-align: justify;
+}
