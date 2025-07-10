@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
-    
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
 </head>
 
 <body>
@@ -54,17 +54,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-md-2">
-                     <li class="nav-item active has-mega-menu">
+                    <li class="nav-item active has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="./about.html"
                             onclick="toggleMegaMenu(event)">
-                         Home
+                            Home
                             <span class="d-lg-none">+</span>
                         </a>
                     </li>
                     <li class="nav-item active has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="./about.html"
                             onclick="toggleMegaMenu(event)">
-                         About Us 
+                            About Us
                             <span class="d-lg-none">+</span>
                         </a>
                     </li>
@@ -87,8 +87,8 @@
                                         <li><a href="#">Machining</a></li>
                                         <li><a href="#">Assembly</a></li>
                                         <li><a href="#">NDT & Welding</a></li>
-                                        <li><a href="#">Metrology & Tooling</a></li> 
-                                        <li><a href="#">Raw Material Management</a></li> 
+                                        <li><a href="#">Metrology & Tooling</a></li>
+                                        <li><a href="#">Raw Material Management</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -98,7 +98,7 @@
                     <li class="nav-item has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="sectors.html"
                             onclick="toggleMegaMenu(event)">
-                           Products 
+                            Products
                             <span class="d-lg-none">+</span>
                         </a>
                         <div class="mega-menu">
@@ -114,14 +114,21 @@
                                         <li><a href="#">Structural Parts</a></li>
                                         <li><a href="#">System Parts</a></li>
                                         <li><a href="#">Horizontal Deployments</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
-                               
-                             
+
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="#">Vanes Family</a></li>
+                                        <li><a href="#">Casings Family</a></li>
+                                        <li><a href="#">Disc Family</a></li>
+
+                                    </ul>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </li>
@@ -129,36 +136,37 @@
                     <li class="nav-item has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="people.html"
                             onclick="toggleMegaMenu(event)">
-                            Engineering Excellence 
+                            Engineering Excellence
                             <span class="d-lg-none">+</span>
-                        </a>  
+                        </a>
                     </li>
-                   
+
                     <li class="nav-item has-mega-menu">
-  <a class="nav-link d-flex justify-content-between align-items-center" href="people.html" onclick="toggleMegaMenu(event)">
-    AeroSphere
-    <span class="d-lg-none">+</span>
-  </a>
-  <div class="mega-menu">
-    <div class="mega-menu-content">
-      
-      <div class="mega-menu-column d-none d-lg-block">
-        <h4>AeroSphere</h4>
-      </div>
+                        <a class="nav-link d-flex justify-content-between align-items-center" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            AeroSphere
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
 
-      <div class="mega-menu-column">
-        <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
-        <ul>
-          <li><a href="sustainability.html">Sustainability & ESG</a></li>
-          <li><a href="csr.html">CSR & Impact</a></li>
-          <li><a href="#">News & Events</a></li>
-          <li><a href="blog.html">Blogs & Insights</a></li>
-        </ul>
-      </div>
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4>AeroSphere</h4>
+                                </div>
 
-    </div>
-  </div>
-</li>
+                                <div class="mega-menu-column">
+                                    <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                                        <li><a href="csr.html">CSR & Impact</a></li>
+                                        <li><a href="#">News & Events</a></li>
+                                        <li><a href="blog.html">Blogs & Insights</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
 
 
                 </ul>
@@ -172,11 +180,12 @@
                             </g>
                         </svg>
 
-                       
+
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
@@ -204,7 +213,8 @@
                                     <!-- <button class="hero-button d-flex align-items-center">
                                         2025 Sustainability Report <i class="fa-solid fa-download ms-2"></i>
                                     </button> -->
-                                     <a href="[Brochure PDF Link]" target="_blank" class="gradient-section">Download Our ESG Snapshot</a>
+                                    <a href="[Brochure PDF Link]" target="_blank" class="gradient-section">Download Our
+                                        ESG Snapshot</a>
                                 </div>
                             </div>
                         </div>
@@ -215,157 +225,176 @@
         </div>
     </div>
 
- <section class="container my-5">
-  <h2 class="section-title text-center">Building a Sustainable Aerospace Future</h2>
-    <p>
-      At JK Maini, we believe engineering excellence must go hand in hand with environmental responsibility,
-      social equity, and ethical governance. Guided by our ESG Development Plan 2030, we are committed to
-      shaping a future-ready aerospace ecosystem that is sustainable, inclusive, and accountable.
-    </p>
-</section>
+    <section class="container my-5">
+        <h2 class="section-title text-center">Building a Sustainable Aerospace Future</h2>
+        <p>
+            At JK Maini, we believe engineering excellence must go hand in hand with environmental responsibility,
+            social equity, and ethical governance. Guided by our ESG Development Plan 2030, we are committed to
+            shaping a future-ready aerospace ecosystem that is sustainable, inclusive, and accountable.
+        </p>
+    </section>
 
-<section class="container my-5">
-  <h2 class="section-title text-center">Our Sustainability Framework</h2>
+    <section class="container my-5">
+        <h2 class="section-title text-center">Our Sustainability Framework</h2>
 
-    <p>Our ESG approach is built around three key pillars — <strong>Environmental (Planet)</strong>, <strong>Social (People)</strong>, and <strong>Governance (Partnership)</strong> — each backed by measurable goals and ongoing action.</p>
+        <p>Our ESG approach is built around three key pillars — <strong>Environmental (Planet)</strong>, <strong>Social
+                (People)</strong>, and <strong>Governance (Partnership)</strong> — each backed by measurable goals and
+            ongoing action.</p>
 
-</section>
+    </section>
 
-<section class="container my-5">
-  <div class="accordion" id="esgAccordion">
+    <section class="container my-5">
+        <div class="accordion" id="esgAccordion">
 
-    <!-- Environmental -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#environmental" aria-expanded="true" aria-controls="environmental">
-           Environmental (Planet)
-        </button>
-      </h2>
-      <div id="environmental" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#esgAccordion">
-        <div class="accordion-body">
-          <p>We are proactively reducing our environmental footprint through energy efficiency, emissions control, and waste recycling:</p>
-          <ul>
-            <li> -25% reduction in energy consumption ratio by 2030 (vs 2021)</li>
-            <li> -30% reduction in CO₂ footprint ratio by 2030 (vs 2021)</li>
-            <li> 50% of generated waste recycled by 2030</li>
-          </ul>
-          <p>We are ISO 14001 certified for our energy management systems, and our solar initiatives and eco-efficient operations reflect our long-term green vision.</p>
+            <!-- Environmental -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#environmental" aria-expanded="true" aria-controls="environmental">
+                        Environmental (Planet)
+                    </button>
+                </h2>
+                <div id="environmental" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#esgAccordion">
+                    <div class="accordion-body">
+                        <p>We are proactively reducing our environmental footprint through energy efficiency, emissions
+                            control, and waste recycling:</p>
+                        <ul>
+                            <li> -25% reduction in energy consumption ratio by 2030 (vs 2021)</li>
+                            <li> -30% reduction in CO₂ footprint ratio by 2030 (vs 2021)</li>
+                            <li> 50% of generated waste recycled by 2030</li>
+                        </ul>
+                        <p>We are ISO 14001 certified for our energy management systems, and our solar initiatives and
+                            eco-efficient operations reflect our long-term green vision.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#social" aria-expanded="false" aria-controls="social">
+                        Social (People)
+                    </button>
+                </h2>
+                <div id="social" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#esgAccordion">
+                    <div class="accordion-body">
+                        <p>Our people are at the core of everything we build. We are committed to safety, diversity, and
+                            well-being:</p>
+                        <ul>
+                            <li> -40% reduction in Lost Time Injury Frequency Rate (LTIFR) by 2030 (vs 2022)</li>
+                            <li> 22% female representation in new management positions between 2023–2030</li>
+                            <li> 0% accidents caused by our products</li>
+                        </ul>
+                        <p>Our internal policies are driven by a culture of inclusion, safety-first operations, and
+                            continuous workforce development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Governance -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#governance" aria-expanded="false" aria-controls="governance">
+                        Governance (Partnership)
+                    </button>
+                </h2>
+                <div id="governance" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#esgAccordion">
+                    <div class="accordion-body">
+                        <p>We lead with integrity. Our governance initiatives ensure ethical sourcing, legal compliance,
+                            and transparent supplier relationships:</p>
+                        <ul>
+                            <li> 100% supplier compliance with our Code of Ethics by 2030</li>
+                            <li> 0 tolerance for ethical or legal breaches</li>
+                            <li> >90% customer satisfaction rating</li>
+                        </ul>
+                        <p>These commitments reflect our belief in building long-term trust with customers, partners,
+                            and communities.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Social -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#social" aria-expanded="false" aria-controls="social">
-          Social (People)
-        </button>
-      </h2>
-      <div id="social" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#esgAccordion">
-        <div class="accordion-body">
-          <p>Our people are at the core of everything we build. We are committed to safety, diversity, and well-being:</p>
-          <ul>
-            <li> -40% reduction in Lost Time Injury Frequency Rate (LTIFR) by 2030 (vs 2022)</li>
-            <li> 22% female representation in new management positions between 2023–2030</li>
-            <li> 0% accidents caused by our products</li>
-          </ul>
-          <p>Our internal policies are driven by a culture of inclusion, safety-first operations, and continuous workforce development.</p>
+    <section class="container-fluid py-5" style="background-color: #f9f9f9;">
+        <div class="container px-lg-5 px-md-4 px-3">
+            <h2 class="text-center mb-5">Our Governance Highlights</h2>
+
+            <!-- Image Grid -->
+            <div class="row text-center justify-content-center g-4">
+                <!-- Highlight 1 -->
+                <div class="col-6 col-md-3">
+                    <div class="bg-white p-3 rounded shadow-sm h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Sustainability+Committee"
+                            class="img-fluid rounded" alt="Sustainability Committee">
+                        <h6 class="fw-semibold mt-3">Active Sustainability Committee</h6>
+                    </div>
+                </div>
+
+                <!-- Highlight 2 -->
+                <div class="col-6 col-md-3">
+                    <div class="bg-white p-3 rounded shadow-sm h-100">
+                        <img src="https://via.placeholder.com/300x200?text=Roadmap+2030" class="img-fluid rounded"
+                            alt="ESG Roadmap">
+                        <h6 class="fw-semibold mt-3">ESG Development Roadmap till 2030</h6>
+                    </div>
+                </div>
+
+                <!-- Highlight 3 -->
+                <div class="col-6 col-md-3">
+                    <div class="bg-white p-3 rounded shadow-sm h-100">
+                        <img src="https://via.placeholder.com/300x200?text=CO2+Reduction" class="img-fluid rounded"
+                            alt="CO2 Monitoring">
+                        <h6 class="fw-semibold mt-3">Focused on CO₂ monitoring and impact reduction</h6>
+                    </div>
+                </div>
+
+                <!-- Highlight 4 -->
+                <div class="col-6 col-md-3">
+                    <div class="bg-white p-3 rounded shadow-sm h-100">
+                        <img src="https://via.placeholder.com/300x200?text=ISO+14001" class="img-fluid rounded"
+                            alt="ISO 14001">
+                        <h6 class="fw-semibold mt-3">Certified under ISO 14001 – Energy Management System</h6>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Governance -->
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#governance" aria-expanded="false" aria-controls="governance">
-           Governance (Partnership)
-        </button>
-      </h2>
-      <div id="governance" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#esgAccordion">
-        <div class="accordion-body">
-          <p>We lead with integrity. Our governance initiatives ensure ethical sourcing, legal compliance, and transparent supplier relationships:</p>
-          <ul>
-            <li> 100% supplier compliance with our Code of Ethics by 2030</li>
-            <li> 0 tolerance for ethical or legal breaches</li>
-            <li> >90% customer satisfaction rating</li>
-          </ul>
-          <p>These commitments reflect our belief in building long-term trust with customers, partners, and communities.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="container-fluid py-5" style="background-color: #f9f9f9;">
-  <div class="container px-lg-5 px-md-4 px-3">
-    <h2 class="text-center mb-5">Our Governance Highlights</h2>
-    
-    <!-- Image Grid -->
-    <div class="row text-center justify-content-center g-4">
-      <!-- Highlight 1 -->
-      <div class="col-6 col-md-3">
-        <div class="bg-white p-3 rounded shadow-sm h-100">
-          <img src="https://via.placeholder.com/300x200?text=Sustainability+Committee" class="img-fluid rounded" alt="Sustainability Committee">
-          <h6 class="fw-semibold mt-3">Active Sustainability Committee</h6>
-        </div>
-      </div>
-
-      <!-- Highlight 2 -->
-      <div class="col-6 col-md-3">
-        <div class="bg-white p-3 rounded shadow-sm h-100">
-          <img src="https://via.placeholder.com/300x200?text=Roadmap+2030" class="img-fluid rounded" alt="ESG Roadmap">
-          <h6 class="fw-semibold mt-3">ESG Development Roadmap till 2030</h6>
-        </div>
-      </div>
-
-      <!-- Highlight 3 -->
-      <div class="col-6 col-md-3">
-        <div class="bg-white p-3 rounded shadow-sm h-100">
-          <img src="https://via.placeholder.com/300x200?text=CO2+Reduction" class="img-fluid rounded" alt="CO2 Monitoring">
-          <h6 class="fw-semibold mt-3">Focused on CO₂ monitoring and impact reduction</h6>
-        </div>
-      </div>
-
-      <!-- Highlight 4 -->
-      <div class="col-6 col-md-3">
-        <div class="bg-white p-3 rounded shadow-sm h-100">
-          <img src="https://via.placeholder.com/300x200?text=ISO+14001" class="img-fluid rounded" alt="ISO 14001">
-          <h6 class="fw-semibold mt-3">Certified under ISO 14001 – Energy Management System</h6>
-        </div>
-      </div>
-    </div>
-
-    
-  </div>
-</section>
-
- <section class="container my-5">
-  <h2 class="section-title text-center">Why It Matters</h2>
-    <p>
-       In the aerospace industry, sustainability is no longer optional—it’s critical. At JK Maini, we're engineering
-    not just precision parts, but a cleaner, safer, and more equitable future for generations to come.
-    </p>
-</section>
+    <section class="container my-5">
+        <h2 class="section-title text-center">Why It Matters</h2>
+        <p>
+            In the aerospace industry, sustainability is no longer optional—it’s critical. At JK Maini, we're
+            engineering
+            not just precision parts, but a cleaner, safer, and more equitable future for generations to come.
+        </p>
+    </section>
 
 
-<!-- <section class="text-center py-4">
+    <!-- <section class="text-center py-4">
   <a href="[Brochure PDF Link]" target="_blank" class="gradient-section">📥 Download Our ESG Snapshot</a>
 </section> -->
 
 
-<section class="get-in-touch-section py-5 text-center">
-  <div class="container">
-    <h6 class="section-title">Get in Touch</h6>
-    <h2>Want to collaborate on your next aerospace innovation?</h2>
+    <section class="get-in-touch-section py-5 text-center">
+        <div class="container">
+            <h6 class="section-title">Get in Touch</h6>
+            <h2>Want to collaborate on your next aerospace innovation?</h2>
 
-    <div class="d-flex justify-content-center gap-3 mt-4">
-      <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
-      <button class="hero-button btn-contact">Contact Us</button>
-    </div>
-  </div>
-</section>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
+                <button class="hero-button btn-contact">Contact Us</button>
+            </div>
+        </div>
+    </section>
 
- <div id="popupOverlay" class="popup-overlay">
+    <div id="popupOverlay" class="popup-overlay">
         <div class="right-form p-4">
             <span class="close-btn" onclick="closePopup()">&times;</span>
             <div>
@@ -397,7 +426,7 @@
                 <button class="hero-button mt-4">Submit</button>
             </form>
         </div>
-</div>
+    </div>
 
 
     <section class="contact-footer">
@@ -454,22 +483,22 @@
     </section>
 
 
-    
+
 
     <footer class="pt-5 main-footer">
         <div class="container">
             <div class="row">
                 <!-- Company Info Column -->
                 <div class="col-md-3 mb-4">
-                    <a href="index.html"><img style="width: 220px;" class="img-fluid" src="./assets/images/JK Aerospace Logo.svg"
-                            alt="JK Maini Precision Technology"></a>
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
                     <p>Trusted partner in precision aerospace components and engineering solutions.
                     </p>
                     <div class="social-links">
-                       <a href="#" class="me-3" style="color:#000000;"><i class="fa-brands fa-facebook"></i></a>
-                       <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-twitter"></i></a>
-                       <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-linkedin"></i></a>
-                       <a href="#" style="color: #000000;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-3" style="color:#000000;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color: #000000;"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -479,12 +508,12 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none">About Us</a></li>
-                        
+
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li>
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
-                        
+
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4 quick-links">
@@ -492,12 +521,12 @@
                     <ul class="list-unstyled">
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Capabilities</a></li>
-                        
+
                         <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none">AeroSphere</a></li>
-                        
+
                     </ul>
                 </div>
 
@@ -505,13 +534,17 @@
                 <div class="col-md-3 mb-4">
                     <h5 class="mb-3 section-title-footer">Contact Info</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial Area,
-                         Off Hosur Road, Bangalore - 560099 </li>
-                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none; color: black;"
-                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial
+                            Area,
+                            Off Hosur Road, Bangalore - 560099 </li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a
+                                style="text-decoration: none; color: black;" href="tel:+912261527998">+91 2261527998</a>
+                        </li>
                         <li class="mb-2">
-                         <i class="fa-solid fa-envelope me-2"></i>
-                         <a style="text-decoration: none; color: black;" href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a></li>
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            <a style="text-decoration: none; color: black;"
+                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a>
+                        </li>
 
                         <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
                     </ul>
@@ -540,12 +573,12 @@
                     </div>
                     <div class="col-md-2">
                         <div class="social-links">
-                            
 
-                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
 
                         </div>
                     </div>

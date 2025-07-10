@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
-    
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+
 </head>
+
 <body>
-     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
         <div class="container d-flex justify-content-between">
             <div class="meta-header-left">
                 <ul class="navbar-nav-left" style="padding-left: 0px;">
@@ -52,17 +53,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-md-2">
-                     <li class="nav-item active has-mega-menu">
+                    <li class="nav-item active has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="./about.html"
                             onclick="toggleMegaMenu(event)">
-                         Home
+                            Home
                             <span class="d-lg-none">+</span>
                         </a>
                     </li>
                     <li class="nav-item active has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="./about.html"
                             onclick="toggleMegaMenu(event)">
-                         About Us 
+                            About Us
                             <span class="d-lg-none">+</span>
                         </a>
                     </li>
@@ -85,8 +86,8 @@
                                         <li><a href="#">Machining</a></li>
                                         <li><a href="#">Assembly</a></li>
                                         <li><a href="#">NDT & Welding</a></li>
-                                        <li><a href="#">Metrology & Tooling</a></li> 
-                                        <li><a href="#">Raw Material Management</a></li> 
+                                        <li><a href="#">Metrology & Tooling</a></li>
+                                        <li><a href="#">Raw Material Management</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -96,7 +97,7 @@
                     <li class="nav-item has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="sectors.html"
                             onclick="toggleMegaMenu(event)">
-                           Products 
+                            Products
                             <span class="d-lg-none">+</span>
                         </a>
                         <div class="mega-menu">
@@ -112,14 +113,20 @@
                                         <li><a href="#">Structural Parts</a></li>
                                         <li><a href="#">System Parts</a></li>
                                         <li><a href="#">Horizontal Deployments</a></li>
-
-
-                                        <!-- <li><a href="#">Tools and Hardware</a></li> -->
-                                        <!-- <li><a href="#">Global Footprints</a></li>  -->
                                     </ul>
                                 </div>
-                               
-                             
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="#">Vanes Family</a></li>
+                                        <li><a href="#">Casings Family</a></li>
+                                        <li><a href="#">Disc Family</a></li>
+
+                                    </ul>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </li>
@@ -127,36 +134,37 @@
                     <li class="nav-item has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="people.html"
                             onclick="toggleMegaMenu(event)">
-                            Engineering Excellence 
+                            Engineering Excellence
                             <span class="d-lg-none">+</span>
-                        </a>  
+                        </a>
                     </li>
-                   
+
                     <li class="nav-item has-mega-menu">
-  <a class="nav-link d-flex justify-content-between align-items-center" href="people.html" onclick="toggleMegaMenu(event)">
-    AeroSphere
-    <span class="d-lg-none">+</span>
-  </a>
-  <div class="mega-menu">
-    <div class="mega-menu-content">
-      
-      <div class="mega-menu-column d-none d-lg-block">
-        <h4>AeroSphere</h4>
-      </div>
+                        <a class="nav-link d-flex justify-content-between align-items-center" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            AeroSphere
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
 
-      <div class="mega-menu-column">
-        <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
-        <ul>
-          <li><a href="sustainability.html">Sustainability & ESG</a></li>
-          <li><a href="csr.html">CSR & Impact</a></li>
-          <li><a href="#">News & Events</a></li>
-          <li><a href="#">Blogs & Insights</a></li>
-        </ul>
-      </div>
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4>AeroSphere</h4>
+                                </div>
 
-    </div>
-  </div>
-</li>
+                                <div class="mega-menu-column">
+                                    <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                                        <li><a href="csr.html">CSR & Impact</a></li>
+                                        <li><a href="#">News & Events</a></li>
+                                        <li><a href="#">Blogs & Insights</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
 
 
                 </ul>
@@ -170,149 +178,171 @@
                             </g>
                         </svg>
 
-                       
+
                     </div>
 
                     <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i> Enquiry</a>
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
-  <img class="banner" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Blog Banner">
-  <header>
-    <h1>Latest Blog</h1>
-    <p>5-Axis Machining: The Precision Backbone of Aerospace Manufacturing</p>
-  </header>
-  <div class="container_blog">
-    
-  <main>
-  <h1>5-Axis Machining: The Precision Backbone of Aerospace Manufacturing</h1>
+    <img class="banner"
+        src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80"
+        alt="Blog Banner">
+    <header>
+        <h1>Latest Blog</h1>
+        <p>5-Axis Machining: The Precision Backbone of Aerospace Manufacturing</p>
+    </header>
+    <div class="container_blog">
 
-  <p>In aerospace manufacturing, complexity isn’t a challenge, it’s a constant. From intricate engine housings to contoured aerodynamic surfaces, every component must meet the highest standards of precision, weight reduction, and performance under extreme conditions.</p>
+        <main>
+            <h1>5-Axis Machining: The Precision Backbone of Aerospace Manufacturing</h1>
 
-  <p>At the core of this precision revolution lies a single enabling technology: 5-axis machining.</p>
+            <p>In aerospace manufacturing, complexity isn’t a challenge, it’s a constant. From intricate engine housings
+                to contoured aerodynamic surfaces, every component must meet the highest standards of precision, weight
+                reduction, and performance under extreme conditions.</p>
 
-  <p>Often regarded as the gold standard for aerospace CNC machining, 5-axis technology has become the backbone of manufacturing high-performance, multi-geometry parts. In this blog, we’ll explore why 5-axis machining matters, how it works, and what it means for aerospace OEMs and Tier 1 suppliers.</p>
+            <p>At the core of this precision revolution lies a single enabling technology: 5-axis machining.</p>
 
-  <h2>What Is 5-Axis Machining?</h2>
-  <p>5-axis machining refers to a CNC (Computer Numerical Control) system that moves a tool or a part along five different axes simultaneously. These include:</p>
-  <ul>
-    <li>X, Y, and Z axes (traditional linear movement)</li>
-    <li>A and B (rotational axes) that rotate around X and Y respectively</li>
-  </ul>
-  <p>This allows the cutting tool to approach the part from virtually any angle in a single setup.</p>
+            <p>Often regarded as the gold standard for aerospace CNC machining, 5-axis technology has become the
+                backbone of manufacturing high-performance, multi-geometry parts. In this blog, we’ll explore why 5-axis
+                machining matters, how it works, and what it means for aerospace OEMs and Tier 1 suppliers.</p>
 
-  <h2>Why 5-Axis Machining Matters in Aerospace</h2>
+            <h2>What Is 5-Axis Machining?</h2>
+            <p>5-axis machining refers to a CNC (Computer Numerical Control) system that moves a tool or a part along
+                five different axes simultaneously. These include:</p>
+            <ul>
+                <li>X, Y, and Z axes (traditional linear movement)</li>
+                <li>A and B (rotational axes) that rotate around X and Y respectively</li>
+            </ul>
+            <p>This allows the cutting tool to approach the part from virtually any angle in a single setup.</p>
 
-  <h3>1. Complex Geometry, One Setup</h3>
-  <p>Aerospace components like turbine blades, impellers, brackets, and nozzles often require multiple angular cuts and tight tolerances across curved surfaces.</p>
-  <p>5-axis machining reduces the need for multiple setups or fixtures, ensuring:</p>
-  <ul>
-    <li>Tighter geometric control</li>
-    <li>Consistent accuracy across planes and features</li>
-    <li>Significant reduction in cumulative errors</li>
-  </ul>
+            <h2>Why 5-Axis Machining Matters in Aerospace</h2>
 
-  <h3>2. Superior Surface Finish & Tolerance</h3>
-  <p>Aircraft parts often require mirror-like surface finishes and tight tolerance windows (±0.005 mm or better) to minimize drag and friction.</p>
-  <p>5-axis machines reduce vibrations and tool deflections while:</p>
-  <ul>
-    <li>Maintaining optimal cutting angles</li>
-    <li>Reducing tool wear</li>
-    <li>Eliminating the need for secondary finishing in most cases</li>
-  </ul>
+            <h3>1. Complex Geometry, One Setup</h3>
+            <p>Aerospace components like turbine blades, impellers, brackets, and nozzles often require multiple angular
+                cuts and tight tolerances across curved surfaces.</p>
+            <p>5-axis machining reduces the need for multiple setups or fixtures, ensuring:</p>
+            <ul>
+                <li>Tighter geometric control</li>
+                <li>Consistent accuracy across planes and features</li>
+                <li>Significant reduction in cumulative errors</li>
+            </ul>
 
-  <h3>3. Lightweighting and Material Efficiency</h3>
-  <p>Aerospace is all about strength-to-weight optimization. 5-axis technology enables:</p>
-  <ul>
-    <li>Precise pocketing and contouring for weight reduction</li>
-    <li>Machining of titanium, Inconel, aluminum, and advanced composites with minimal material wastage</li>
-  </ul>
+            <h3>2. Superior Surface Finish & Tolerance</h3>
+            <p>Aircraft parts often require mirror-like surface finishes and tight tolerance windows (±0.005 mm or
+                better) to minimize drag and friction.</p>
+            <p>5-axis machines reduce vibrations and tool deflections while:</p>
+            <ul>
+                <li>Maintaining optimal cutting angles</li>
+                <li>Reducing tool wear</li>
+                <li>Eliminating the need for secondary finishing in most cases</li>
+            </ul>
 
-  <h3>4. Reduced Cycle Time and Cost Efficiency</h3>
-  <p>While 5-axis machines are more sophisticated, they reduce overall manufacturing lead time by up to 50% by:</p>
-  <ul>
-    <li>Performing complex operations in fewer setups</li>
-    <li>Automating transitions between cuts</li>
-    <li>Minimizing operator interventions</li>
-  </ul>
-  <p>This not only reduces operational costs but also accelerates time-to-market for aerospace OEMs.</p>
+            <h3>3. Lightweighting and Material Efficiency</h3>
+            <p>Aerospace is all about strength-to-weight optimization. 5-axis technology enables:</p>
+            <ul>
+                <li>Precise pocketing and contouring for weight reduction</li>
+                <li>Machining of titanium, Inconel, aluminum, and advanced composites with minimal material wastage</li>
+            </ul>
 
-  <h3>5. Enabler for New Product Development (NPD)</h3>
-  <p>In today’s fast-moving aerospace industry, time is everything. 5-axis machining is ideal for:</p>
-  <ul>
-    <li>Prototyping complex geometries</li>
-    <li>Testing iterations with minimal tooling changes</li>
-    <li>Adapting to digital twin and simulation-driven design models</li>
-  </ul>
-  <p>It becomes a cornerstone for agile, first-time-right manufacturing during NPD cycles.</p>
+            <h3>4. Reduced Cycle Time and Cost Efficiency</h3>
+            <p>While 5-axis machines are more sophisticated, they reduce overall manufacturing lead time by up to 50%
+                by:</p>
+            <ul>
+                <li>Performing complex operations in fewer setups</li>
+                <li>Automating transitions between cuts</li>
+                <li>Minimizing operator interventions</li>
+            </ul>
+            <p>This not only reduces operational costs but also accelerates time-to-market for aerospace OEMs.</p>
 
-  <h2>How JK Maini Leverages 5-Axis Machining</h2>
-  <p>At JK Maini Global Aerospace, we’ve embedded 5-axis machining as a core competency in our state-of-the-art New Product Development (NPD) Cell:</p>
-  <ul>
-    <li>180+ CNC machines, including advanced 5-axis setups</li>
-    <li>Dedicated 20-machine line for NPD</li>
-    <li>Digital validation using CATIA, SolidWorks, NX, and Vericut</li>
-    <li>Integration with SAP S/4HANA and real-time IoT dashboards</li>
-  </ul>
-  <p>From engine components to mission-critical structural parts, our 5-axis capabilities are built to deliver aerospace-grade precision at global scale.</p>
+            <h3>5. Enabler for New Product Development (NPD)</h3>
+            <p>In today’s fast-moving aerospace industry, time is everything. 5-axis machining is ideal for:</p>
+            <ul>
+                <li>Prototyping complex geometries</li>
+                <li>Testing iterations with minimal tooling changes</li>
+                <li>Adapting to digital twin and simulation-driven design models</li>
+            </ul>
+            <p>It becomes a cornerstone for agile, first-time-right manufacturing during NPD cycles.</p>
 
-  <h2>What to Look for in a 5-Axis Aerospace Partner</h2>
-  <p>If you’re an OEM or Tier 1 supplier evaluating 5-axis machining vendors, prioritize those who offer:</p>
-  <ul class="checklist">
-    <li>✔ NADCAP certification for special processes</li>
-    <li>✔ Digital twin and PLM integration</li>
-    <li>✔ In-house metrology, NDT, and tooling</li>
-    <li>✔ ISO-certified energy and quality systems</li>
-    <li>✔ Experience with aerospace alloys and tight-tolerance parts</li>
-  </ul>
+            <h2>How JK Maini Leverages 5-Axis Machining</h2>
+            <p>At JK Maini Global Aerospace, we’ve embedded 5-axis machining as a core competency in our
+                state-of-the-art New Product Development (NPD) Cell:</p>
+            <ul>
+                <li>180+ CNC machines, including advanced 5-axis setups</li>
+                <li>Dedicated 20-machine line for NPD</li>
+                <li>Digital validation using CATIA, SolidWorks, NX, and Vericut</li>
+                <li>Integration with SAP S/4HANA and real-time IoT dashboards</li>
+            </ul>
+            <p>From engine components to mission-critical structural parts, our 5-axis capabilities are built to deliver
+                aerospace-grade precision at global scale.</p>
 
-  <h2>Conclusion: Precision with Purpose</h2>
-  <p>5-axis machining isn’t just a manufacturing technique—it’s an enabler of the aerospace industry’s most complex ambitions. Whether it’s powering next-gen engines, optimizing aerodynamics, or lightweighting spacecraft, 5-axis is what turns design intent into engineered reality.</p>
+            <h2>What to Look for in a 5-Axis Aerospace Partner</h2>
+            <p>If you’re an OEM or Tier 1 supplier evaluating 5-axis machining vendors, prioritize those who offer:</p>
+            <ul class="checklist">
+                <li>✔ NADCAP certification for special processes</li>
+                <li>✔ Digital twin and PLM integration</li>
+                <li>✔ In-house metrology, NDT, and tooling</li>
+                <li>✔ ISO-certified energy and quality systems</li>
+                <li>✔ Experience with aerospace alloys and tight-tolerance parts</li>
+            </ul>
 
-  <p>At JK Maini, we’re proud to lead from the front, delivering precision, agility, and trust through our advanced machining capabilities.</p>
+            <h2>Conclusion: Precision with Purpose</h2>
+            <p>5-axis machining isn’t just a manufacturing technique—it’s an enabler of the aerospace industry’s most
+                complex ambitions. Whether it’s powering next-gen engines, optimizing aerodynamics, or lightweighting
+                spacecraft, 5-axis is what turns design intent into engineered reality.</p>
 
-  <p><strong>Ready to unlock the power of 5-axis for your aerospace components?</strong><br>
-  Let’s talk: Contact Us</p>
-</main>
+            <p>At JK Maini, we’re proud to lead from the front, delivering precision, agility, and trust through our
+                advanced machining capabilities.</p>
 
-    <div class="sidebar-right">
-     
-      <h3>Blog Posts</h3>
-      <ul class="blog-list">
-        <li>
-          <img class="blog-thumb" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=50&q=80" alt="Welcome to My Blog">
-          <a href="#">NADCAP Certification</a>
-        </li>
-        <li>
-          <img class="blog-thumb" src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=50&q=80" alt="Another Blog Post">
-          <a href="#">Global Aerospace Supply Chain 4.0</a>
-        </li>
-        <li>
-          <img class="blog-thumb" src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=50&q=80" alt="NADCAP Certification">
-          <a href="#">5-Axis Machining</a>
-        </li>
-      
-      </ul>
+            <p><strong>Ready to unlock the power of 5-axis for your aerospace components?</strong><br>
+                Let’s talk: Contact Us</p>
+        </main>
+
+        <div class="sidebar-right">
+
+            <h3>Blog Posts</h3>
+            <ul class="blog-list">
+                <li>
+                    <img class="blog-thumb"
+                        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=50&q=80"
+                        alt="Welcome to My Blog">
+                    <a href="#">NADCAP Certification</a>
+                </li>
+                <li>
+                    <img class="blog-thumb"
+                        src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=50&q=80"
+                        alt="Another Blog Post">
+                    <a href="#">Global Aerospace Supply Chain 4.0</a>
+                </li>
+                <li>
+                    <img class="blog-thumb"
+                        src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=50&q=80"
+                        alt="NADCAP Certification">
+                    <a href="#">5-Axis Machining</a>
+                </li>
+
+            </ul>
+        </div>
     </div>
-  </div>
-  <footer class="pt-5 main-footer">
+    <footer class="pt-5 main-footer">
         <div class="container">
             <div class="row">
                 <!-- Company Info Column -->
                 <div class="col-md-3 mb-4">
-                    <a href="index.html"><img style="width: 220px;" class="img-fluid" src="./assets/images/JK Aerospace Logo.svg"
-                            alt="JK Maini Precision Technology"></a>
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
                     <p>Trusted partner in precision aerospace components and engineering solutions.
                     </p>
                     <div class="social-links">
-                       <a href="#" class="me-3" style="color:#000000;"><i class="fa-brands fa-facebook"></i></a>
-                       <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-twitter"></i></a>
-                       <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-linkedin"></i></a>
-                       <a href="#" style="color: #000000;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="me-3" style="color:#000000;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color: #000000;"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
@@ -322,12 +352,12 @@
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none">About Us</a></li>
-                        
+
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li>
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
-                        
+
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4 quick-links">
@@ -335,12 +365,12 @@
                     <ul class="list-unstyled">
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Capabilities</a></li>
-                        
+
                         <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
                         <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li> -->
                         <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li>
                         <li class="mb-2"><a href="#" class="text-decoration-none">AeroSphere</a></li>
-                        
+
                     </ul>
                 </div>
 
@@ -348,13 +378,17 @@
                 <div class="col-md-3 mb-4">
                     <h5 class="mb-3 section-title-footer">Contact Info</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial Area,
-                         Off Hosur Road, Bangalore - 560099 </li>
-                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a style="text-decoration: none; color: black;"
-                                href="tel:+912261527998">+91 2261527998</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial
+                            Area,
+                            Off Hosur Road, Bangalore - 560099 </li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a
+                                style="text-decoration: none; color: black;" href="tel:+912261527998">+91 2261527998</a>
+                        </li>
                         <li class="mb-2">
-                         <i class="fa-solid fa-envelope me-2"></i>
-                         <a style="text-decoration: none; color: black;" href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a></li>
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            <a style="text-decoration: none; color: black;"
+                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a>
+                        </li>
 
                         <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
                     </ul>
@@ -383,12 +417,12 @@
                     </div>
                     <div class="col-md-2">
                         <div class="social-links">
-                            
 
-                        <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
 
                         </div>
                     </div>
@@ -396,7 +430,7 @@
             </div>
         </div>
     </footer>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
         integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -419,4 +453,5 @@
 
     </script>
 </body>
+
 </html>

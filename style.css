@@ -3682,18 +3682,50 @@ ul, ol {
   cursor: pointer;
   font-size: 30px;
   transition: transform 0.2s;
+  margin-right: 40px;
 }
 
 .img-modal .arrow:hover {
   transform: scale(1.3);
 }
 
-@media screen and (max-width: 360px) {
+/* @media screen and (max-width: 360px) {
   .img-modal .modal-content {
     width: 95vmin;
     height: 95vmin;
   }
+} */
+
+@media (max-width: 767px) {
+  .img-modal .arrows-container {
+    top: 50%;
+    padding: 0 10px; 
+  }
+
+  .arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .arrow i {
+    font-size: 14px;
+  }
+
+  .arrow svg {
+    width: 36px;
+    height: 36px;
+  }
 }
+.img-modal {
+  padding-top: 60px; 
+}
+
+@media (max-width: 767px) {
+  .img-modal {
+    padding-top: 80px; 
+  }
+}
+
 
 .modal-content {
   margin: auto;
