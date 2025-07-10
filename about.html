@@ -250,55 +250,51 @@
     </div>
   </section>
   <!-- about1 -->
-  <section class="aerospace-facility-section">
-  <div class="aerospace-container">
-    
-    <div id="facilityCarousel" class="carousel slide aerospace-image" data-bs-ride="carousel">
-      <!-- Dots/Indicators -->
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#facilityCarousel" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#facilityCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+  <section class="csr my-5" id="csr">
+    <div class="container mt-5">
+      <div class="row mt-5">
+
+        <div class="col-md-6">
+          <div class="row mt-5 align-items-center">
+            <div class="swiper csr-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/images/future-ready.png" alt="" style="width: 100%;">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/images/future-ready1.png" alt="" style="width: 100%;">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- <div class="row mt-5 align-items-center "> -->
+            <h2 class="csr-text">Future-Ready 25-Acre Aerospace Facility</h2>
+            <p class="csr-text">Our new <strong>25-acre state-of-the-art facility</strong> in Hindupur, Andhra Pradesh, is purpose-built
+              to
+              meet the dynamic needs of the global aerospace industry. Designed with sustainability and scalability in
+              mind,
+              the facility reflects our commitment to long-term innovation and environmental stewardship.</p>
+            <ul>
+              <li>In-house special process capabilities: <strong>Heat treatment, Surface coating, NDT,</strong> and more
+              </li>
+              <li><strong>Asset-light & partnership-ready</strong> model for JVs and strategic collaborations</li>
+              <li>Paris Agreement 2050-aligned sustainability goals</li>
+              <li>Fully integrated <strong>renewable energy systems</strong></li>
+              <li><strong>Low-carbon footprint operations</strong> to support net-zero manufacturing</li>
+            </ul>
+          </div>
+        <!-- </div> -->
+
       </div>
 
-      <!-- Slides (DO NOT wrap with another div here) -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/images/future-ready.png" class="d-block w-100" alt="Aerospace Facility">
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/future-ready1.png" class="d-block w-100" alt="Another Facility">
-        </div>
-      </div>
 
-      <!-- Navigation Arrows -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#facilityCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#facilityCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
     </div>
-
-    <!-- Content -->
-    <div class="aerospace-content">
-      <h2>Future-Ready 25-Acre Aerospace Facility</h2>
-      <p>Our new <strong>25-acre state-of-the-art facility</strong> in Hindupur, Andhra Pradesh, is purpose-built to
-        meet the dynamic needs of the global aerospace industry...</p>
-      <ul>
-        <li>In-house special process capabilities: <strong>Heat treatment, Surface coating, NDT</strong>, and more</li>
-        <li><strong>Asset-light & partnership-ready</strong> model for JVs and strategic collaborations</li>
-        <li>Paris Agreement 2050-aligned sustainability goals</li>
-        <li>Fully integrated <strong>renewable energy systems</strong></li>
-        <li><strong>Low-carbon footprint operations</strong> to support net-zero manufacturing</li>
-      </ul>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 
   <!-- about2 -->
   <!-- <section class="global-footprint-vibrant">
@@ -383,7 +379,7 @@
       </div>
 
       <!-- Why it matters - TEXT ONLY -->
-      <div class="why-matters">
+      <!-- <div class="why-matters">
         <div class="why-matters-text">
           <h3 class="why-title">Why it matters:</h3>
           <ul>
@@ -392,7 +388,7 @@
             <li> Delivers cost-effective, high-precision production at global scale</li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </section>
@@ -676,6 +672,20 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>AOS.init({ duration: 1000 });</script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  var swiper = new Swiper('.csr-swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
 
 </body>
 
