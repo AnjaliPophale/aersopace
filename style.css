@@ -2355,6 +2355,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 /* about3 */
 section.infra-upgrade {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .infra-header {
     text-align: center;
@@ -4076,4 +4077,9 @@ p.engg_excellence {
 }
 ul.engg_excellence li {
     text-align: justify;
+}
+
+
+.swiper-pagination-bullet-active {
+    background: #f97316 !important;
 }
