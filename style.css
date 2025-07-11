@@ -4047,7 +4047,7 @@ ul, ol {
   background-color: #fffdf9; 
 }
 .carousel-indicators [data-bs-target] {
-  background-color: #ff8c00; /* custom orange dots */
+  background-color: #ff8c00; 
   width: 10px;
   height: 10px;
   border-radius: 50%;
