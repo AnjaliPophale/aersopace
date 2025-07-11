@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
+                    <!-- <li class="nav-item ms-2">
+                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
+                    </li> -->
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            Home
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            About Us
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
+                            onclick="toggleMegaMenu(event)">Capabilities
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                                    <ul>
+                                        <li><a href="#">Machining</a></li>
+                                        <li><a href="#">Assembly</a></li>
+                                        <li><a href="#">NDT & Welding</a></li>
+                                        <li><a href="#">Metrology & Tooling</a></li>
+                                        <li><a href="#">Raw Material Management</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="sectors.html"
+                            onclick="toggleMegaMenu(event)">
+                            Products
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="#">Complex Engine Parts</a></li>
+                                        <li><a href="#">Structural Parts</a></li>
+                                        <li><a href="#">System Parts</a></li>
+                                        <li><a href="#">Horizontal Deployments</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="#">Vanes Family</a></li>
+                                        <li><a href="#">Casings Family</a></li>
+                                        <li><a href="#">Disc Family</a></li>
+
+                                    </ul>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            Engineering Excellence
+                            <span class="d-lg-none">+</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between align-items-center" href="people.html"
+                            onclick="toggleMegaMenu(event)">
+                            AeroSphere
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4>AeroSphere</h4>
+                                </div>
+
+                                <div class="mega-menu-column">
+                                    <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                                        <li><a href="csr.html">CSR & Impact</a></li>
+                                        <li><a href="#">News & Events</a></li>
+                                        <li><a href="blog.html">Blogs & Insights</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/automobile-bg.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="text-center mt-5">
+                                <h1>Capabilities</h1>
+                                <p class="mt-3 mb-4">
+                                    Crafting the Future of Flight—With Every Detail Engineered
+                                </p>
+                                <div class="d-flex justify-content-center">
+                                    <button class="hero-button d-flex align-items-center">
+                                        Visit Site <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- <section class="gallery-section">
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-1.png" alt="Paris Show 1">
+      <div class="overlay">Paris Show 1</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-2.jpg" alt="Paris Show 2">
+      <div class="overlay">Paris Show 2</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-3.jpg" alt="Paris Show 3">
+      <div class="overlay">Paris Show 3</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-4.jpg" alt="Paris Show 4">
+      <div class="overlay">Paris Show 4</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-5.jpg" alt="Paris Show 5">
+      <div class="overlay">Paris Show 5</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-6.jpg" alt="Paris Show 6">
+      <div class="overlay">Paris Show 6</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-7.jpg" alt="Paris Show 7">
+      <div class="overlay">Paris Show 7</div>
+    </div>
+    <div class="gallery-item">
+      <img src="assets/images/paris-show/PAS-8.jpg" alt="Paris Show 8">
+      <div class="overlay">Paris Show 8</div>
+    </div>
+    
+  </div>
+</section>
+ -->
+
+ <section class="gallery-section">
+    <div class="gallery-grid">
+      <!-- Repeat for each image -->
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-1.png" alt="Paris Show 1" data-index="0" onclick="openLightbox(0)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(0)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-2.jpg" alt="Paris Show 2" data-index="1" onclick="openLightbox(1)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(1)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-3.jpg" alt="Paris Show 3" data-index="2" onclick="openLightbox(2)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(2)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-4.jpg" alt="Paris Show 4" data-index="3" onclick="openLightbox(3)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(3)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-5.jpg" alt="Paris Show 5" data-index="4" onclick="openLightbox(4)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(4)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-6.jpg" alt="Paris Show 6" data-index="5" onclick="openLightbox(5)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(5)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-7.jpg" alt="Paris Show 7" data-index="6" onclick="openLightbox(6)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(6)">&#128065;</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="assets/images/paris-show/PAS-8.jpg" alt="Paris Show 8" data-index="7" onclick="openLightbox(7)">
+        <div class="overlay">
+          <span class="eye-icon" onclick="openLightbox(7)">&#128065;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <button class="nav-btn prev-btn" onclick="prevImage(event)">&#10094;</button>
+    <img id="lightbox-img" src="" alt="Preview">
+    <button class="nav-btn next-btn" onclick="nextImage(event)">&#10095;</button>
+  </div>
+
+
+ <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name">
+                    <input class="my-3" type="text" placeholder="Last Name">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company">
+                    <input class="my-3" type="text" placeholder="Email Address">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No.">
+                    <input class="my-3" type="text" placeholder="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" id="" placeholder="I want to know more about"></textarea>
+
+                </div>
+                <button class="hero-button mt-4">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <section class="get-in-touch-section py-5 text-center">
+        <div class="container">
+            <h6 class="section-title">Get in Touch</h6>
+            <h2>Want to collaborate on your next aerospace innovation?</h2>
+
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
+                <button class="hero-button btn-contact">Contact Us</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-footer">
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-location-dot mb-3"></i>
+                        <h3>Our Offices</h3>
+                        <p>View our locations around the world and find contact details for your nearest office.</p>
+                        <a href="">Locate the Nearest Office</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-envelope-open mb-3"></i>
+                        <h3>Drop us a Line</h3>
+                        <p>You can contact us by filling in this form any time you need professional support.</p>
+                        <a href="">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <i class="fa-solid fa-headset mb-3"></i>
+                        <h3>Support</h3>
+                        <p>Learn more about us and find resources that will help you with all of our products</p>
+                        <a href="">Open a Ticket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-3 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+                    <p>Trusted partner in precision aerospace components and engineering solutions.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="me-3" style="color:#000000;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="me-3" style="color: #000000;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color: #000000;"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">About Us</a></li>
+
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Company</h5>
+                    <ul class="list-unstyled">
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Home</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Capabilities</a></li>
+
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Products</a></li>
+                        <!-- <li class="mb-2"><a href="#" class="text-decoration-none">Career</a></li> -->
+                        <li class="mb-2"><a href="#" class="text-decoration-none">Engineering Excellence</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none">AeroSphere</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="col-md-3 mb-4">
+                    <h5 class="mb-3 section-title-footer">Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-location-dot me-2"></i> 122/C, Bommasandra Industrial
+                            Area,
+                            Off Hosur Road, Bangalore - 560099 </li>
+                        <li class="mb-2"><i class="fa-solid fa-phone me-2"></i><a
+                                style="text-decoration: none; color: black;" href="tel:+912261527998">+91 2261527998</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="fa-solid fa-envelope me-2"></i>
+                            <a style="text-decoration: none; color: black;"
+                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <p class="m-0">© 2025 JK Maini Precision Technology Designed by Probus Studio. All rights
+                            reserved.   ∙   Privacy 
+                             ∙   Terms of Use   ∙   Site Map</p>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-links">
+
+
+                            <a href="#" class="me-3"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  <script>
+   const images = [
+      'assets/images/paris-show/PAS-1.png',
+      'assets/images/paris-show/PAS-2.jpg',
+      'assets/images/paris-show/PAS-3.jpg',
+      'assets/images/paris-show/PAS-4.jpg',
+      'assets/images/paris-show/PAS-5.jpg',
+      'assets/images/paris-show/PAS-6.jpg',
+      'assets/images/paris-show/PAS-7.jpg',
+      'assets/images/paris-show/PAS-8.jpg'
+    ];
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+      currentIndex = index;
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = images[currentIndex];
+    }
+
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    function prevImage(event) {
+      event.stopPropagation();
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      document.getElementById("lightbox-img").src = images[currentIndex];
+    }
+
+    function nextImage(event) {
+      event.stopPropagation();
+      currentIndex = (currentIndex + 1) % images.length;
+      document.getElementById("lightbox-img").src = images[currentIndex];
+    }
+  </script>
+
+    <script>
+        // Outer Tabs
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                tabButtons.forEach(b => b.classList.remove("active"));
+                tabContents.forEach(c => c.classList.remove("active"));
+
+                btn.classList.add("active");
+                document.getElementById(btn.dataset.tab).classList.add("active");
+
+                // Reset sub-tabs when changing main tab
+                const newSubBtns = document.querySelector(`#${btn.dataset.tab} .sub-tab-buttons .sub-tab-btn`);
+                const newSubContents = document.querySelectorAll(`#${btn.dataset.tab} .sub-tab-content`);
+                newSubContents.forEach(c => c.classList.remove("active"));
+                newSubBtns.classList.add("active");
+                const firstSubTabId = newSubBtns.dataset.subtab;
+                document.getElementById(firstSubTabId).classList.add("active");
+            });
+        });
+
+        // Inner Tabs
+        const allSubTabButtons = document.querySelectorAll(".sub-tab-btn");
+
+        allSubTabButtons.forEach(subBtn => {
+            subBtn.addEventListener("click", () => {
+                const parentTab = subBtn.closest(".tab-content");
+                const subTabButtons = parentTab.querySelectorAll(".sub-tab-btn");
+                const subTabContents = parentTab.querySelectorAll(".sub-tab-content");
+
+                subTabButtons.forEach(b => b.classList.remove("active"));
+                subTabContents.forEach(c => c.classList.remove("active"));
+
+                subBtn.classList.add("active");
+                document.getElementById(subBtn.dataset.subtab).classList.add("active");
+            });
+        });
+    </script>
+
+</body>
+
+</html>
