@@ -21,179 +21,199 @@
 
 
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
-        <div class="container d-flex justify-content-between">
-            <div class="meta-header-left">
-                <ul class="navbar-nav-left" style="padding-left: 0px;">
-                    <li class="nav-item ms-2">
-                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
-                                class="fa-solid fa-phone-volume me-2"></i>
-                            +91 2261527998</a>
-                    </li>
-                    <!-- <li class="nav-item ms-2">
+    <div class="container d-flex justify-content-between">
+      <div class="meta-header-left">
+        <ul class="navbar-nav-left" style="padding-left: 0px;">
+          <li class="nav-item ms-2">
+            <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                class="fa-solid fa-phone-volume me-2"></i>
+              +91 2261527998</a>
+          </li>
+          <!-- <li class="nav-item ms-2">
                         <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
                     </li> -->
 
-                </ul>
+        </ul>
+      </div>
+      <div class="meta-header-right">
+        <ul class="navbar-nav-right">
+          <li class="nav-item ms-2    ">
+            <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item ms-2    ">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+          src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-md-2">
+          <li class="nav-item active has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="./index.html" onclick="toggleMegaMenu(event)">
+              Home
+              <span class="d-lg-none">+</span>
+            </a>
+
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Home</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">Home</h4>
+                  <ul>
+                    <li><a href="#">JK MAINI Global Aerospace</a></li>
+                    <li><a href="#">JK MAINI Global Raymond</a></li>
+                    <li><a href="#">JK MAINI Global Automobile</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="meta-header-right">
-                <ul class="navbar-nav-right">
-                    <li class="nav-item ms-2    ">
-                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
-                    </li>
-                    <li class="nav-item ms-2    ">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
 
-                </ul>
+
+          </li>
+          <li class="nav-item active has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="./about.html" onclick="toggleMegaMenu(event)">
+              About Us
+              <span class="d-lg-none">+</span>
+            </a>
+          </li>
+
+          <li class="nav-item has-mega-menu">
+
+            <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
+              onclick="toggleMegaMenu(event)">Capabilities
+              <span class="d-lg-none">+</span>
+            </a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                  <ul>
+                    <li><a href="#">Machining</a></li>
+                    <li><a href="#">Assembly</a></li>
+                    <li><a href="#">NDT & Welding</a></li>
+                    <li><a href="#">Metrology & Tooling</a></li>
+                    <li><a href="#">Raw Material Management</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
-                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-md-2">
-                    <li class="nav-item active has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="./index.html"
-                            onclick="toggleMegaMenu(event)">
-                            Home
-                            <span class="d-lg-none">+</span>
-                        </a>
-                    </li>
-                    <li class="nav-item active has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="./about.html"
-                            onclick="toggleMegaMenu(event)">
-                            About Us
-                            <span class="d-lg-none">+</span>
-                        </a>
-                    </li>
+          </li>
 
-                    <li class="nav-item has-mega-menu">
+          <li class="nav-item has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
+              Products
+              <span class="d-lg-none">+</span>
+            </a>
 
-                        <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
-                            onclick="toggleMegaMenu(event)">Capabilities
-                            <span class="d-lg-none">+</span>
-                        </a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Products</h4>
 
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
-                                    <ul>
-                                        <li><a href="#">Machining</a></li>
-                                        <li><a href="#">Assembly</a></li>
-                                        <li><a href="#">NDT & Welding</a></li>
-                                        <li><a href="#">Metrology & Tooling</a></li>
-                                        <li><a href="#">Raw Material Management</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                </div>
+                <div class="mega-menu-column">
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="product.html"
-                            onclick="toggleMegaMenu(event)">
-                            Products
-                            <span class="d-lg-none">+</span>
-                        </a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                  <ul>
+                    <li><a href="#">Complex Engine Parts</a></li>
+                    <li><a href="#">Structural Parts</a></li>
+                    <li><a href="#">System Parts</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                  <ul>
 
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Products</h4>
-                                    <ul>
-                                        <li><a href="#">Complex Engine Parts</a></li>
-                                        <li><a href="#">Structural Parts</a></li>
-                                        <li><a href="#">System Parts</a></li>
-                                        <li><a href="#">Horizontal Deployments</a></li>
-                                    </ul>
-                                </div>
+                    <li><a href="#">Horizontal Deployments</a></li>
+                    <li><a href="#">Vanes Family</a></li>
+                    <li><a href="#">Casings Family</a></li>
 
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Products</h4>
-                                    <ul>
-                                        <li><a href="#">Vanes Family</a></li>
-                                        <li><a href="#">Casings Family</a></li>
-                                        <li><a href="#">Disc Family</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                  <ul>
+                    <li><a href="#">Disc Family</a></li>
 
-                                    </ul>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="engineering_excellence.html"
-                            onclick="toggleMegaMenu(event)">
-                            Engineering Excellence
-                            <span class="d-lg-none">+</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between align-items-center" href="#"
-                            onclick="toggleMegaMenu(event)">
-                            AeroSphere
-                            <span class="d-lg-none">+</span>
-                        </a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4>AeroSphere</h4>
-                                </div>
-
-                                <div class="mega-menu-column">
-                                    <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
-                                    <ul>
-                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
-                                        <li><a href="csr.html">CSR & Impact</a></li>
-                                        <li><a href="events.html">News & Events</a></li>
-                                        <li><a href="blog.html">Blogs & Insights</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-
-                </ul>
-                <ul class="navbar-nav ms-md-auto">
-                    <div class="group me-2">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
-                            <g>
-                                <path
-                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                </path>
-                            </g>
-                        </svg>
-
-
-                    </div>
-
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
-                            Enquiry</a>
-                    </li>
-
-                </ul>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-    </nav>
+          </li>
+
+          <li class="nav-item has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="engineering_excellence.html"
+              onclick="toggleMegaMenu(event)">
+              Engineering Excellence
+              <span class="d-lg-none">+</span>
+            </a>
+          </li>
+
+          <li class="nav-item has-mega-menu">
+            <a class="nav-link d-flex justify-content-between align-items-center" href="#"
+              onclick="toggleMegaMenu(event)">
+              AeroSphere
+              <span class="d-lg-none">+</span>
+            </a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
+                  <ul>
+                    <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                    <li><a href="csr.html">CSR & Impact</a></li>
+                    <li><a href="events.html">News & Events</a></li>
+                    <li><a href="blog.html">Blogs & Insights</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+
+        </ul>
+        <ul class="navbar-nav ms-md-auto">
+          <div class="group me-2">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+
+
+          </div>
+
+          <li class="nav-item">
+            <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+              Enquiry</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
     <!-- Add necessary JavaScript for hide/show on scroll -->
 
@@ -233,7 +253,9 @@
 
     <section class="counter-section">
         <div class="tagline">
-            <h2>From Forging The Future To Flying Global—<br>Powering Aerospace Innovation</h2>
+            <h4 class="landing_subheading">Engineering Scale</h4>
+            <h2 class="landing_mainheading">From Forging to Global Flight-Powering Aerospace Innovation</h2>
+
         </div>
 
         <div class="counter-grid">
@@ -266,7 +288,13 @@
 
     <!-- tile -2 -->
     <section class="capabilities-section">
-        <h2 class="capabilities-title">End-To-End Aerospace Capabilities Backed By Cutting-Edge Certifications</h2>
+        <!-- <h2 class="capabilities-title">End-To-End Aerospace Capabilities Backed By Cutting-Edge Certifications</h2> -->
+        <div class="tagline">
+            <h4 class="landing_subheading">Precision Delivered</h4>
+            <h2 class="landing_mainheading">Complete in-house capabilities—from part production to final
+                assembly, ensuring aerospace-grade quality at every step</h2>
+
+        </div>
         <div class="flip-card-grid">
 
             <!-- Card 1 -->
@@ -350,11 +378,11 @@
 
     <section class="engineering-grid-section">
         <div class="section-wrapper">
-            <h2 class="engineering-title">Fueling Aerospace Progress Through Engineering Excellence</h2>
-            <p class="engineering-subtext">
-                JK Maini Aerospace combines design-to-build innovation with world-class new product development and
-                digital workflow tools.
-            </p>
+            <h4 class="engineering-title">Innovation Engine</h4>
+            <h2 class="landing_mainheading">
+                Our NPD capabilities turn concepts into manufacturable aerospace components through agile tools and
+                digital workflows.
+            <h2>
 
             <div class="engineering-grid">
 
@@ -384,7 +412,11 @@
 
     <!-- awrads--------- -->
     <section class="awards-wrapper">
-        <h2 class="awards-heading">Our Awards</h2>
+        <!-- <h2 class="awards-heading">Our Awards</h2> -->
+         <h4 class="engineering-title">Our Awards</h4>
+            <h2 class="landing_mainheading">
+               Our awards reflect our achievements and highlight our sincere commitment to excellence
+            <h2>
 
         <div class="award-section">
             <div class="award-box">
@@ -427,11 +459,10 @@
 
     <section class="aerospace-modern">
         <div class="container">
-            <h2 class="section-title">World-Class Aerospace Manufacturing – Made in India</h2>
-            <p class="section-subtitle">
-                Visit our world-class aerospace facility in Bengaluru, India built for global compliance, quality, and
-                co-development.
-            </p>
+            <h4 class="engineering-title">Future-Ready Infrastructure</h4>
+            <h2 class="landing_mainheading">
+                Globally certified and sustainability-driven our facility is built for growth.
+            <h2>
 
             <div class="feature-grid">
 
@@ -476,7 +507,7 @@
     <section class="clients my-5">
         <div class="container">
             <div class="text-center">
-                <h6 class="section-title">Our Clients</h6>
+                <h6 class="engineering-title">Our Clients</h6>
                 <h2>Meet Our Clients</h2>
 
             </div>
@@ -549,7 +580,7 @@
                     <img src="./assets/images/clients/safran_loading_system.png" alt="safran_loading_system">
                     <img src="./assets/images/clients/Snecma Hal.png" alt="Snecma Hal">
                 </div>
-                
+
                 <div class="logo_items">
                     <img src="./assets/images/clients/asco.png" alt="ASCO">
                     <img src="./assets/images/clients/Avio Aero.png" alt="Avio Aero">
@@ -623,7 +654,7 @@
 
     <section class="testimonial-section">
         <div class="container text-center">
-            <h6 class="section-title">Our Clients Testimonials</h6>
+            <h6 class="engineering-title">Our Clients Testimonials</h6>
             <h2>What Customers say about our services</h2>
         </div>
 
@@ -637,7 +668,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="img-container d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/Sachin Kulkarni.png" alt="">
+                                    <img src="./assets/images/Mark VanWyk.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-8 d-flex align-items-center">
@@ -658,84 +689,31 @@
                                     </div>
                                     <div class="test-text text-start px-4">
                                         <p class="mt-0">
-                                            "RPL rose to the occasion when we faced a critical global supply disruption.
-                                            In just six weeks, they developed and delivered over 100,000 high-quality
-                                            parts—helping avert a potential loss of 500,000 cars across Volkswagen Group
-                                            brands. Their agility, precision, and global readiness truly reflect the
-                                            strength of India’s supplier ecosystem."
+                                            "Maini has been a strategic supplier to Marshall for a number of years and
+                                            together we have formed a strong collaborative relationship.
+                                            On time delivery has always been at a high level to support our continuous
+                                            production line requirements and where issues arise they are dealt with
+                                            quickly and a recovery plan put in place.
+                                            Quality and attention to detail is always consistently high and a large
+                                            amount of effort has been afforded to the continuous improvement of this
+                                            throughout the years to meet the required standards of Boeing.
+                                            Maini continues to be a key strategic supplier within the Marshall supply
+                                            chain and one we rely upon to ensure we meet our customers needs."
                                         </p>
 
                                     </div>
                                     <div class="px-4">
                                         <div class="nameandposition text-start">
-                                            <h4 class="m-0">Sachin Kulkarni</h3>
-                                                <p>Executive Director corporate Procurement and member of Board, Skoda
-                                                    Auto Wolkswagong India</h5>
-                                                    <!-- <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
+                                            <h4 class="m-0">Mark Van Wyk</h3>
+                                                <p>Head of Operations - Integrated Support
+                                                    Advanced Manufacturing Solutions, Cambridge, United Kingdom</h5>
+                                                    <div class="social-icons mt-3">
+                                                <a href="https://www.linkedin.com/in/mark-van-wyk-mcips-79b726177/" target="_blank"
                                                     aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
                                                     <i class="fab fa-linkedin"></i>
                                                 </a>
                     
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="img-container d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/Hrishikesh Kulkarni.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 d-flex align-items-center">
-                                <div class="test-content py-3">
-                                    <div class="test-box px-4 py-3">
-                                        <div class="quote-and-ratings d-flex justify-content-between">
-                                            <div class="quotes">
-                                                <img src="./assets/images/quotes.png" alt="">
                                             </div>
-                                            <!-- <div class="rating">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="test-text text-start px-4">
-                                        <p class="mt-0">
-                                            "J K Maini has consistently demonstrated a zero-defect mindset and a
-                                            first-time-right approach—values that perfectly align with our expectations
-                                            at Valeo. Their marketing strength, backed by strong technical expertise and
-                                            flexible manufacturing capabilities, enabled a seamless product launch
-                                            within months. Even during critical moments—like the rapid six-week
-                                            development of a new gear when a major supplier failed—J K Maini stood up to
-                                            the occasion and delivered. Their state-of-the-art facility with a
-                                            single-piece flow and Industry 4.0 orientation further reflects their
-                                            commitment to innovation and excellence. We see them as a strategic partner
-                                            poised for global growth."
-                                        </p>
-
-                                    </div>
-                                    <div class="px-4">
-                                        <div class="nameandposition text-start">
-                                            <h4 class="m-0">Hrishikesh Kulkarni</h3>
-                                                <p>Group Purchasing and Exports Director, Valeo</h5>
-                                                    <!-- <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
-                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
-                                                    <i class="fab fa-linkedin"></i>
-                                                </a>
-                    
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -744,230 +722,15 @@
                     </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="img-container d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/Girish DM.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 d-flex align-items-center">
-                                <div class="test-content py-3">
-                                    <div class="test-box px-4 py-3">
-                                        <div class="quote-and-ratings d-flex justify-content-between">
-                                            <div class="quotes">
-                                                <img src="./assets/images/quotes.png" alt="">
-                                            </div>
-                                            <!-- <div class="rating">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="test-text text-start px-4">
-                                        <p class="mt-0">
-                                            "Our journey with J K Maini spans over two and a half decades—and it has
-                                            been
-                                            nothing short of outstanding. From supplying critical components to Volvo’s
-                                            global engine plants across Europe, the U.S., Brazil, and India, to
-                                            consistently delivering excellence in new product development and quality, J
-                                            K Maini has proven to be a trusted and forward-thinking partner. What sets
-                                            them apart is their deep alignment with Volvo’s core values—especially
-                                            safety and quality. Their commitment to sustainability, adoption of Industry
-                                            4.0 practices, and world-class manufacturing infrastructure gives us immense
-                                            confidence in scaling this partnership further. With the merger, we see J K
-                                            Maini well-positioned to explore new frontiers and lead transformative
-                                            projects at a global scale."
-                                        </p>
+               
 
-                                    </div>
-                                    <div class="px-4">
-                                        <div class="nameandposition text-start">
-                                            <h4 class="m-0">Girish DM</h3>
-                                                <p>VP, Volvo Group Truck Purchasing</h5>
-                                                    <!-- <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
-                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
-                                                    <i class="fab fa-linkedin"></i>
-                                                </a>
-                    
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
-                <div class="swiper-slide">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="img-container d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/Angelo Bona.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 d-flex align-items-center">
-                                <div class="test-content py-3">
-                                    <div class="test-box px-4 py-3">
-                                        <div class="quote-and-ratings d-flex justify-content-between">
-                                            <div class="quotes">
-                                                <img src="./assets/images/quotes.png" alt="">
-                                            </div>
-                                            <!-- <div class="rating">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="test-text text-start px-4">
-                                        <p class="mt-0">
-                                            "Despite being a relatively new partner, we’ve always felt like a priority
-                                            with J K Maini. The level of attention, collaboration, and commitment shown
-                                            by their team—from traveling across Europe to understand our needs, to
-                                            aligning with our vision in India—reflects the spirit of true partnership.
-                                            The recent expansion, executed in just seven months, and their readiness to
-                                            seize emerging market opportunities further highlights their agility and
-                                            growth mindset. We deeply value this relationship and look forward to
-                                            growing together on a global scale."
-                                        </p>
 
-                                    </div>
-                                    <div class="px-4">
-                                        <div class="nameandposition text-start">
-                                            <h4 class="m-0">Angelo Bona</h3>
-                                                <p>GM and Board Member, Saleri India Pvt Ltd </h5>
-                                                    <!-- <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
-                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
-                                                    <i class="fab fa-linkedin"></i>
-                                                </a>
-                    
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="img-container d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/Prasad Mantri.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 d-flex align-items-center">
-                                <div class="test-content py-3">
-                                    <div class="test-box px-4 py-3">
-                                        <div class="quote-and-ratings d-flex justify-content-between">
-                                            <div class="quotes">
-                                                <img src="./assets/images/quotes.png" alt="">
-                                            </div>
-                                            <!-- <div class="rating">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="test-text text-start px-4">
-                                        <p class="mt-0">
-                                            "Our relationship with J K Maini spans over 25 years—beginning with small
-                                            orders and evolving into a strategic partnership that now supports a
-                                            significant portion of our flywheel business. Their consistent quality,
-                                            reliability, and timely delivery have been instrumental in our growth from
-                                            just-in-time to well-in-time operations. Ring Plus Aqua’s starter gears have
-                                            been a key enabler in expanding both our domestic and export offerings.
-                                            Their service has set a benchmark in our industry, and we look forward to
-                                            continuing this trusted collaboration as they enter an exciting new chapter
-                                            of growth."
-                                        </p>
+               
 
-                                    </div>
-                                    <div class="px-4">
-                                        <div class="nameandposition text-start">
-                                            <h4 class="m-0">Prasad Mantri</h3>
-                                                <p>MD, Mantri Metallics</h5>
-                                                    <!-- <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
-                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
-                                                    <i class="fab fa-linkedin"></i>
-                                                </a>
-                    
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="container mt-5">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="img-container d-flex justify-content-center align-items-center">
-                                    <img src="./assets/images/Shrirang tambe.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-md-8 d-flex align-items-center">
-                                <div class="test-content py-3">
-                                    <div class="test-box px-4 py-3">
-                                        <div class="quote-and-ratings d-flex justify-content-between">
-                                            <div class="quotes">
-                                                <img src="./assets/images/quotes.png" alt="">
-                                            </div>
-                                            <!-- <div class="rating">
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                                <i class="fa-solid fa-star text-warning"></i>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                    <div class="test-text text-start px-4">
-                                        <p class="mt-0">
-                                            "Ring Plus Aqua has been a trusted partner for over 25 years. Their
-                                            consistent quality, reliability, and timely delivery have played a key role
-                                            in scaling our flywheel business and setting industry benchmarks. We value
-                                            this partnership and look forward to future growth together."
-                                        </p>
-
-                                    </div>
-                                    <div class="px-4">
-                                        <div class="nameandposition text-start">
-                                            <h4 class="m-0">Shrirang Tambe</h3>
-                                                <p>Head strategic purchasing, MTU India </h5>
-                                                    <!-- <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/gautam-singhania" target="_blank"
-                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
-                                                    <i class="fab fa-linkedin"></i>
-                                                </a>
-                    
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+               
 
 
             </div>
@@ -990,10 +753,11 @@
                         <img src="./assets/images/sustainability.png" alt="">
                         <div class="p-3">
                             <h2>Sustainability & ESG</h2>
-                            <p>At JK Maini, sustainability is built into every component we craft. From resource
-                                efficiency to reduced environmental impact, we engineer with purpose—driving responsible
-                                innovation and a greener supply chain.</p>
-                            <a href="#"  class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Explore our
+                            <p>At JK Maini Global Aerospace Limited, sustainability is more than a goal—it's embedded in
+                                everything we design and deliver. From optimizing resource use to minimizing
+                                environmental impact, we champion responsible innovation and build a greener, more
+                                resilient aerospace supply chain.</p>
+                            <a href="#" class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Explore our
                                 sustainability
                                 efforts</a>
                         </div>
@@ -1004,13 +768,13 @@
                         <img src="./assets/images/careers.png" alt="">
                         <div class="p-3">
                             <h2>CSR & Impact</h2>
-                            <p>Join a workplace where precision fuels progress. We empower talent across
-                                disciplines engineering, design, operations, and more—to drive excellence in
-                                manufacturing. We offer a
-                                career that’s built to last.
+                            <p>At JK Maini Global Aerospace Limited, we believe progress starts with people. We invest
+                                in talent across engineering, design, operations, and beyond—empowering individuals to
+                                grow, lead, and shape the future of advanced manufacturing. Join us in building a
+                                career—and a company—that makes a lasting impact.
 
                             </p>
-                            <a href="#"  class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Explore job
+                            <a href="#" class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Explore job
                                 opportunities</a>
                         </div>
                     </div>
@@ -1020,10 +784,9 @@
                         <img src="./assets/images/blogs.png" alt="">
                         <div class="p-3">
                             <h2>Blogs & Insights</h2>
-                            <p>Stay updated with stories from the shop floor to the frontlines of innovation. Our blog
-                                covers industry insights, engineering breakthroughs, company milestones, and thought
-                                leadership in the world of precision manufacturing.</p>
-                            <a href="#"  class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Read our
+                            <p>Explore the latest from the world of precision manufacturing. From engineering breakthroughs and industry trends to shop floor stories and company milestones, our blog offers insights that drive innovation, celebrate excellence, and reflect the spirit of JK Maini Global Aerospace Limited. 
+                               </p>
+                            <a href="#" class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Read our
                                 blogs</a>
                         </div>
                     </div>
@@ -1032,7 +795,7 @@
         </div>
     </section>
 
-    
+
     <section class="get-in-touch-section py-5 text-center">
         <div class="container">
             <h6 class="section-title">Get in Touch</h6>
@@ -1040,7 +803,7 @@
 
             <div class="d-flex justify-content-center gap-3 mt-4">
                 <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
-                <button class="hero-button btn-contact">Contact Us</button>
+                <!-- <button class="hero-button btn-contact">Contact Us</button> -->
             </div>
         </div>
     </section>
@@ -1175,7 +938,7 @@
                         <li class="mb-2">
                             <i class="fa-solid fa-envelope me-2"></i>
                             <a style="text-decoration: none; color: black;"
-                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a>
+                                href="mailto:jkfiles.secretarial@raymond.in">jkfiles.secretarial@raymond.in</a>
                         </li>
 
                         <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->

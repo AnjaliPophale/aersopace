@@ -19,179 +19,199 @@
 <body>
 
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
-        <div class="container d-flex justify-content-between">
-            <div class="meta-header-left">
-                <ul class="navbar-nav-left" style="padding-left: 0px;">
-                    <li class="nav-item ms-2">
-                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
-                                class="fa-solid fa-phone-volume me-2"></i>
-                            +91 2261527998</a>
-                    </li>
-                    <!-- <li class="nav-item ms-2">
+    <div class="container d-flex justify-content-between">
+      <div class="meta-header-left">
+        <ul class="navbar-nav-left" style="padding-left: 0px;">
+          <li class="nav-item ms-2">
+            <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                class="fa-solid fa-phone-volume me-2"></i>
+              +91 2261527998</a>
+          </li>
+          <!-- <li class="nav-item ms-2">
                         <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
                     </li> -->
 
-                </ul>
+        </ul>
+      </div>
+      <div class="meta-header-right">
+        <ul class="navbar-nav-right">
+          <li class="nav-item ms-2    ">
+            <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item ms-2    ">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+          src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-md-2">
+          <li class="nav-item active has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="./index.html" onclick="toggleMegaMenu(event)">
+              Home
+              <span class="d-lg-none">+</span>
+            </a>
+
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Home</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">Home</h4>
+                  <ul>
+                    <li><a href="#">JK MAINI Global Aerospace</a></li>
+                    <li><a href="#">JK MAINI Global Raymond</a></li>
+                    <li><a href="#">JK MAINI Global Automobile</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="meta-header-right">
-                <ul class="navbar-nav-right">
-                    <li class="nav-item ms-2    ">
-                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
-                    </li>
-                    <li class="nav-item ms-2    ">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
 
-                </ul>
+
+          </li>
+          <li class="nav-item active has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="./about.html" onclick="toggleMegaMenu(event)">
+              About Us
+              <span class="d-lg-none">+</span>
+            </a>
+          </li>
+
+          <li class="nav-item has-mega-menu">
+
+            <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
+              onclick="toggleMegaMenu(event)">Capabilities
+              <span class="d-lg-none">+</span>
+            </a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                  <ul>
+                    <li><a href="#">Machining</a></li>
+                    <li><a href="#">Assembly</a></li>
+                    <li><a href="#">NDT & Welding</a></li>
+                    <li><a href="#">Metrology & Tooling</a></li>
+                    <li><a href="#">Raw Material Management</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
-                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-md-2">
-                    <li class="nav-item active has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="./index.html"
-                            onclick="toggleMegaMenu(event)">
-                            Home
-                            <span class="d-lg-none">+</span>
-                        </a>
-                    </li>
-                    <li class="nav-item active has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="./about.html"
-                            onclick="toggleMegaMenu(event)">
-                            About Us
-                            <span class="d-lg-none">+</span>
-                        </a>
-                    </li>
+          </li>
 
-                    <li class="nav-item has-mega-menu">
+          <li class="nav-item has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
+              Products
+              <span class="d-lg-none">+</span>
+            </a>
 
-                        <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
-                            onclick="toggleMegaMenu(event)">Capabilities
-                            <span class="d-lg-none">+</span>
-                        </a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Products</h4>
 
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
-                                    <ul>
-                                        <li><a href="#">Machining</a></li>
-                                        <li><a href="#">Assembly</a></li>
-                                        <li><a href="#">NDT & Welding</a></li>
-                                        <li><a href="#">Metrology & Tooling</a></li>
-                                        <li><a href="#">Raw Material Management</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                </div>
+                <div class="mega-menu-column">
 
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="product.html"
-                            onclick="toggleMegaMenu(event)">
-                            Products
-                            <span class="d-lg-none">+</span>
-                        </a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                  <ul>
+                    <li><a href="#">Complex Engine Parts</a></li>
+                    <li><a href="#">Structural Parts</a></li>
+                    <li><a href="#">System Parts</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                  <ul>
 
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Products</h4>
-                                    <ul>
-                                        <li><a href="#">Complex Engine Parts</a></li>
-                                        <li><a href="#">Structural Parts</a></li>
-                                        <li><a href="#">System Parts</a></li>
-                                        <li><a href="#">Horizontal Deployments</a></li>
-                                    </ul>
-                                </div>
+                    <li><a href="#">Horizontal Deployments</a></li>
+                    <li><a href="#">Vanes Family</a></li>
+                    <li><a href="#">Casings Family</a></li>
 
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Products</h4>
-                                    <ul>
-                                        <li><a href="#">Vanes Family</a></li>
-                                        <li><a href="#">Casings Family</a></li>
-                                        <li><a href="#">Disc Family</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+                  <ul>
+                    <li><a href="#">Disc Family</a></li>
 
-                                    </ul>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="engineering_excellence.html"
-                            onclick="toggleMegaMenu(event)">
-                            Engineering Excellence
-                            <span class="d-lg-none">+</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-item has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between align-items-center" href="#"
-                            onclick="toggleMegaMenu(event)">
-                            AeroSphere
-                            <span class="d-lg-none">+</span>
-                        </a>
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4>AeroSphere</h4>
-                                </div>
-
-                                <div class="mega-menu-column">
-                                    <h4 class="d-lg-none" onclick="toggleAccordion(this)">AeroSphere</h4>
-                                    <ul>
-                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
-                                        <li><a href="csr.html">CSR & Impact</a></li>
-                                        <li><a href="events.html">News & Events</a></li>
-                                        <li><a href="blog.html">Blogs & Insights</a></li>
-                                    </ul>
-                                </div>
-
-                            </div>
-                        </div>
-                    </li>
-
-
-                </ul>
-                <ul class="navbar-nav ms-md-auto">
-                    <div class="group me-2">
-                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
-                            <g>
-                                <path
-                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                                </path>
-                            </g>
-                        </svg>
-
-
-                    </div>
-
-                    <li class="nav-item">
-                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
-                            Enquiry</a>
-                    </li>
-
-                </ul>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </div>
-    </nav>
+          </li>
+
+          <li class="nav-item has-mega-menu">
+            <a class="nav-link d-flex justify-content-between" href="engineering_excellence.html"
+              onclick="toggleMegaMenu(event)">
+              Engineering Excellence
+              <span class="d-lg-none">+</span>
+            </a>
+          </li>
+
+          <li class="nav-item has-mega-menu">
+            <a class="nav-link d-flex justify-content-between align-items-center" href="#"
+              onclick="toggleMegaMenu(event)">
+              AeroSphere
+              <span class="d-lg-none">+</span>
+            </a>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
+                  <ul>
+                    <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                    <li><a href="csr.html">CSR & Impact</a></li>
+                    <li><a href="events.html">News & Events</a></li>
+                    <li><a href="blog.html">Blogs & Insights</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </li>
+
+
+        </ul>
+        <ul class="navbar-nav ms-md-auto">
+          <div class="group me-2">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                </path>
+              </g>
+            </svg>
+
+
+          </div>
+
+          <li class="nav-item">
+            <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+              Enquiry</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
     <div class="container-fluid p-0 hero-section">
         <div class="carousel">
@@ -203,16 +223,16 @@
                         </div>
                         <div class="container swiper-content">
                             <div class="text-center mt-5">
-                                <h1>Engineering Excellence</h1>
+                                <h1>Smart Design. Seamless Execution.</h1>
                                 <p class="mt-3 mb-4">
-                                    JK Maini Aerospace combines design-to-build innovation, advanced digital tools, and
-                                    dedicated NPD capabilities to deliver precision-driven aerospace engineering.
+                                    Our integrated engineering ecosystem combines digital tools, in-house innovation,
+                                    and disciplined workflows to accelerate aerospace development with precision.
                                 </p>
-                                <div class="d-flex justify-content-center">
+                                <!-- <div class="d-flex justify-content-center">
                                     <button class="hero-button d-flex align-items-center">
                                         View CSR Report <i class="fa-solid fa-download ms-2"></i>
                                     </button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -227,7 +247,7 @@
 
 
 
-    <section class="csr my-5" id="csr">
+    <!-- <section class="csr my-5" id="csr">
         <div class="container mt-5">
             <div class="row mt-5">
                 <div class="col-md-6">
@@ -256,10 +276,10 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/npd1.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/npd1.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/npd2.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/npd2.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -275,10 +295,10 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/software ecosystem1.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/software ecosystem1.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/software ecosystem2.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/software ecosystem2.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -339,10 +359,10 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/workflows1.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/workflows1.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/workflows2.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/workflows2.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -359,10 +379,10 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/tool1.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/tool1.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/tool2.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/tool2.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
 
                             </div>
@@ -418,10 +438,10 @@
                         <div class="swiper csr-swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/design1.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/design1.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="./assets/images/design2.png" alt="" style="width: 100%;">
+                                    <img src="./assets/images/design2.png" alt="" style="width: 100%;" class="img-fluid facility-image">
                                 </div>
                             </div>
                             <div class="swiper-pagination"></div>
@@ -433,7 +453,141 @@
 
 
         </div>
-    </section>
+    </section> -->
+
+    <section class="csr my-5" id="csr">
+  <div class="container mt-5">
+
+    <!-- 1. Advanced NPD Cell -->
+    <div class="row align-items-center flex-column-reverse flex-lg-row my-5">
+      <div class="col-lg-6 mt-4">
+        <div class="csr-text">
+          <h2>Advanced NPD Cell</h2>
+          <p class="engg_excellence">At JK Maini, engineering begins at the core—with our New Product Development (NPD) Cell, purpose-built for high-complexity aerospace programs.</p>
+          <ul class="engg_excellence">
+            <li>20 State-of-the-Art Machines exclusively allocated for NPD activities</li>
+            <li>57+ Dedicated Engineers focusing solely on New Product Development</li>
+            <li>Expertise spans design validation, prototype machining, and production ramp-up</li>
+            <li>Seamless transition from digital model to physical component</li>
+            <li>Dedicated infrastructure to shorten lead times and support faster innovation cycles</li>
+          </ul>
+          <p class="engg_excellence">This facility is a launchpad for next-generation aerospace components, where design agility meets manufacturing precision.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="swiper csr-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/npd1.png" class="img-fluid w-100" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/npd2.png" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Digital Engineering Software Ecosystem -->
+    <div class="row align-items-center flex-column flex-lg-row my-5">
+      <div class="col-lg-6">
+        <div class="swiper csr-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/software ecosystem1.png" class="img-fluid w-100" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/software ecosystem2.png" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4">
+        <div class="csr-text">
+          <h2>Digital Engineering Software Ecosystem</h2>
+          <p class="engg_excellence">To achieve precision, repeatability, and collaboration, JK Maini relies on a comprehensive suite of world-class design and simulation tools:</p>
+          <ul class="engg_excellence">
+            <li>CATIA & SolidWorks for 3D modeling and parametric design</li>
+            <li>Siemens NX PLM for product lifecycle and engineering data management</li>
+            <li>VERICUT for simulation and virtual CNC machine verification</li>
+          </ul>
+          <p class="engg_excellence">These tools are deeply integrated into our workflow, enabling digital continuity from design to shop floor.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Connected Engineering Workflows -->
+    <div class="row align-items-center flex-column-reverse flex-lg-row my-5">
+      <div class="col-lg-6 mt-4">
+        <div class="csr-text">
+          <h2>Connected Engineering Workflows</h2>
+          <p class="engg_excellence">Our engineering process is backed by a robust, digitized operations backbone that ensures traceability, efficiency, and speed:</p>
+          <ul class="engg_excellence">
+            <li>RFQ Estimation Tools to enable accurate and rapid quote responses</li>
+            <li>SAP S/4HANA ERP drives end-to-end material, process, and cost integration</li>
+            <li>IoT-Based Real-Time Monitoring ensures every machine and process is optimized</li>
+            <li>In-process checks and dashboards for proactive issue resolution</li>
+          </ul>
+          <p class="engg_excellence">This digital thread ensures every component is engineered, built, and delivered with data-driven confidence.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="swiper csr-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/workflows1.png" class="img-fluid w-100" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/workflows2.png" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. In-House Innovation Tools -->
+    <div class="row align-items-center flex-column flex-lg-row my-5">
+      <div class="col-lg-6">
+        <div class="swiper csr-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/tool1.png" class="img-fluid w-100" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/tool2.png" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt-4">
+        <div class="csr-text">
+          <h2>In-House Innovation Tools</h2>
+          <p class="engg_excellence">We believe in creating our own engineering edge. Our proprietary and in-house solutions include:</p>
+          <ul class="engg_excellence">
+            <li>COQ-Q Portal for tracking Cost of Quality</li>
+            <li>Gage Caliber for automated gauge control</li>
+            <li>Zoller Tool Management system for inventory control</li>
+          </ul>
+          <p class="engg_excellence">These systems foster a culture of continuous improvement, ensuring aerospace benchmarks are met.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. From Design to Build -->
+    <div class="row align-items-center flex-column-reverse flex-lg-row my-5">
+      <div class="col-lg-6 mt-4">
+        <div class="csr-text">
+          <h2>From Design to Build – A Culture of Excellence</h2>
+          <p class="engg_excellence">Our cross-functional teams work 24/6 to turn concepts into flight-ready components. From RFQ to ramp-up, our design-to-build philosophy ensures:</p>
+          <ul class="engg_excellence">
+            <li>Seamless integration of product and process engineering</li>
+            <li>High-speed turnaround times for prototype and production</li>
+            <li>Continuous collaboration across design, quality, and customer teams</li>
+          </ul>
+          <p class="engg_excellence">At JK Maini, engineering isn’t just a function—it’s a differentiator.</p>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="swiper csr-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./assets/images/design1.png" class="img-fluid w-100" alt=""></div>
+            <div class="swiper-slide"><img src="./assets/images/design2.png" class="img-fluid w-100" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <section class="get-in-touch-section py-5 text-center">
         <div class="container">
@@ -442,7 +596,7 @@
 
             <div class="d-flex justify-content-center gap-3 mt-4">
                 <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
-                <button class="hero-button btn-contact">Contact Us</button>
+                
             </div>
         </div>
     </section>
@@ -538,7 +692,7 @@
                         <li class="mb-2">
                             <i class="fa-solid fa-envelope me-2"></i>
                             <a style="text-decoration: none; color: black;"
-                                href="mailto:mppaero@mainimail.com">mppaero@mainimail.com</a>
+                                href="mailto:jkfiles.secretarial@raymond.in">jkfiles.secretarial@raymond.in</a>
                         </li>
 
                         <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
