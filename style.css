@@ -2348,11 +2348,11 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 }
 .global-footprint-vibrant {
   background-color: #f7f8fc;
-  padding: 60px 20px;
+  padding: 30px 20px;
 }
 /* about3 */
 section.infra-upgrade {
-    padding-top: 60px;
+    padding-top: 30px;
     padding-bottom: 60px;
 }
 .infra-header {
@@ -2955,13 +2955,12 @@ ul, ol {
   padding: 20px;
 }
 
-/* Flex Layout */
+
 #product-section .product-layout {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Sidebar */
 #product-section .product-sidebar {
   width: 25%;
   padding: 10px;
@@ -2978,32 +2977,34 @@ ul, ol {
 
 #product-section .product-sidebar ul li a {
   display: block;
-  background-color: #d65b00;
-  color: #fff;
+  background-color: transparent;
+  color: var(--accent);
   padding: 10px 15px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
+  border: 2px solid var(--accent);
 }
 
 #product-section .product-sidebar ul li a:hover {
-  background-color: #a63f00;
+  background-color: #ff873c;
+  color: #fff;
 }
 
-/* Product Grid Content */
+
 #product-section .product-content {
   width: 75%;
   padding: 10px;
 }
 
-/* Product Grid Wrapper */
+
 #product-section .product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
-/* Single Product Card */
+
 #product-section .col-img {
   width: 33.3333%;
 }
@@ -4174,10 +4175,16 @@ ul.engg_excellence li {
 .landing_subheading
 {
    color: var(--primary);
+   font-family: "Montserrat", "Helvetica Neue", sans-serif;
+   font-size: 18px;
+   font-weight: 700;
 }
 .engineering-title
 {
   color: var(--primary);
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
 }
 /*----------------------------------- contact section----------------------------- */
   /* Section Wrapper */
@@ -4218,7 +4225,7 @@ ul.engg_excellence li {
 .icon-box {
   background: #ff6600;
   color: #fff;
-  padding: 12px;
+  padding: 40px;
   border-radius: 12px;
   font-size: 18px;
   display: flex;
@@ -4290,11 +4297,12 @@ h2.landing_mainheading {
     text-align: center;
     font-size: 28px;
     font-weight: 700;
-    color: #000000;
+    color: var(--bs-heading-color);
     max-width: 800px;
     margin: auto;
     line-height: 1.4;
     margin-bottom: 3rem;
+    font-family: "Poppins", "Arial", sans-serif;
 }
 .about-title {
   color: #f48220;
@@ -4481,6 +4489,7 @@ h2.landing_mainheading {
     margin-bottom: 1.5rem !important;
 }
 
+
 @media (min-width: 992px) {
   .csr-text {
     max-width: 90%;
@@ -4575,3 +4584,18 @@ h2.csr-heading {
   }
 }
 
+/* -------------------------------------------product sidebar-------------------------------- */
+.product-sidebar ul li a.active-link{
+  background-color: var(--accent) !important;
+  color: #fff !important;
+}
+
+.img-fluid-facility-image{
+  border-radius: 25px;
+}
+div#map-image {
+    margin-top: -3rem;
+}
+nav ul{
+  margin-left: 0!important;
+}
