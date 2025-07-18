@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<!----------------------------------Nav Bar ----------------------------------->
+  <!----------------------------------Nav Bar ----------------------------------->
   <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
     <div class="container d-flex justify-content-between">
       <div class="meta-header-left">
@@ -127,17 +127,21 @@
               </div>
             </div>
           </li>
-          <li class="nav-item has-mega-menu">
+
+          <li class="nav-item has-mega-menu d-none d-lg-block products-desktop">
             <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
               Products
               <span class="d-lg-none">+</span>
             </a>
+
             <div class="mega-menu">
               <div class="mega-menu-content">
                 <div class="mega-menu-column d-none d-lg-block">
                   <h4 onclick="toggleAccordion(this)">Products</h4>
+
                 </div>
                 <div class="mega-menu-column">
+                  <!-- <h4 onclick="toggleAccordion(this)">Products</h4> -->
                   <ul>
                     <li><a href="product.html#engine">Complex Engine Parts</a></li>
                     <li><a href="product.html#structure">Structural Parts</a></li>
@@ -145,17 +149,50 @@
                   </ul>
                 </div>
                 <div class="mega-menu-column">
+
                   <ul>
+
                     <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
                     <li><a href="product.html#vanes">Vanes Family</a></li>
                     <li><a href="product.html#casings">Casings Family</a></li>
+
                   </ul>
                 </div>
                 <div class="mega-menu-column">
+
                   <ul>
+                    <li><a href="product.html#disc">Disc Family</a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega-menu d-block d-lg-none products-mobile">
+            <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
+              Products
+              <span class="d-lg-none">+</span>
+            </a>
+
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">Products</h4>
+                  <ul>
+                    <li><a href="product.html#engine">Complex Engine Parts</a></li>
+                    <li><a href="product.html#structure">Structural Parts</a></li>
+                    <li><a href="product.html#system">System Parts</a></li>
+                    <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
+                    <li><a href="product.html#vanes">Vanes Family</a></li>
+                    <li><a href="product.html#casings">Casings Family</a></li>
                     <li><a href="product.html#disc">Disc Family</a></li>
                   </ul>
                 </div>
+
               </div>
             </div>
           </li>
@@ -232,7 +269,7 @@
       </div>
     </div>
   </nav>
-<!----------------------------------Breadcrume ----------------------------------->
+  <!----------------------------------Breadcrume ----------------------------------->
   <div class="container-fluid p-0 hero-section">
     <div class="carousel">
       <div class="swiper mySwiper">
@@ -272,7 +309,7 @@
       </div>
     </div>
   </div>
-<!----------------------------------product ----------------------------------->
+  <!----------------------------------product ----------------------------------->
   <section id="product-section">
     <div class="container">
       <div class="product-layout">
@@ -1005,7 +1042,7 @@
       </div>
     </div>
   </section>
-<!--------------------------------productimg model------------------------------------->
+  <!--------------------------------productimg model------------------------------------->
   <div id="imgModal" class="img-modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="modalImage">
@@ -1025,7 +1062,7 @@
       </a>
     </div>
   </div>
-<!--------------------------------popup from------------------------------------->
+  <!--------------------------------popup from------------------------------------->
   <div id="popupOverlay" class="popup-overlay">
     <div class="right-form p-4">
       <span class="close-btn" onclick="closePopup()">&times;</span>
@@ -1056,7 +1093,7 @@
       </form>
     </div>
   </div>
-<!--------------------------------contact footer------------------------------------->
+  <!--------------------------------contact footer------------------------------------->
   <section class="contact-footer">
     <div class="line"></div>
     <div class="container py-4">
@@ -1088,7 +1125,7 @@
       </div>
     </div>
   </section>
-<!--------------------------------contact main------------------------------------->
+  <!--------------------------------contact main------------------------------------->
   <footer class="pt-5 main-footer">
     <div class="container">
       <div class="row">

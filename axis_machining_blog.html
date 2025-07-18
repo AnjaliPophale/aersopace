@@ -27,10 +27,6 @@
                 class="fa-solid fa-phone-volume me-2"></i>
               +91 2261527998</a>
           </li>
-          <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
-
         </ul>
       </div>
       <div class="meta-header-right">
@@ -132,7 +128,8 @@
             </div>
           </li>
 
-          <li class="nav-item has-mega-menu">
+
+          <li class="nav-item has-mega-menu d-none d-lg-block products-desktop">
             <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
               Products
               <span class="d-lg-none">+</span>
@@ -145,7 +142,7 @@
 
                 </div>
                 <div class="mega-menu-column">
-
+                  <!-- <h4 onclick="toggleAccordion(this)">Products</h4> -->
                   <ul>
                     <li><a href="product.html#engine">Complex Engine Parts</a></li>
                     <li><a href="product.html#structure">Structural Parts</a></li>
@@ -153,7 +150,7 @@
                   </ul>
                 </div>
                 <div class="mega-menu-column">
-                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+
                   <ul>
 
                     <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
@@ -163,12 +160,40 @@
                   </ul>
                 </div>
                 <div class="mega-menu-column">
-                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
+
                   <ul>
                     <li><a href="product.html#disc">Disc Family</a></li>
 
                   </ul>
                 </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item has-mega-menu d-block d-lg-none products-mobile">
+            <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
+              Products
+              <span class="d-lg-none">+</span>
+            </a>
+
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)">Products</h4>
+                  <ul>
+                    <li><a href="product.html#engine">Complex Engine Parts</a></li>
+                    <li><a href="product.html#structure">Structural Parts</a></li>
+                    <li><a href="product.html#system">System Parts</a></li>
+                    <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
+                    <li><a href="product.html#vanes">Vanes Family</a></li>
+                    <li><a href="product.html#casings">Casings Family</a></li>
+                    <li><a href="product.html#disc">Disc Family</a></li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </li>
