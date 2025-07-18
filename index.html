@@ -18,244 +18,249 @@
 </head>
 
 <body>
+    <!------------------------------------------ navbar--------------------------------------- -->
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
+                                class="fa-solid fa-phone-volume me-2"></i>
+                            +91 2261527998</a>
+                    </li>
 
 
-<nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
-    <div class="container d-flex justify-content-between">
-      <div class="meta-header-left">
-        <ul class="navbar-nav-left" style="padding-left: 0px;">
-          <li class="nav-item ms-2">
-            <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
-                class="fa-solid fa-phone-volume me-2"></i>
-              +91 2261527998</a>
-          </li>
-          <!-- <li class="nav-item ms-2">
-                        <a class="nav-link" href="#">Mon - Fri 9:00 - 19:00</a>
-                    </li> -->
-
-        </ul>
-      </div>
-      <div class="meta-header-right">
-        <ul class="navbar-nav-right">
-          <li class="nav-item ms-2    ">
-            <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
-          </li>
-          <li class="nav-item ms-2    ">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-    <div class="container">
-      <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
-          src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-md-2">
-          <li class="nav-item active has-mega-menu">
-            <a class="nav-link d-flex justify-content-between" href="./index.html" onclick="toggleMegaMenu(event)">
-              Home
-              <span class="d-lg-none">+</span>
-            </a>
-
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-column d-none d-lg-block">
-                  <h4 onclick="toggleAccordion(this)">Home</h4>
-
-                </div>
-                <div class="mega-menu-column">
-                  <h4 onclick="toggleAccordion(this)">Group Companies</h4>
-                  <ul>
-                    <li><a href="https://psychonimus.github.io/JK-maini-web/index.html">JK Maini Precision Technology Ltd.</a></li>
-                  
-                    <li><a href="https://anjalipophale.github.io/aersopace/index.html">Jk Maini Global Aerospace Ltd.</a></li>
-                  </ul>
-                </div>
-              </div>
+                </ul>
             </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right">
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item ms-2    ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
 
-                
-          </li>
-          <li class="nav-item active has-mega-menu">
-            <a class="nav-link d-flex justify-content-between" href="./about.html" onclick="toggleMegaMenu(event)">
-              About Us
-              <span class="d-lg-none">+</span>
-            </a>
-               <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-column d-none d-lg-block">
-                  <h4 onclick="toggleAccordion(this)">About Aerospace</h4>
-
-                </div>
-                <div class="mega-menu-column">
-                  <h4 onclick="toggleAccordion(this)">About Aerospace</h4>
-                  <ul>
-                    <li><a href="./about.html#about us">About US</a></li>
-                    <li><a href="./about.html#our facility">Our Facility</a></li>
-                    <li><a href="./about.html#our journey">Our Journey</a></li>
-                    <li><a href="./about.html#global-presence">Global Footprints</a></li>
-                  </ul>
-                </div>
-              </div>
+                </ul>
             </div>
-           
-          </li>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 220px;" class="img-fluid"
+                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./index.html"
+                            onclick="toggleMegaMenu(event)">
+                            Home
+                            <span class="d-lg-none">+</span>
+                        </a>
 
-          <li class="nav-item has-mega-menu">
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Home</h4>
 
-            <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
-              onclick="toggleMegaMenu(event)">Capabilities
-              <span class="d-lg-none">+</span>
-            </a>
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-column d-none d-lg-block">
-                  <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Group Companies</h4>
+                                    <ul>
+                                        <li><a href="https://psychonimus.github.io/JK-maini-web/index.html">JK Maini
+                                                Precision Technology Ltd.</a></li>
 
-                </div>
-                <div class="mega-menu-column">
-                  <h4 onclick="toggleAccordion(this)">Capabilities</h4>
-                  <ul>
-                     <li><a href="./capabilities.html#machining">Machining</a></li>
-                    <li><a href="./capabilities.html#assembly">Assembly</a></li>
-                    <li><a href="./capabilities.html#NDT_welding">NDT & Welding</a></li>
-                    <li><a href="./capabilities.html#metrology_tooling">Metrology & Tooling</a></li>
-                    <li><a href="./capabilities.html">Raw Material Management</a></li>
-                  </ul>
-                </div>
-              </div>
+                                        <li><a href="https://anjalipophale.github.io/aersopace/index.html">Jk Maini
+                                                Global Aerospace Ltd.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </li>
+                    <li class="nav-item active has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="./about.html"
+                            onclick="toggleMegaMenu(event)">
+                            About Us
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">About Aerospace</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Aerospace</h4>
+                                    <ul>
+                                        <li><a href="./about.html#about us">About US</a></li>
+                                        <li><a href="./about.html#our facility">Our Facility</a></li>
+                                        <li><a href="./about.html#our journey">Our Journey</a></li>
+                                        <li><a href="./about.html#global-presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="./capabilities.html"
+                            onclick="toggleMegaMenu(event)">Capabilities
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                                    <ul>
+                                        <li><a href="./capabilities.html#machining">Machining</a></li>
+                                        <li><a href="./capabilities.html#assembly">Assembly</a></li>
+                                        <li><a href="./capabilities.html#NDT_welding">NDT & Welding</a></li>
+                                        <li><a href="./capabilities.html#metrology_tooling">Metrology & Tooling</a></li>
+                                        <li><a href="./capabilities.html">Raw Material Management</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="product.html"
+                            onclick="toggleMegaMenu(event)">
+                            Products
+                            <span class="d-lg-none">+</span>
+                        </a>
+
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+
+                                    <ul>
+                                        <li><a href="product.html#engine">Complex Engine Parts</a></li>
+                                        <li><a href="product.html#structure">Structural Parts</a></li>
+                                        <li><a href="product.html#system">System Parts</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+
+                                    <ul>
+
+                                        <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
+                                        <li><a href="product.html#vanes">Vanes Family</a></li>
+                                        <li><a href="product.html#casings">Casings Family</a></li>
+
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+
+                                    <ul>
+                                        <li><a href="product.html#disc">Disc Family</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="engineering_excellence.html"
+                            onclick="toggleMegaMenu(event)">
+                            Engineering Excellence
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)"> Engineering Excellence</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)"> Engineering Excellence</h4>
+                                    <ul>
+                                        <li><a href="./engineering_excellence.html#advanced NPD cell">Advanced NPD
+                                                Cell</a></li>
+                                        <li><a href="./engineering_excellence.html#digital engineering software">Digital
+                                                Engineering Software</a></li>
+                                        <li><a href="./engineering_excellence.html#connected engineering workflows">Connected
+                                                Engineering Workflows</a></li>
+                                        <li><a href="./engineering_excellence.html#in-house innovation tools">In-House
+                                                Innovation Tools</a></li>
+                                        <li><a href="./engineering_excellence.html#from design to build">From Design to
+                                                Build</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between align-items-center" href="#"
+                            onclick="toggleMegaMenu(event)">
+                            AeroSphere
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                                        <li><a href="csr.html">CSR & Impact</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                        <li><a href="blog.html">Blogs & Insights</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+
+                    </div>
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
+                            Enquiry</a>
+                    </li>
+
+                </ul>
             </div>
-          </li>
-
-          <li class="nav-item has-mega-menu">
-            <a class="nav-link d-flex justify-content-between" href="product.html" onclick="toggleMegaMenu(event)">
-              Products
-              <span class="d-lg-none">+</span>
-            </a>
-
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-column d-none d-lg-block">
-                  <h4 onclick="toggleAccordion(this)">Products</h4>
-
-                </div>
-                <div class="mega-menu-column">
-
-                  <ul>
-                    <li><a href="product.html#engine">Complex Engine Parts</a></li>
-                    <li><a href="product.html#structure">Structural Parts</a></li>
-                    <li><a href="product.html#system">System Parts</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-column">
-                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
-                  <ul>
-
-                    <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
-                    <li><a href="product.html#vanes">Vanes Family</a></li>
-                    <li><a href="product.html#casings">Casings Family</a></li>
-
-                  </ul>
-                </div>
-                <div class="mega-menu-column">
-                  <!-- <h4 onclick="toggleAccordion(this)"></h4> -->
-                  <ul>
-                    <li><a href="product.html#disc">Disc Family</a></li>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item has-mega-menu">
-            <a class="nav-link d-flex justify-content-between" href="engineering_excellence.html"
-              onclick="toggleMegaMenu(event)">
-              Engineering Excellence
-              <span class="d-lg-none">+</span>
-            </a>
-             <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-column d-none d-lg-block">
-                  <h4 onclick="toggleAccordion(this)"> Engineering Excellence</h4>
-
-                </div>
-                <div class="mega-menu-column">
-                  <h4 onclick="toggleAccordion(this)"> Engineering Excellence</h4>
-                  <ul>
-                    <li><a href="./engineering_excellence.html#advanced NPD cell">Advanced NPD Cell</a></li>
-                    <li><a href="./engineering_excellence.html#digital engineering software">Digital Engineering Software</a></li>
-                    <li><a href="./engineering_excellence.html#connected engineering workflows">Connected Engineering Workflows</a></li>
-                    <li><a href="./engineering_excellence.html#in-house innovation tools">In-House Innovation Tools</a></li>
-                    <li><a href="./engineering_excellence.html#from design to build">From Design to Build</a></li>
-                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item has-mega-menu">
-            <a class="nav-link d-flex justify-content-between align-items-center" href="#"
-              onclick="toggleMegaMenu(event)">
-              AeroSphere
-              <span class="d-lg-none">+</span>
-            </a>
-            <div class="mega-menu">
-              <div class="mega-menu-content">
-                <div class="mega-menu-column d-none d-lg-block">
-                  <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
-
-                </div>
-                <div class="mega-menu-column">
-                  <h4 onclick="toggleAccordion(this)">AeroSphere</h4>
-                  <ul>
-                    <li><a href="sustainability.html">Sustainability & ESG</a></li>
-                    <li><a href="csr.html">CSR & Impact</a></li>
-                    <li><a href="events.html">News & Events</a></li>
-                    <li><a href="blog.html">Blogs & Insights</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-          </li>
+        </div>
+    </nav>
 
 
-        </ul>
-        <ul class="navbar-nav ms-md-auto">
-          <div class="group me-2">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
-              <g>
-                <path
-                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
-                </path>
-              </g>
-            </svg>
-
-
-          </div>
-
-          <li class="nav-item">
-            <a class="nav-link" onclick="openPopup()" href="#"><i class="fa-solid fa-headset me-2"></i>
-              Enquiry</a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-</nav>
-
-
-    <!-- Add necessary JavaScript for hide/show on scroll -->
-
-
-    <!-- Add some padding to prevent content from hiding under navbar -->
+    <!------------------------------------------ video banner section--------------------------------------- -->
 
     <section class="video-section">
         <div class="container-fluid p-0" style="height: 100vh; overflow-y:hidden; z-index: 1;">
@@ -265,10 +270,10 @@
                         <div class="swiper-slide">
                             <video playsinline loop autoplay muted preload="metadata"
                                 class="bg-video videoDesktop d-none d-md-block"
-                                src="./assets/images/Aerospace-bg-video.mp4"></video>
+                                src="./assets/images/Aerospace-bg-video.webm"></video>
                             <video playsinline loop autoplay muted preload="metadata"
                                 class="videoMobile d-block d-md-none"
-                                src="./assets/images/Aerospace-bg-video-mobile.mp4"></video>
+                                src="./assets/images/Aerospace-bg-video-mobile.webm"></video>
                             <div class="container swiper-content">
                                 <div class="col-md-10">
                                     <h1>Precision That Powers Flight</h1>
@@ -286,12 +291,12 @@
             </div>
         </div>
     </section>
-    <!-- tile 1 -->
+    <!--------------------------------------- Engineering Scale-------------------------------------- -->
 
     <section class="counter-section">
         <div class="tagline">
             <h4 class="landing_subheading">Engineering Scale</h4>
-            <h2 class="landing_mainheading">From Forging to Global Flight-Powering Aerospace Innovation</h2>
+            <h2 class="landing_mainheading">From Forging to Global Flight Powering Aerospace Innovation</h2>
 
         </div>
 
@@ -323,12 +328,12 @@
     </section>
 
 
-    <!-- tile -2 -->
+    <!------------------------------------------------- Precision Delivered-------------------------- -->
     <section class="capabilities-section">
-        <!-- <h2 class="capabilities-title">End-To-End Aerospace Capabilities Backed By Cutting-Edge Certifications</h2> -->
+
         <div class="tagline">
             <h4 class="landing_subheading">Precision Delivered</h4>
-            <h2 class="landing_mainheading">Complete in-house capabilities—from part production to final
+            <h2 class="landing_mainheading">Complete in-house capabilities from part production to final
                 assembly, ensuring aerospace-grade quality at every step</h2>
 
         </div>
@@ -411,134 +416,135 @@
 
         </div>
     </section>
-    <!-- tile_3 -->
+    <!---------------------------------- Innovation Engine------------------------------------------- -->
 
     <section class="engineering-grid-section">
         <div class="section-wrapper">
             <h4 class="engineering-title">Innovation Engine</h4>
             <h2 class="landing_mainheading">
                 Our NPD capabilities turn concepts into manufacturable aerospace components through agile tools and
-                digital workflows.
-            <h2>
+                digital workflows
+                <h2>
 
-            <div class="engineering-grid">
+                    <div class="engineering-grid">
 
-                <div class="eng-card npd-card">
-                    <h3>NPD Cell</h3>
-                    <p>20 dedicated machines, 58 engineers</p>
-                </div>
+                        <div class="eng-card npd-card">
+                            <h3>NPD Cell</h3>
+                            <p>20 dedicated machines, 58 engineers</p>
+                        </div>
 
-                <div class="eng-card software-card">
-                    <h3>Software Used</h3>
-                    <p>Catia, Solidworks, NX PLM, Vericut</p>
-                </div>
+                        <div class="eng-card software-card">
+                            <h3>Software Used</h3>
+                            <p>Catia, Solidworks, NX PLM, Vericut</p>
+                        </div>
 
-                <div class="eng-card workflow-card">
-                    <h3>Workflow</h3>
-                    <p>RFQ Estimation, SAP S/4HANA, Real-time IoT Monitoring</p>
-                </div>
+                        <div class="eng-card workflow-card">
+                            <h3>Workflow</h3>
+                            <p>RFQ Estimation, SAP S/4HANA, Real-time IoT Monitoring</p>
+                        </div>
 
-                <div class="eng-card innovation-card">
-                    <h3>In-house Innovation Tools</h3>
-                    <p>COQ-Q Portal, Gage Caliber, Zoller</p>
-                </div>
+                        <div class="eng-card innovation-card">
+                            <h3>In-house Innovation Tools</h3>
+                            <p>COQ-Q Portal, Gage Caliber, Zoller</p>
+                        </div>
 
-            </div>
+                    </div>
         </div>
     </section>
 
-    <!-- awrads--------- -->
+    <!-- -----------------------------------------------awrads---------------------------------------- -->
     <section class="awards-wrapper">
-        <!-- <h2 class="awards-heading">Our Awards</h2> -->
-         <h4 class="engineering-title">Our Awards</h4>
-            <h2 class="landing_mainheading">
-               Our awards reflect our achievements and highlight our sincere commitment to excellence
+
+        <h4 class="engineering-title">Our Awards</h4>
+        <h2 class="landing_mainheading">
+            Our awards reflect our achievements and highlight our sincere commitment to excellence
             <h2>
 
-        <div class="award-section">
-            <div class="award-box">
-                <img src="assets/images/trophy1.png" alt="Award Trophy">
+                <div class="award-section">
+                    <div class="award-box">
+                        <img src="assets/images/trophy1.png" alt="Award Trophy">
 
-                <p>Best Exporter<br><span>Karnataka Chamber of Commerce</span></p>
-            </div>
-            <div class="award-box">
-                <img src="assets/images/trophy1.png" alt="Award Trophy">
+                        <p>Best Exporter<br><span>Karnataka Chamber of Commerce</span></p>
+                    </div>
+                    <div class="award-box">
+                        <img src="assets/images/trophy1.png" alt="Award Trophy">
 
-                <p>“Best Supplier – Lean and Fast”<br><span>by General Electric</span></p>
-            </div>
-            <div class="award-box">
-                <img src="assets/images/trophy1.png" alt="Award Trophy">
+                        <p>“Best Supplier – Lean and Fast”<br><span>by General Electric</span></p>
+                    </div>
+                    <div class="award-box">
+                        <img src="assets/images/trophy1.png" alt="Award Trophy">
 
-                <p>Eaton Quality Excellence</p>
-            </div>
-            <div class="award-box">
-                <img src="assets/images/trophy1.png" alt="Award Trophy">
+                        <p>Eaton Quality Excellence</p>
+                    </div>
+                    <div class="award-box">
+                        <img src="assets/images/trophy1.png" alt="Award Trophy">
 
-                <p>“Quality Experience”<br><span>by General Electric</span></p>
-            </div>
-            <div class="award-box">
-                <img src="assets/images/trophy1.png" alt="Award Trophy">
+                        <p>“Quality Experience”<br><span>by General Electric</span></p>
+                    </div>
+                    <div class="award-box">
+                        <img src="assets/images/trophy1.png" alt="Award Trophy">
 
-                <p>Defense Star Performer</p>
-            </div>
-            <div class="award-box">
-                <img src="assets/images/trophy1.png" alt="Award Trophy">
+                        <p>Defense Star Performer</p>
+                    </div>
+                    <div class="award-box">
+                        <img src="assets/images/trophy1.png" alt="Award Trophy">
 
-                <p>“Supplier Recognition”<br><span>by Honeywell</span></p>
-            </div>
-        </div>
+                        <p>“Supplier Recognition”<br><span>by Honeywell</span></p>
+                    </div>
+                </div>
     </section>
 
 
 
 
-    <!-- tile 4-->
+    <!------------------------------------- Future-Ready Infrastructure---------------------------------->
 
     <section class="aerospace-modern">
         <div class="container">
-            <h4 class="engineering-title">Future-Ready Infrastructure</h4>
+            <h4 class="engineering-title">Future Ready Infrastructure</h4>
             <h2 class="landing_mainheading">
-                Globally certified and sustainability-driven our facility is built for growth.
-            <h2>
+                Globally certified and sustainability driven our facility is built for growth
+                <h2>
 
-            <div class="feature-grid">
+                    <div class="feature-grid">
 
-                <div class="feature-card">
-                    <div class="icon-box">
-                        <img src="./assets/images/background/icon/tourism.png" alt="Tour" />
+                        <div class="feature-card">
+                            <div class="icon-box">
+                                <img src="./assets/images/background/icon/tourism.png" alt="Tour" />
+                            </div>
+                            <h3>Start-Of-The-Art-Facility</h3>
+                            <p>High-roof hangar, customer-specific cells</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon-box">
+                                <img src="./assets/images/background/icon/certificate.png" alt="Certifications" />
+                            </div>
+                            <h3>Certifications</h3>
+                            <p>AS9100D, ISO 9001/14001/45001, NADCAP</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon-box">
+                                <img src="./assets/images/background/icon/expansion.png" alt="Expansion" />
+                            </div>
+                            <h3>Expansion Plans</h3>
+                            <p>Expansion plans in EU & US</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <div class="icon-box">
+                                <img src="./assets/images/background/icon/sustainability.png" alt="Sustainability" />
+                            </div>
+                            <h3>Sustainability</h3>
+                            <p>Renewable energy, low-carbon operations</p>
+                        </div>
+
                     </div>
-                    <h3>Start-Of-The-Art-Facility</h3>
-                    <p>High-roof hangar, customer-specific cells</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon-box">
-                        <img src="./assets/images/background/icon/certificate.png" alt="Certifications" />
-                    </div>
-                    <h3>Certifications</h3>
-                    <p>AS9100D, ISO 9001/14001/45001, NADCAP</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon-box">
-                        <img src="./assets/images/background/icon/expansion.png" alt="Expansion" />
-                    </div>
-                    <h3>Expansion Plans</h3>
-                    <p>Expansion plans in EU & US</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon-box">
-                        <img src="./assets/images/background/icon/sustainability.png" alt="Sustainability" />
-                    </div>
-                    <h3>Sustainability</h3>
-                    <p>Renewable energy, low-carbon operations</p>
-                </div>
-
-            </div>
         </div>
     </section>
 
+    <!------------------------------------- Our Clients -------------------------------------------------->
 
 
     <section class="clients my-5">
@@ -688,7 +694,7 @@
 
     </section>
 
-
+    <!------------------------------------- Our Clients Testimonials -------------------------------------------------->
     <section class="testimonial-section">
         <div class="container text-center">
             <h6 class="engineering-title">Our Clients Testimonials</h6>
@@ -744,13 +750,14 @@
                                             <h4 class="m-0">Mark Van Wyk</h3>
                                                 <p>Head of Operations - Integrated Support
                                                     Advanced Manufacturing Solutions, Cambridge, United Kingdom</h5>
-                                                    <div class="social-icons mt-3">
-                                                <a href="https://www.linkedin.com/in/mark-van-wyk-mcips-79b726177/" target="_blank"
-                                                    aria-label="LinkedIn" class="me-2" style="color: #0A66C2; font-size: 1.5rem;">
-                                                    <i class="fab fa-linkedin"></i>
-                                                </a>
-                    
-                                            </div>
+                                                <div class="social-icons mt-3">
+                                                    <a href="https://www.linkedin.com/in/mark-van-wyk-mcips-79b726177/"
+                                                        target="_blank" aria-label="LinkedIn" class="me-2"
+                                                        style="color: #0A66C2; font-size: 1.5rem;">
+                                                        <i class="fab fa-linkedin"></i>
+                                                    </a>
+
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -759,15 +766,15 @@
                     </div>
                 </div>
 
-               
-
-               
 
 
 
-               
 
-               
+
+
+
+
+
 
 
             </div>
@@ -775,13 +782,13 @@
         </div>
     </section>
 
-
+    <!------------------------------------- Explore More -------------------------------------------------->
 
     <section class="explore-more mt-5 py-5">
         <div class="container">
             <div class="text-center">
                 <h6 class="engineering-title">Explore More</h6>
-                <h2>Discover how we engineer a better tomorrow — through sustainable practices, meaningful careers, and
+                <h2>Discover how we engineer a better tomorrow through sustainable practices, meaningful careers, and
                     stories that inspire innovation.</h2>
             </div>
             <div class="row mt-5">
@@ -789,7 +796,7 @@
                     <div class="explore-card">
                         <img src="./assets/images/sustainability.png" alt="">
                         <div class="p-3">
-                            <h2>Sustainability & ESG</h2>
+                            <h2 style="font-size: 28px;">Sustainability & ESG</h2>
                             <p>At JK Maini Global Aerospace Limited, sustainability is more than a goal—it's embedded in
                                 everything we design and deliver. From optimizing resource use to minimizing
                                 environmental impact, we champion responsible innovation and build a greener, more
@@ -804,7 +811,7 @@
                     <div class="explore-card">
                         <img src="./assets/images/careers.png" alt="">
                         <div class="p-3">
-                            <h2>CSR & Impact</h2>
+                            <h2 style="font-size: 28px;">CSR & Impact</h2>
                             <p>At JK Maini Global Aerospace Limited, we believe progress starts with people. We invest
                                 in talent across engineering, design, operations, and beyond—empowering individuals to
                                 grow, lead, and shape the future of advanced manufacturing. Join us in building a
@@ -820,9 +827,12 @@
                     <div class="explore-card">
                         <img src="./assets/images/blogs.png" alt="">
                         <div class="p-3">
-                            <h2>Blogs & Insights</h2>
-                            <p>Explore the latest from the world of precision manufacturing. From engineering breakthroughs and industry trends to shop floor stories and company milestones, our blog offers insights that drive innovation, celebrate excellence, and reflect the spirit of JK Maini Global Aerospace Limited. 
-                               </p>
+                            <h2 style="font-size: 28px;">Blogs & Insights</h2>
+                            <p>Explore the latest from the world of precision manufacturing. From engineering
+                                breakthroughs and industry trends to shop floor stories and company milestones, our blog
+                                offers insights that drive innovation, celebrate excellence, and reflect the spirit of
+                                JK Maini Global Aerospace Limited.
+                            </p>
                             <a href="#" class="custom-link"><i class="fa-solid fa-arrow-right me-2"></i>Read our
                                 blogs</a>
                         </div>
@@ -832,19 +842,7 @@
         </div>
     </section>
 
-
-    <!-- <section class="get-in-touch-section py-5 text-center">
-        <div class="container">
-            <h6 class="section-title">Get in Touch</h6>
-            <h2>Want to collaborate on your next aerospace innovation?</h2>
-
-            <div class="d-flex justify-content-center gap-3 mt-4">
-                <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
-                <button class="hero-button btn-contact">Contact Us</button> 
-            </div>
-        </div>
-    </section> -->
-
+    <!------------------------------------- Get in Touch -------------------------------------------------->
     <section class="get-in-touch-section py-5 text-center">
         <div class="container">
             <h6 class="engineering-title">Get in Touch</h6>
@@ -858,6 +856,7 @@
     </section>
 
 
+    <!------------------------------------- popup from -------------------------------------------------->
 
     <div id="popupOverlay" class="popup-overlay">
         <div class="right-form p-4">
@@ -884,19 +883,16 @@
                     <textarea name="" id="" placeholder="I want to know more about"></textarea>
 
                 </div>
-                <!-- <div class="d-flex gap-3">
-                    <input type="checkbox" name="" id="t&c" class="w-auto">
-                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
-                </div> -->
                 <button class="hero-button mt-4">Submit</button>
             </form>
         </div>
     </div>
 
 
+    <!------------------------------------- contact footer-------------------------------------------------->
 
 
-     <section class="contact-footer">
+    <section class="contact-footer">
         <div class="line"></div>
         <div class="container py-4">
             <div class="row">
@@ -927,6 +923,7 @@
             </div>
         </div>
     </section>
+    <!------------------------------------- main footer-------------------------------------------------->
 
 
     <footer class="pt-5 main-footer">
@@ -953,9 +950,9 @@
                         <li class="mb-2"><a href="index.html" class="text-decoration-none">Home</a></li>
                         <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
 
-                     
+
                         <li class="mb-2"><a href="careers.html" class="text-decoration-none">Career</a></li>
-                        
+
                         <li class="mb-2"><a href="contact.html" class="text-decoration-none">Contact Us</a></li>
 
                     </ul>
@@ -963,12 +960,13 @@
                 <div class="col-md-3 mb-4 quick-links">
                     <h5 class="mb-3 section-title-footer">Company</h5>
                     <ul class="list-unstyled">
-                      
+
                         <li class="mb-2"><a href="capabilities.html" class="text-decoration-none">Capabilities</a></li>
 
                         <li class="mb-2"><a href="product.html" class="text-decoration-none">Products</a></li>
-                       
-                        <li class="mb-2"><a href="engineering_excellence.html" class="text-decoration-none">Engineering Excellence</a></li>
+
+                        <li class="mb-2"><a href="engineering_excellence.html" class="text-decoration-none">Engineering
+                                Excellence</a></li>
                         <li class="mb-2"><a href="blog.html" class="text-decoration-none">Blogs & Insights</a></li>
 
                     </ul>
@@ -994,7 +992,7 @@
                     </ul>
                 </div>
 
-                
+
             </div>
         </div>
         <div class="copyright py-2">

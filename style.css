@@ -4207,7 +4207,7 @@ ul.engg_excellence li {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    padding: 20px;
+    padding: 10px;
     background: #F7F8FC;
     border-left: 5px solid #ffa14d;
     border-radius: 12px;
@@ -4215,6 +4215,8 @@ ul.engg_excellence li {
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     margin-bottom: 20px;
 }
+
+
 
 .info-card:hover {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -4225,7 +4227,7 @@ ul.engg_excellence li {
 .icon-box {
   background: #ff6600;
   color: #fff;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
   font-size: 18px;
   display: flex;
@@ -4265,6 +4267,7 @@ ul.engg_excellence li {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08); /* optional map shadow */
 }
 
+
 /* Responsive */
 @media (max-width: 991px) {
   .office-locations .row {
@@ -4275,6 +4278,7 @@ ul.engg_excellence li {
   .col-md-8 {
     width: 100%;
     max-width: 100%;
+    
   }
 
   .info-card {
@@ -4284,8 +4288,8 @@ ul.engg_excellence li {
 
 @media (max-width: 576px) {
   .info-card {
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column; */
+    align-items:center;
   }
 
   .icon-box {
