@@ -2549,7 +2549,7 @@ section.infra-upgrade {
 /* Responsive */
 @media (max-width: 768px) {
   .timeline-zigzag::before {
-    left: 1px;
+    left: 10px;
   }
 
   .timeline-row,
@@ -2566,7 +2566,7 @@ section.infra-upgrade {
   }
 
   .timeline-row::after {
-    left: 0;
+    left: -7px;
   }
 }
 
