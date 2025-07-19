@@ -2424,6 +2424,7 @@ section.infra-upgrade {
 .our-journey-zigzag {
   padding: 60px 10px;
   background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -2548,7 +2549,7 @@ section.infra-upgrade {
 /* Responsive */
 @media (max-width: 768px) {
   .timeline-zigzag::before {
-    left: 10px;
+    left: 1px;
   }
 
   .timeline-row,

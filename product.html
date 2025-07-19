@@ -18,7 +18,8 @@
   <!-- Add in <head> -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
+   <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -291,8 +292,15 @@
                 </div>
               </div> -->
               <div class="text-center mt-5">
-                <h1>Engineering Excellence in Every Part</h1>
-                <p class="mt-3 mb-4">
+               
+                <h1 class="hero-title text-white text-center">
+                  <span data-aos="fade-up" data-aos-delay="0">Engineering</span>
+                  <span data-aos="fade-up" data-aos-delay="150">Excellence in </span>
+                  <span data-aos="fade-up" data-aos-delay="300">Every</span>
+                  <span data-aos="fade-up" data-aos-delay="450">Part</span>
+                </h1>
+                <p class="mt-3 mb-4" 
+                 data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                   Our components are crafted with exacting precision to support the world’s leading aerospace
                   platforms—on time and to spec.
                 </p>
@@ -1094,7 +1102,7 @@
     </div>
   </div>
   <!--------------------------------contact footer------------------------------------->
-  <section class="contact-footer">
+  <section class="contact-footer" data-aos="fade-up">
     <div class="line"></div>
     <div class="container py-4">
       <div class="row">
@@ -1452,7 +1460,15 @@
       });
     });
   </script>
+  <!-- AOS JS -->
 
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // whether animation should happen only once - while scrolling down
+    });
+  </script>
 
   <svg style="display: none;">
     <symbol viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none" stroke="currentColor">
