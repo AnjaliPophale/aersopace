@@ -98,6 +98,27 @@ window.addEventListener("scroll", () => {
               popup.style.display = "none";
           }
       }
+// preload
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
 
+  // After short delay, fade out
+  setTimeout(() => {
+    preloader.classList.add("fade-out");
+    document.querySelector(".main-content").style.display = "block";
+  }, 1400); // Match animation duration + delay
+});
+
+
+//lenis js 
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+lenis.on('scroll', (e) => {
+  console.log(e);
+});
 
 
