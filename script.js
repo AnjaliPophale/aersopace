@@ -98,16 +98,14 @@ window.addEventListener("scroll", () => {
               popup.style.display = "none";
           }
       }
-// preload
-window.addEventListener("load", function () {
-  const preloader = document.getElementById("preloader");
-
-  // After short delay, fade out
-  setTimeout(() => {
-    preloader.classList.add("fade-out");
-    document.querySelector(".main-content").style.display = "block";
-  }, 1400); // Match animation duration + delay
-});
+// preload in after page reload
+// window.addEventListener("load", function () {
+//   const preloader = document.getElementById("preloader");
+//   setTimeout(() => {
+//     preloader.classList.add("fade-out");
+//     document.querySelector(".main-content").style.display = "block";
+//   }, 1400); 
+// });
 
 
 //lenis js 

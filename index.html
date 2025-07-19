@@ -20,9 +20,9 @@
 </head>
 
 <body>
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="horizontal-line"></div>
-    </div>
+    </div> -->
     <!------------------------------------------ navbar--------------------------------------- -->
 
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
@@ -296,7 +296,7 @@
 
     <!------------------------------------------ video banner section--------------------------------------- -->
 
-    <section class="video-section">
+    <!-- <section class="video-section">
         <div class="container-fluid p-0" style="height: 100vh; overflow-y:hidden; z-index: 1;">
             <div class="carousel">
                 <div class="swiper mySwiper">
@@ -324,7 +324,50 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <section class="video-section">
+        <div class="container-fluid p-0" style="height: 100vh; overflow-y:hidden; z-index: 1;">
+            <div class="carousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="bg-video videoDesktop d-none d-md-block"
+                                src="./assets/images/Aerospace-bg-video.webm"></video>
+
+                            <video playsinline loop autoplay muted preload="metadata"
+                                class="videoMobile d-block d-md-none"
+                                src="./assets/images/Aerospace-bg-video-mobile.webm"></video>
+
+                            <div class="container swiper-content">
+                                <div class="col-md-10">
+                                    <h1 class="hero-title text-white">
+                                        <span data-aos="fade-up" data-aos-delay="0">Precision</span>
+                                        <span data-aos="fade-up" data-aos-delay="200">That</span>
+                                        <span data-aos="fade-up" data-aos-delay="400">Powers</span>
+                                        <span data-aos="fade-up" data-aos-delay="600">Flight</span>
+                                    </h1>
+
+                                    <p data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                        Delivering precision aerospace solutions with global impact.
+                                    </p>
+                                    <a style="text-decoration: none;" href="capabilities.html" data-aos="zoom-in"
+                                        data-aos-delay="200" data-aos-duration="1000">
+                                        <button class="hero-button">
+                                            Explore More
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     <!--------------------------------------- Engineering Scale-------------------------------------- -->
 
     <section class="counter-section" data-aos="fade-up">

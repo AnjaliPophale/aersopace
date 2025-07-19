@@ -4664,3 +4664,22 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+/* breaddrume css */
+.slide-image {
+  position: relative;
+}
+
+.slide-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+}
+.hero-title span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
