@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestone Timeline</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+    }
+
+    .timeline-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 50px auto;
+      position: relative;
+    }
+
+    .timeline {
+      position: relative;
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .milestone {
+      position: relative;
+      background: #f5222d;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 6px;
+      max-width: 300px;
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .milestone::after {
+      content: "↓";
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      transform: translateX(-50%);
+      font-size: 1.2rem;
+      color: #f5222d;
+    }
+
+    .milestone:last-child::after {
+      display: none;
+    }
+
+    .year {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .timeline {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .milestone {
+        flex: 0 0 calc(50% - 40px);
+        margin: 30px 20px;
+      }
+
+      .milestone::after {
+        content: "➡";
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+      }
+
+      .milestone:last-child::after {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .milestone {
+        flex: 0 0 calc(33.33% - 40px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    <div class="timeline">
+      <div class="milestone"><div class="year">2025</div>New Plant inaugurated at Sinnar, Maharashtra</div>
+      <div class="milestone"><div class="year">2024</div>Raymond Group acquired 50.2% of MPP</div>
+      <div class="milestone"><div class="year">2021</div>Name changed to JK Files and Engineering Ltd</div>
+      <div class="milestone"><div class="year">2012</div>New Plant setup in Vapi, Gujarat</div>
+      <div class="milestone"><div class="year">2009</div>Developed Design & Engineering capabilities</div>
+      <div class="milestone"><div class="year">2005</div>Raymond Group acquired Ring Plus Aqua</div>
+      <div class="milestone"><div class="year">1994</div>1st in India to supply to GM USA</div>
+      <div class="milestone"><div class="year">1984</div>1st in India to supply to Bosch Germany</div>
+      <div class="milestone"><div class="year">1977</div>Commenced Production for Files</div>
+      <div class="milestone"><div class="year">1973</div>MPP Incorporated</div>
+      <div class="milestone"><div class="year">1965</div>JK Files Incorporated</div>
+    </div>
+  </div>
+</body>
+</html>
