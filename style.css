@@ -2558,11 +2558,13 @@ section.infra-upgrade {
 .timeline-row.left .content-box {
   margin-right: 20px;
   text-align: right;
+  border-top: 5px solid #f48120;
 }
 
 .timeline-row.right .content-box {
   margin-left: 20px;
   text-align: left;
+  border-top: 5px solid #f48120;
 }
 
 .year {
