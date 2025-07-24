@@ -7,6 +7,7 @@
     <title>JK Maini</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style1.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -28,11 +29,21 @@
     <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
         <div class="container d-flex justify-content-between">
             <div class="meta-header-left">
-                <ul class="navbar-nav-left" style="padding-left: 0px;">
+                <ul class="navbar-nav-left" style="list-style: none;">
                     <li class="nav-item ms-2">
-                        <a class="nav-link" aria-current="page" href="tel:+912261527998"> <i
-                                class="fa-solid fa-phone-volume me-2"></i>
-                            +91 2261527998</a>
+                        <a class="nav-link " aria-current="page" href="" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="JK Maini Group">
+                            JK Maini Group</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="JK Maini Precision Technology Ltd.">
+                            JKMPTL</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active" aria-current="page" href="" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="JK Maini Global Aerospace Ltd.">
+                            JKMGAL</a>
                     </li>
 
 
@@ -59,34 +70,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-md-2">
-                    <li class="nav-item active has-mega-menu">
-                        <a class="nav-link d-flex justify-content-between" href="./index.html"
-                            onclick="toggleMegaMenu(event)">
-                            Home
-                            <span class="d-lg-none">+</span>
-                        </a>
 
-                        <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Home</h4>
-
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)">Group Companies</h4>
-                                    <ul>
-                                        <li><a href="https://psychonimus.github.io/JK-maini-web/index.html">JK Maini
-                                                Precision Technology Ltd.</a></li>
-
-                                        <li><a href="https://anjalipophale.github.io/aersopace/index.html">Jk Maini
-                                                Global Aerospace Ltd.</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </li>
                     <li class="nav-item active has-mega-menu">
                         <a class="nav-link d-flex justify-content-between" href="./about.html"
                             onclick="toggleMegaMenu(event)">
@@ -132,7 +116,7 @@
                                         <li><a href="./capabilities.html#assembly">Assembly</a></li>
                                         <li><a href="./capabilities.html#NDT_welding">NDT & Welding</a></li>
                                         <li><a href="./capabilities.html#metrology_tooling">Metrology & Tooling</a></li>
-                                        <li><a href="./capabilities.html">Raw Material Management</a></li>
+                                        <!-- <li><a href="./capabilities.html">Raw Material Management</a></li> -->
                                     </ul>
                                 </div>
                             </div>
@@ -327,7 +311,7 @@
     </section> -->
 
     <section class="video-section">
-        <div class="container-fluid p-0" style="height: 100vh; overflow-y:hidden; z-index: 1;">
+        <div class="container-fluid p-0 vid-container" >
             <div class="carousel">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -370,161 +354,158 @@
 
     <!--------------------------------------- Engineering Scale-------------------------------------- -->
 
-    <section class="counter-section" data-aos="fade-up">
-        <div class="tagline">
-            <h4 class="landing_subheading">Engineering Scale</h4>
-            <h2 class="landing_mainheading">From Forging to Global Flight Powering Aerospace Innovation</h2>
+    <section class="counter-section business-verticals " data-aos="fade-up">
+        <div class="container p-4 vertical-bg py-5">
+            <div class="tagline">
+                <h6 class="landing_subheading">Engineering Scale</h6>
+                <h4>From Forging to Global Flight Powering Aerospace Innovation</h4>
 
-        </div>
-
-        <div class="counter-grid">
-            <div class="counter-card card-exports" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="icon-wrap">
-                    <img src="./assets/images/background/icon/export.png" alt="Exports">
-                </div>
-                <div class="count" data-target="90">0</div>
-                <p>Exports</p>
             </div>
 
-            <div class="counter-card card-customers" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="icon-wrap">
-                    <img src="./assets/images/background/icon/customer.png" alt="Customers">
+            <div class="counter-grid" style="margin-top: 4rem;">
+                <div class="counter-card card-exports" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                    <div class="icon-wrap">
+                        <img src="./assets/images/background/icon/export.png" alt="Exports">
+                    </div>
+                    <div class="count" data-target="90">0</div>
+                    <p>Exports</p>
                 </div>
-                <div class="count" data-target="25">0</div>
-                <p>Customers</p>
-            </div>
 
-            <div class="counter-card card-countries" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="icon-wrap">
-                    <img src="./assets/images/background/icon/country.png" alt="Countries">
+                <div class="counter-card card-customers" data-aos="zoom-in" data-aos-delay="200"
+                    data-aos-duration="1500">
+                    <div class="icon-wrap">
+                        <img src="./assets/images/background/icon/customer.png" alt="Customers">
+                    </div>
+                    <div class="count" data-target="25">0</div>
+                    <p>Customers</p>
                 </div>
-                <div class="count" data-target="10">0</div>
-                <p>Countries</p>
+
+                <div class="counter-card card-countries" data-aos="zoom-in" data-aos-delay="200"
+                    data-aos-duration="1500">
+                    <div class="icon-wrap">
+                        <img src="./assets/images/background/icon/country.png" alt="Countries">
+                    </div>
+                    <div class="count" data-target="10">0</div>
+                    <p>Countries</p>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!------------------------------------------------- Precision Delivered-------------------------- -->
-    <section class="capabilities-section" data-aos="fade-up">
 
-        <div class="tagline">
-            <h4 class="landing_subheading">Precision Delivered</h4>
-            <h2 class="landing_mainheading">Complete in-house capabilities from part production to final
-                assembly, ensuring aerospace, grade quality at every step</h2>
+    <section class="facility-cards my-4 sector-cards">
+        <div class="container">
+            <div class="header text-center" >
+                <h6 class="landing_subheading">Precision Delivered</h6>
+                <h4>Complete in-house capabilities from part production to final
+                    assembly, ensuring aerospace, grade quality at every step</h4>
 
-        </div>
-        <div class="flip-card-grid">
-
-            <!-- Card 1 -->
-            <div class="flip-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <div class="icon-box">
-                            <img src="./assets/images/background/icon/factory-machine.png" alt="Machining">
-                        </div>
-                        <h3>Machining</h3>
-                    </div>
-                    <div class="flip-back bg-machining">
-                        <p>180+ machines, 1200+ SKUs, complex engine parts</p>
-                    </div>
-                </div>
             </div>
 
-            <!-- Card 2 -->
-            <div class="flip-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <div class="icon-box">
-                            <img src="./assets/images/background/icon/assembly.png" alt="Assembly">
+            <div class="swiper sector-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sector-card first-card">
+                            <img src="./assets/images/precision delivered/1.png" alt="Design Engineering">
+                            <div class="content text-center">
+                               <h2>Machining</h2>
+                                <h6>180+ Machines, 1200+ SKUs, Complext Engine Parts</h6>
+                            </div>
                         </div>
-                        <h3>Assembly</h3>
+                        
                     </div>
-                    <div class="flip-back bg-assembly ">
-                        <p>Riveting, bush & helicoil, sealing, hydraulic press</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="flip-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <div class="icon-box">
-                            <img src="./assets/images/background/icon/welding-machine.png" alt="NDT Welding">
+                    <div class="swiper-slide">
+                        <div class="sector-card">
+                            <img src="./assets/images/precision delivered/2.png" alt="Tool & Die">
+                            <div class="content text-center">
+                               <h2>Assembly</h2>
+                                <h6>Riveting, Bush & Helicoil, Sealing, Hydraulic Press</h6>
+                            </div>
                         </div>
-                        <h3>NDT & Welding</h3>
                     </div>
-                    <div class="flip-back bg-ndt">
-                        <p>NADCAP approved – FPI, MPI, TIG, Resistance</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="flip-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <div class="icon-box">
-                            <img src="./assets/images/background/icon/measurement.png" alt="Metrology">
+                    <div class="swiper-slide">
+                        <div class="sector-card">
+                            <img src="./assets/images/precision delivered/3.png" alt="Forging">
+                            <div class="content text-center">
+                               <h2>NDT & Welding</h2>
+                                <h6>NADCAP approved FPI, MPI, TIG, Resistance</h6>
+                            </div>
                         </div>
-                        <h3>Metrology & Tooling</h3>
                     </div>
-                    <div class="flip-back bg-metrology">
-                        <p>Gauge calibration, 10x zoom inspections</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="flip-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <div class="icon-box">
-                            <img src="./assets/images/background/icon/material.png" alt="Raw Material">
+                    <div class="swiper-slide">
+                        <div class="sector-card">
+                            <img src="./assets/images/precision delivered/4.png" alt="Testing">
+                            <div class="content text-center">
+                               <h2>Metrology & Tooling</h2>
+                                <h6>Gauge Calibraion, 10X Zoom Inspections</h6>
+                            </div>
                         </div>
-                        <h3>Raw Material</h3>
                     </div>
-                    <div class="flip-back bg-raw">
-                        <p>500T annually, 110+ RM types</p>
+                    <div class="swiper-slide">
+                        <div class="sector-card">
+                            <img src="./assets/images/precision delivered/5.png" alt="Testing">
+                            <div class="content text-center">
+                               <h2>Raw Material</h2>
+                                <h6>500T annually, 110+ RM Types</h6>
+                            </div>
+                        </div>
                     </div>
+                    
+                    
+                    
                 </div>
+                <div class="swiper-button-next btn-next"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-prev btn-prev"></div>
             </div>
-
+           
         </div>
     </section>
     <!---------------------------------- Innovation Engine------------------------------------------- -->
 
-    <section class="engineering-grid-section" data-aos="fade-up">
-        <div class="section-wrapper">
-            <h4 class="engineering-title">Innovation Engine</h4>
-            <h2 class="landing_mainheading">
+
+
+    <section class="aerospace-modern" data-aos="fade-up">
+        <div class="container">
+            <h6 class="landing_subheading">Innovation Engine</h6>
+            <h4>
                 Our NPD capabilities turn concepts into manufacturable aerospace components through agile tools and
                 digital workflows
                 <h2>
 
-                    <div class="engineering-grid">
+                    <div class="feature-grid">
 
-                        <div class="eng-card npd-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                            <div class="icon-box-">
+                                <img src="./assets/images/background/icon/npd.png" alt="Tour" />
+                            </div>
                             <h3>NPD Cell</h3>
                             <p>20 dedicated machines, 58 engineers</p>
                         </div>
 
-                        <div class="eng-card software-card" data-aos="zoom-in" data-aos-delay="200"
-                            data-aos-duration="1500">
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                            <div class="icon-box-">
+                                <img src="./assets/images/background/icon/software-used.png" alt="Certifications" />
+                            </div>
                             <h3>Software Used</h3>
                             <p>Catia, Solidworks, NX PLM, Vericut</p>
                         </div>
 
-                        <div class="eng-card workflow-card" data-aos="zoom-in" data-aos-delay="200"
-                            data-aos-duration="1500">
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                            <div class="icon-box-">
+                                <img src="./assets/images/background/icon/workflow.png" alt="Expansion" />
+                            </div>
                             <h3>Workflow</h3>
                             <p>RFQ Estimation, SAP S/4HANA, Real-time IoT Monitoring</p>
                         </div>
 
-                        <div class="eng-card innovation-card" data-aos="zoom-in" data-aos-delay="200"
-                            data-aos-duration="1500">
-                            <h3>In-house Innovation Tools</h3>
+                        <div class="feature-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                            <div class="icon-box-">
+                                <img src="./assets/images/background/icon/innovation-tools.png" alt="Sustainability" />
+                            </div>
+                            <h3>In house Innovation Tools</h3>
                             <p>COQ-Q Portal, Gage Caliber, Zoller</p>
                         </div>
 
@@ -532,8 +513,19 @@
         </div>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
     <!-- -----------------------------------------------awrads---------------------------------------- -->
-    <section class="awards-wrapper" data-aos="fade-up">
+    <!-- <section class="awards-wrapper" data-aos="fade-up">
 
         <h4 class="engineering-title">Our Awards</h4>
         <h2 class="landing_mainheading">
@@ -572,14 +564,14 @@
                         <p>Supplier Recognition<br><span>by Honeywell</span></p>
                     </div>
                 </div>
-    </section>
+    </section> -->
 
 
 
 
     <!------------------------------------- Future-Ready Infrastructure---------------------------------->
 
-    <section class="aerospace-modern" data-aos="fade-up">
+    <!-- <section class="aerospace-modern" data-aos="fade-up">
         <div class="container">
             <h4 class="engineering-title">Future Ready Infrastructure</h4>
             <h2 class="landing_mainheading">
@@ -592,8 +584,8 @@
                             <div class="icon-box">
                                 <img src="./assets/images/background/icon/tourism.png" alt="Tour" />
                             </div>
-                            <h3>Start-Of-The-Art-Facility</h3>
-                            <p>High-roof hangar, customer-specific cells</p>
+                            <h3>Start of the art facility</h3>
+                            <p>High roof hangar, customer specific cells</p>
                         </div>
 
                         <div class="feature-card" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
@@ -622,12 +614,69 @@
 
                     </div>
         </div>
+    </section> -->
+
+    <section class="services ">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <!-- <h6 class="section-title">Centre of Excellence</h6> -->
+                <h6 class="landing_subheading">Future Ready Infrastructure</h6>
+                <h4>
+                    Globally certified and sustainability driven our facility is built for growth
+                    <h2>
+                        <!-- <p>Globally certified and sustainability driven our facility is built for growth</p> -->
+            </div>
+            <div class="row">
+                <div class="col-lg-6 p-3" data-aos="fade-right">
+                    <div class="service-box text-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid mb-4" src="./assets/images/background/icon/1.png" alt="">
+                        </div>
+                        <h3>Start of the art facility
+                        </h3>
+                        <p>High roof hangar, customer specific cells</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 p-3" data-aos="fade-left">
+                    <div class="service-box text-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid mb-4" src="./assets/images/background/icon/2.png" alt="">
+                        </div>
+                        <h3>Certifications</h3>
+                        <p>AS9100D, ISO 9001/14001/45001, NADCAP</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 p-3" data-aos="fade-right">
+                    <div class="service-box text-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid mb-4" src="./assets/images/background/icon/3.png" alt="">
+                        </div>
+                        <h3>Expansion Plans</h3>
+                        <p>Expansion plans in EU & US</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 p-3" data-aos="fade-left">
+                    <div class="service-box text-center">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid mb-4" src="./assets/images/background/icon/4.png" alt="">
+                        </div>
+                        <h3>Sustainability</h3>
+                        <p>Renewable energy, low-carbon operations
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!------------------------------------- Our Clients -------------------------------------------------->
 
 
-    <section class="clients my-5" data-aos="fade-up">
+    <!-- <section class="clients my-5" data-aos="fade-up">
         <div class="container">
             <div class="text-center">
                 <h6 class="engineering-title">Our Clients</h6>
@@ -772,7 +821,7 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
     <!------------------------------------- Our Clients Testimonials -------------------------------------------------->
     <section class="testimonial-section" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="200"
@@ -829,8 +878,7 @@
                                     <div class="px-4">
                                         <div class="nameandposition text-start">
                                             <h4 class="m-0">Mark Van Wyk</h3>
-                                                <p>Head of Operations - Integrated Support
-                                                    Advanced Manufacturing Solutions, Cambridge, United Kingdom</h5>
+                                                <p>Head of Operations, Marshall Aerospace, UK</h5>
                                                 <div class="social-icons mt-3">
                                                     <a href="https://www.linkedin.com/in/mark-van-wyk-mcips-79b726177/"
                                                         target="_blank" aria-label="LinkedIn" class="me-2"
@@ -952,14 +1000,14 @@
                     <input class="my-3" type="text" placeholder="Industry" id="Industry">
                 </div>
                 <div class="form-group">
-                    <textarea name=""  placeholder="I want to know more about" id="Inquiry"></textarea>
+                    <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
 
                 </div>
                 <!-- <div class="d-flex gap-3">
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
                 </div> -->
-                <button class="hero-button mt-4" id="submit"  >Submit</button>
+                <button class="hero-button mt-4" id="submit">Submit</button>
                 <div id="message" class="message"></div>
                 <div id="error" class="error"></div>
             </form>
@@ -1023,13 +1071,14 @@
                     </p>
                     <p class="mb-1">
                         <strong>Address :</strong>
-                        C/o Raymond Limited, Pokhran Road No.1, Jekegram, Near Cadbury Junction, Thane-400606, Maharashtra
+                        C/o Raymond Limited, Pokhran Road No.1, Jekegram, Near Cadbury Junction, Thane-400606,
+                        Maharashtra
                     </p>
                     <p class="mb-1">
                         <strong>Phone :</strong>
                         <a href="tel:+912261527000" class="text-decoration-none text-dark">+91 2261527000</a>
                     </p>
-                    
+
                 </div>
 
                 <!-- Quick Links Column -->
@@ -1109,12 +1158,14 @@
                                 <div class="socialcontainer">
                                     <div class="icon social-icon-4-4">
                                         <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
                                         </svg>
                                     </div>
                                     <div class="social-icon-4">
                                         <svg fill="white" viewBox="0 0 448 512" height="1.6em">
-                                            <path d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z"/>
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
                                         </svg>
                                     </div>
                                 </div>
@@ -1139,8 +1190,8 @@
                                     </div>
                                 </div>
                             </a>
-                            
-                            
+
+
                         </div>
 
 
@@ -1155,7 +1206,7 @@
                         <p class="m-0">© 2025 JK Maini Global Aerospace Limited. All rights
                             reserved.</p>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -1261,6 +1312,67 @@
             once: true,     // whether animation should happen only once - while scrolling down
         });
     </script>
+
+    <script>
+        var swiper = new Swiper(".csr-swiper", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        var swiper = new Swiper(".sector-swiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            on: {
+                init: function () {
+                    setActiveClass();
+                },
+                slideChange: function () {
+                    setActiveClass();
+                }
+            }
+        });
+
+        // 🔁 Function to toggle "active" class
+        function setActiveClass() {
+            document.querySelectorAll(".sector-swiper .swiper-slide").forEach(slide => {
+                slide.classList.remove("active");
+            });
+
+            const activeSlide = document.querySelector(".sector-swiper .swiper-slide-active");
+            if (activeSlide) {
+                activeSlide.classList.add("active");
+            }
+        }
+
+    </script>
+
+
+
+
+
 
 </body>
 

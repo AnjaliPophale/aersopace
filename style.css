@@ -78,9 +78,14 @@ body {
   background-color: #fff !important;
 }
 
-.navbar.transparent .nav-link,
-.navbar.transparent .navbar-brand {
-  color: #000 !important;
+.navbar.transparent .nav-link{
+  color: #000;
+}
+.navbar.transparent .nav-link:hover{
+  color: var(--accent);
+}
+.navbar.transparent .nav-link.active{
+  color: var(--accent);
 }
 
 
@@ -89,9 +94,14 @@ body {
   background: #fff !important; 
 }
 
-.navbar.solid .nav-link,
-.navbar.solid .navbar-brand {
-  color: #000 !important;
+.navbar.solid .nav-link{
+  color: #000;
+}
+.navbar.solid .nav-link:hover{
+  color: var(--accent);
+}
+.navbar.solid .nav-link.active{
+  color: var(--accent);
 }
 
 /* Hidden on scroll down */
@@ -104,13 +114,11 @@ body {
   margin-right: 15px;
 }
 
-/* Hover and active styles */
-.nav-link:hover {
-  font-weight: 500;
-}
+
 
 .nav-link.active {
   font-weight: 600;
+  color: var(--accent);
 }
 .swiper {
   width: 100%;
@@ -945,10 +953,30 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   position: relative;
   z-index: 1;
 }
+.video-section .carousel{
+  height: 100%;
+}
+.video-section .carousel video{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.vid-container{
+  height: 100vh;
+  overflow-y:hidden;
+  z-index: 1;
+}
+@media(min-width : 768px) and (ma-width : 992px){
+  .vid-container{
+    height: 60vh !important;
+    overflow-y: hidden;
+  }
+}
 .business-verticals {
   position: relative;
   z-index: 10;
-  margin-top: -50px; 
+  background-color: transparent !important;
+  margin-top: -100px; 
 }
 .business-verticals .card-body button{
   outline: none;
@@ -1985,7 +2013,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 }
 /* tile-1 */
 .counter-section {
-  background: #ffffff;
+  /* background: #ffffff; */
   padding: 3.5rem 1rem;
   text-align: center;
 }
@@ -2136,6 +2164,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   display: grid;
   gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  text-align: left;
 }
 
 .feature-card {
@@ -2146,6 +2175,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   padding: 30px 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
+  border-top: 5px  solid #fe6a00;
 }
 
 .feature-card:hover {
@@ -4226,9 +4256,7 @@ ul.engg_excellence li {
 .landing_subheading
 {
    color: var(--primary);
-   font-family: "Montserrat", "Helvetica Neue", sans-serif;
-   font-size: 18px;
-   font-weight: 700;
+  font-weight: 600;
 }
 .engineering-title
 {
@@ -4276,10 +4304,10 @@ ul.engg_excellence li {
 }
 
 /* Icon Styling */
-.icon-box {
+/* .icon-box {
   background: #ff6600;
   color: #fff;
-  padding: 30px;
+  padding: 45px;
   border-radius: 12px;
   font-size: 18px;
   display: flex;
@@ -4287,7 +4315,7 @@ ul.engg_excellence li {
   justify-content: center;
   min-width: 45px;
   height: 45px;
-}
+} */
 
 /* Text Styling */
 .info-text {
@@ -4831,3 +4859,82 @@ body {
   .socialcontainer:hover .social-icon-4 {
     transform: translateY(-70px);
   }
+
+.sector-swiper .btn-next::after,
+.sector-swiper .btn-prev::after {
+  color: #ffffff;
+  font-size: 24px;
+} 
+.icon-box- img{
+  width: 100px;
+  height: 100px;
+}
+
+/* sector swiper css 
+ */
+
+
+
+.sector-swiper .swiper-slide{
+  width: 60%;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+}
+.sector-swiper .sector-card{
+  height: 100%;
+}
+
+.sector-swiper .sector-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.sector-swiper .btn-next,.btn-prev{
+  background-color: var(--accent);
+  padding: 30px;
+  border-radius: 30px;
+}
+.sector-swiper .overlay{
+  text-align: center;
+}
+
+@media(max-width : 992px) and (min-width : 576px){
+  .sector-swiper .overlay .facility-title{
+    font-size: 30px;
+    line-height: normal;
+  }
+}
+@media(max-width : 575px){
+  .sector-swiper .overlay .facility-title{
+    font-size: 20px;
+    line-height: normal;
+  }
+  .sector-swiper .swiper-slide{
+    width: 60%;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  }
+}
+.sector-swiper .overlay .facility-title{
+  font-size: 50px;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.sector-card{
+  position: relative;
+}
+.sector-card .content{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 20px;
+  color: white;
+  transition: all 0.4s ease;
+}
