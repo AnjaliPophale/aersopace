@@ -5154,6 +5154,8 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
     color: #ffffff;
     background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
     padding: 10px;
+     border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .aircraft-item {
