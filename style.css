@@ -4999,6 +4999,173 @@ body {
 }
 
 
-.section-heading {
-  margin-bottom: 2rem; /* adjust value as needed */
+/* Global Styles */
+
+
+/*-------------------------------------------------------------- Terms Container */
+.terms-container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional: adds a soft shadow */
+  border-radius: 8px; /* optional: rounded corners */
+}
+
+/* Heading Styling */
+.update-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Intro Text */
+.intro-text {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Terms Paragraph */
+.terms-paragraph {
+  text-align: justify;
+  line-height: 1.6;
+   margin-bottom: 10px;
+}
+
+/* Link Styling */
+.website-link {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.website-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 600px) {
+  .terms-container {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .update-heading {
+    font-size: 16px;
+  }
+
+  .intro-text,
+  .terms-paragraph {
+    font-size: 15px;
+  }
+}
+
+/* -------------------------------product2 */
+
+.aircraft-components-section {
+  background-color: #f9f9f9;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+.section-title .highlight {
+  color: #FE6A00;
+}
+
+.component-box {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.component-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+.red-box .component-title {
+background: #FE6A00; 
+background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+}
+.yellow-box .component-title {
+background: #FE6A00; 
+background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+}
+.blue-box .component-title {
+background: #FE6A00; 
+background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+}
+
+.part-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+.part-card:hover {
+  transform: translateY(-5px);
+}
+.part-card img {
+  width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+.part-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/*-------------------------- prodct family */
+.aircraft-family-section {
+  background-color: #f9f9f9;
+}
+
+.aircraft-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.aircraft-highlight {
+  color: #f48220;
+}
+
+.aircraft-box {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.aircraft-box:hover {
+  transform: translateY(-5px);
+}
+
+.family-heading {
+  font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+    padding: 10px;
+}
+
+.aircraft-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+
+.aircraft-item img {
+  max-height: 100px;
+  object-fit: contain;
 }
