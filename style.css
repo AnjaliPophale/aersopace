@@ -2090,6 +2090,47 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 
 
 
+.counter-card {
+  position: relative;
+  background: linear-gradient(to right, #00000099, #00000099), url('./assets/images/background/sample-bg.jpg') center/cover no-repeat;
+  color: white;
+  border-radius: 15px;
+  padding: 50px 20px 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.counter-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-wrap {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: orange;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.icon-wrap img {
+  width: 30px;
+  height: 30px;
+}
+
+.count {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
 
 
 /* ✅ Different background images */
