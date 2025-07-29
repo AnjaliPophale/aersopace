@@ -188,7 +188,7 @@ body {
 
 @media(max-width : 991px) {
   .navbar-brand img {
-    width: 60% !important;
+    width: 100% !important;
   }
 }
 
@@ -2886,7 +2886,7 @@ h3 {
 }
 
 ul, ol {
-  margin-left: 1.5rem;
+  /* margin-left: 1.5rem; */
 }
 
 .checklist {
@@ -4640,7 +4640,7 @@ h2.landing_mainheading {
       text-align: justify;
     }
     .csr-text ul {
-      padding-left: 1.2rem;
+      /* padding-left: 1.2rem; */
     }
     .facility-image {
       border-radius: 6px;
@@ -5019,6 +5019,7 @@ body {
   font-size: 1rem;
   margin-bottom: 10px;
   color: #333;
+  text-align: start;
 }
 
 .icon-orange {
