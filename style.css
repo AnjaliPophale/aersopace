@@ -5341,3 +5341,17 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
     max-width: 48%;
   }
 }
+/*-------------------------------------------------- contact from */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .info-section {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .map-section {
+    width: 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
