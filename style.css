@@ -5283,6 +5283,12 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   height: 100px;
 }
 
+@media(max-width : 768px){
+  .tech-img img{
+    height: 60px;
+  }
+}
+
 .tech-img-container {
   overflow: hidden;
   border-radius: 20px;
