@@ -444,29 +444,33 @@
     <!-- Cards Grid -->
     <div class="row justify-content-center gy-5">
       <!-- Card 1 -->
-      <div class="col-md-4 d-flex justify-content-center">
+      <div class="col-md-3 d-flex justify-content-center">
         <div class="counter-card text-center" style="background-image: url('./assets/images/background/tile1/1.png');">
           <div class="icon-wrap">
             <img src="./assets/images/background/icon/export.png" alt="Exports">
           </div>
-          <div class="count" data-target="90">0</div>
+          <div class="d-flex gap-1 justify-content-center align-items-center">
+            <div class="count" data-target="90">0%</div><div style="font-weight : 700; font-size:30px;">%</div>
+          </div>
           <p>Exports</p>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="col-md-4 d-flex justify-content-center" >
+      <div class="col-md-3 d-flex justify-content-center" >
         <div class="counter-card text-center"style="background-image: url('./assets/images/background/tile1/2.png');">
           <div class="icon-wrap">
             <img src="./assets/images/background/icon/customer.png" alt="Customers">
           </div>
-          <div class="count" data-target="25">0</div>
+          <div class="d-flex gap-1 justify-content-center align-items-center">
+            <div class="count" data-target="25">0</div><div style="font-weight : 700; font-size:30px;">+</div>
+          </div>
           <p>Customers</p>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="col-md-4 d-flex justify-content-center">
+      <div class="col-md-3 d-flex justify-content-center">
         <div class="counter-card text-center" style="background-image: url('./assets/images/experience-bg.png');">
           <div class="icon-wrap">
             <img src="./assets/images/background/icon/reputation.png" alt="Experience">
@@ -477,26 +481,19 @@
       </div>
 
       <!-- Card 4 -->
-      <div class="col-md-4 d-flex justify-content-center">
+      <div class="col-md-3 d-flex justify-content-center">
         <div class="counter-card text-center" style="background-image: url('./assets/images/sku-bg.png');">
           <div class="icon-wrap">
             <img src="./assets/images/background/icon/sku.png" alt="SKUs">
           </div>
+          <div class="d-flex gap-1 justify-content-center align-items-center">
           <div class="count" data-target="1200">0</div>
+            <div style="font-weight : 700; font-size:30px;">+</div>
+          </div>
           <p>SKUs</p>
         </div>
       </div>
 
-      <!-- Card 5 -->
-      <div class="col-md-4 d-flex justify-content-center">
-        <div class="counter-card text-center" style="background-image: url('./assets/images/industries-bg.png');">
-          <div class="icon-wrap">
-            <img src="./assets/images/background/icon/industry.png" alt="Industries">
-          </div>
-          <div class="count" data-target="5">0</div>
-          <p>Industries Served</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
@@ -1349,7 +1346,7 @@
         });
     </script>
 
-    <script>
+    <!-- <script>
         const counters = document.querySelectorAll('.count');
 
         counters.forEach(counter => {
@@ -1368,7 +1365,7 @@
 
             updateCount();
         });
-    </script>
+    </script> -->
 
 
     <!-- Initialize Swiper -->
@@ -1482,7 +1479,7 @@
 
 
 <script>
-    document.querySelectorAll('.count').forEach(counter => {
+  document.querySelectorAll('.count').forEach(counter => {
   const target = +counter.getAttribute('data-target');
   let count = 0;
   const increment = target / 200;
