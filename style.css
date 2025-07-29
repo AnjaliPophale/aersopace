@@ -5212,3 +5212,87 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   max-height: 100px;
   object-fit: contain;
 }
+/* ---------------------about section services ----------------------------------*/
+.service-box-wrapper {
+  flex: 0 0 20%; 
+  max-width: 20%;
+}
+
+@media (max-width: 992px) {
+  .service-box-wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-box-wrapper {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/*----------------------------------------------------------- products css  */
+.our-products .part-card p {
+  margin-bottom: 0px;
+  line-height: normal;
+}
+
+.our-products .part-card {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 10px;
+  height: 100%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.our-products .part-card img {
+  width: 100%;
+  max-height: 70px;
+  object-fit: contain;
+  margin-bottom: 0px;
+}
+
+.our-products .aero-img-container {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-products .aero-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.workflow-management .diagram img {
+  width: 70%;
+}
+
+.rfq .content h3 {
+  color: var(--primary);
+}
+
+.tech-img img {
+  /* width: 20%; */
+  height: 100px;
+}
+
+.tech-img-container {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.tech-img-container img {
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s all ease;
+}
+
+.tech-img-container img:hover{
+  scale: 1.03;
+}
