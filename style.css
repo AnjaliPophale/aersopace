@@ -4395,12 +4395,15 @@ ul.engg_excellence li {
     flex-direction: column;
   }
 
-  .col-md-4,
+  /* .col-md-4,
   .col-md-8 {
     width: 100%;
     max-width: 100%;
     
-  }
+  } */
+html, body {
+  overflow-x: hidden;
+}
 
   .info-card {
     flex-direction: row;
@@ -5302,4 +5305,39 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 
 .tech-img-container img:hover{
   scale: 1.03;
+}
+/* document css in the blog */
+@media (max-width: 1024px) {
+  .brochure .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .brochure .brochure-content {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .facility-features-clean {
+    text-align: left;
+    padding: 0 1rem;
+  }
+
+  .hero-button {
+    margin: 1rem auto;
+  }
+}
+/* blog grid css */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blogs .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .blogs .row > div {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
 }
