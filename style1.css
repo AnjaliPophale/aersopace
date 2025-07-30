@@ -2249,3 +2249,19 @@ box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18), 0 1.5px 6px rgba(0,0,0,0.10);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
   }
 }
+.back-to-top {
+  position: fixed;
+  padding: 10px 15px;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 50px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  display: none;
+  border: none;
+  outline: none;
+}
+.back-to-top:hover{
+  background-color: var(--highlight);
+}

@@ -119,6 +119,19 @@ lenis.on('scroll', (e) => {
   console.log(e);
 });
 
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTopBtn');
+  if (window.scrollY > 200) {
+      btn.style.display = 'block';
+  } else {
+      btn.style.display = 'none';
+  }
+});
+
+// Scroll to top on click
+document.getElementById('backToTopBtn').addEventListener('click', function() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
 // <!-----------------------------------------------------------Send Mail Start----------------------------------------------------------->
 
