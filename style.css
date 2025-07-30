@@ -5094,36 +5094,34 @@ body {
 
 
 /*-------------------------------------------------------------- Terms Container */
-.terms-container {
+/* .terms-container {
   max-width: 960px;
   margin: 40px auto;
   padding: 20px;
-  background-color: #ffffff; /* White background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional: adds a soft shadow */
-  border-radius: 8px; /* optional: rounded corners */
+  background-color: #ffffff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
 }
 
-/* Heading Styling */
+
 .update-heading {
   font-size: 18px;
   margin-bottom: 10px;
 }
 
-/* Intro Text */
 .intro-text {
   font-weight: bold;
   margin-bottom: 20px;
   text-align: justify;
 }
 
-/* Terms Paragraph */
+
 .terms-paragraph {
   text-align: justify;
   line-height: 1.6;
    margin-bottom: 10px;
 }
 
-/* Link Styling */
 .website-link {
   color: #0056b3;
   font-weight: bold;
@@ -5134,7 +5132,7 @@ body {
   text-decoration: underline;
 }
 
-/* Responsive Font Sizes */
+
 @media (max-width: 600px) {
   .terms-container {
     padding: 15px;
@@ -5149,7 +5147,72 @@ body {
   .terms-paragraph {
     font-size: 15px;
   }
+} */
+
+.terms-container {
+  /* max-width: 960px; */
+  margin: 120px auto 40px auto; /* Add top margin to push below navbar */
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  color: #333;
+   font-family:'arya' ; 
 }
+
+.update-heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  font-family: 'arya', sans-serif;
+}
+
+.intro-text {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #444;
+}
+
+.terms-paragraph {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: #444;
+}
+
+.website-link {
+  color: #0056b3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.website-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .terms-container {
+    padding: 20px;
+    margin: 100px 10px 30px;
+  }
+
+  .intro-text,
+  .terms-paragraph {
+    font-size: 14px;
+  }
+
+  .update-heading {
+    font-size: 18px;
+  }
+}
+
 
 /* -------------------------------product2 */
 
