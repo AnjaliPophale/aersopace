@@ -2800,7 +2800,7 @@ section.infra-upgrade {
     border-top: 4px solid #f48220;
 }
 
-  .csr-list li {
+  /* .csr-list li {
     list-style: none;
     position: relative;
     padding-left: 24px;
@@ -2815,7 +2815,31 @@ section.infra-upgrade {
     left: 0;
     font-size: 1.3rem;
     line-height: 1;
-  }
+  } */
+   .csr-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.csr-list li {
+  position: relative;
+  padding-left: 32px; /* Space for icon */
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.csr-list li::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url('./assets/images/background/icon/plane.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
   .highlight {
     font-weight: 600;
@@ -5481,4 +5505,28 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 }
 .back-to-top:hover{
   background-color: var(--highlight);
+}
+/* -----------------------------------------------------Custom list style with rocket bullet image */
+.services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services ul li {
+  position: relative;
+  padding-left: 32px; /* space for the icon */
+  margin-bottom: 8px;
+}
+
+.services ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  background-image: url('./assets/images/background/icon/plane.png'); /* path to your PNG */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
