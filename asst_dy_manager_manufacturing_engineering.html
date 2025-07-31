@@ -116,7 +116,8 @@
           </li>
           <!-- d-none d-lg-block products-desktop -->
           <li class="nav-item has-mega-menu ">
-            <a class="nav-link d-flex justify-content-between" href="aircraft_product.html" onclick="toggleMegaMenu(event)">
+            <a class="nav-link d-flex justify-content-between" href="aircraft_product.html"
+              onclick="toggleMegaMenu(event)">
               Products
               <span class="d-lg-none">+</span>
             </a>
@@ -176,34 +177,36 @@
               Engineering Excellence
               <span class="d-lg-none">+</span>
             </a>
-             <div class="mega-menu">
-                            <div class="mega-menu-content">
-                                <div class="mega-menu-column d-none d-lg-block">
-                                    <h4 onclick="toggleAccordion(this)">Engineering Excellence</h4>
+            <div class="mega-menu">
+              <div class="mega-menu-content">
+                <div class="mega-menu-column d-none d-lg-block">
+                  <h4 onclick="toggleAccordion(this)">Engineering Excellence</h4>
 
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)"><a style="text-decoration: none; color: var(--accent);" href="engineering_excellence.html">Engineering Prowess</a></h4>
-                                    <ul>
-                                        <li><a href="engineering_excellence.html#advanced_NPD_cell">Advanced NPD
-                                                Cell</a></li>
-                                        <li><a href="engineering_excellence.html#from_design_to_build">Design to Build
-                                                Capability</a></li>
-                                    </ul>
-                                </div>
-                                <div class="mega-menu-column">
-                                    <h4 onclick="toggleAccordion(this)"><a style="text-decoration: none; color: var(--accent);" href="workflow-management.html">Workflow Management</a></h4>
-                                    <ul>
-                                        <li><a href="workflow-management.html#rfq">RFQ Feasibility & Estimation</a></li>
-                                        <li><a href="workflow-management.html#connected-factory">Connected Factory</a>
-                                        </li>
-                                        <li><a href="workflow-management.html#fai">FAI / PPAP development</a></li>
-                                        <li><a href="workflow-management.html#quality">Quality</a></li>
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)"><a style="text-decoration: none; color: var(--accent);"
+                      href="engineering_excellence.html">Engineering Prowess</a></h4>
+                  <ul>
+                    <li><a href="engineering_excellence.html#advanced_NPD_cell">Advanced NPD
+                        Cell</a></li>
+                    <li><a href="engineering_excellence.html#from_design_to_build">Design to Build
+                        Capability</a></li>
+                  </ul>
+                </div>
+                <div class="mega-menu-column">
+                  <h4 onclick="toggleAccordion(this)"><a style="text-decoration: none; color: var(--accent);"
+                      href="workflow-management.html">Workflow Management</a></h4>
+                  <ul>
+                    <li><a href="workflow-management.html#rfq">RFQ Feasibility & Estimation</a></li>
+                    <li><a href="workflow-management.html#connected-factory">Connected Factory</a>
+                    </li>
+                    <li><a href="workflow-management.html#fai">FAI / PPAP development</a></li>
+                    <li><a href="workflow-management.html#quality">Quality</a></li>
 
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </li>
 
 
@@ -442,6 +445,18 @@
           <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
 
         </div>
+        <div class="d-flex gap-3">
+          <input required type="checkbox" name="" id="T&C" class="w-auto">
+          <label class="w-auto" for="T&C">
+            I agree to the
+            <a href="privacy-policy.html" target="_blank" class="text-decoration-underline">Privacy
+              Policy</a>
+            and
+            <a href="terms-and-conditions.html" target="_blank" class="text-decoration-underline">Terms
+              &amp; Conditions</a>
+            <span class="text-danger">*</span>
+          </label>
+        </div>
         <!-- <div class="d-flex gap-3">
                     <input type="checkbox" name="" id="t&c" class="w-auto">
                     <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
@@ -519,7 +534,7 @@
         </div>
 
         <!-- Quick Links Column -->
-      <div class="col-md-3 mb-4 quick-links">
+        <div class="col-md-3 mb-4 quick-links">
           <h5 class="mb-3 section-title-footer">Quick Links</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
@@ -654,7 +669,7 @@
   <button class=" back-to-top" id="backToTopBtn" title="Back to top" type="button">
     <i class="fa fa-arrow-up"></i>
   </button>
-  
+
   <script>
     const popup = document.getElementById("imagePopup");
     const popupImg = document.getElementById("popupImg");
