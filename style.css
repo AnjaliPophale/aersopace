@@ -209,7 +209,7 @@ body {
 }
 
 .mega-menu h4 {
-  color: #f48220;
+  color: #f48220 !important;
   margin-bottom: 15px;
 }
 
@@ -324,7 +324,7 @@ body {
       #aa2068,
       #880088) no-repeat; */
       background: #FE6A00;
-/* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
+/* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
 background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
   background-size: 300%;
   background-position: left center;
@@ -486,7 +486,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   
 /* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) */
 background: #FE6A00;
-/* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
+/* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
 background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%);
 
 
@@ -543,7 +543,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 /* background: linear-gradient(90deg, #b31217 0%, #e52d27 30%, #ff6a00 60%, #fbb03b 85%, #fff200 100%); */
 
 background: #FE6A00;
-/* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
+/* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
 background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%);
 
    
@@ -5492,19 +5492,65 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 
 .back-to-top {
   position: fixed;
-  padding: 10px 15px;
-  background-color: var(--primary);
-  color: #fff;
-  border-radius: 50px;
   bottom: 30px;
   right: 30px;
-  z-index: 1000;
+  width: 50px;
   display: none;
+  z-index: 1000;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--accent);
   border: none;
-  outline: none;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+
 }
-.back-to-top:hover{
-  background-color: var(--highlight);
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.back-to-top:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: var(--primary);
+  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.back-to-top:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.back-to-top::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.back-to-top:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
 }
 /* -----------------------------------------------------Custom list style with rocket bullet image */
 .services ul {
@@ -5529,4 +5575,94 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.enq-btn {
+  border: none;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+
+  border-radius: 30px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+  transition: 0.5s all ease;
+}
+
+.enq-btn:hover {
+  background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 var(--accent);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+#cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Outer cursor border */
+#cursor-border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #d0d0d0;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9998;
+  transition: width 0.3s, height 0.3s, border-color 0.3s;
+}
+
+/* GSAP Animation Support */
+.page-title-animate {
+  opacity: 1; /* Ensure element is visible by default */
+  transform: translateY(0); /* Reset any transforms */
+  will-change: opacity, transform; /* Optimize for animations */
+}
+
+/* Ensure GSAP animations work properly */
+.page-title-animate .word,
+.page-title-animate .char {
+  display: inline-block;
+  opacity: 1;
+  transform: translateY(0);
+  will-change: opacity, transform;
+}
+
+/* Animation states for debugging */
+.page-title-animate.animating {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.page-title-animate.animated {
+  opacity: 1;
+  transform: translateY(0);
 }

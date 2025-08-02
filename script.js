@@ -343,3 +343,5 @@ document.getElementById('ApplyNow').addEventListener('submit', function (e) {
       console.log('Form cleared');
     });
 });
+
+
