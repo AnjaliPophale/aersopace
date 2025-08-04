@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <!-- <div id="preloader">
+    <div id="preloader">
         <div class="horizontal-line"></div>
-    </div> -->
+    </div>
 
 
     <!------------------------------------------ navbar--------------------------------------- -->
@@ -634,7 +634,7 @@
 
                     <div class="swiper-slide text-center">
                         <div class="sector-card">
-                            <img src="./assets/images/precision delivered/certifications.png" alt="Testing">
+                            <img src="./assets/images/precision delivered/certifications.PNG" alt="Testing">
                             <div class="content text-center">
                                 <h2>Certifications</h2>
                                 <h6>AS9100D, ISO 9001/14001/45001, NADCAP</h6>
@@ -1644,6 +1644,21 @@
         }
 
     </script>
+
+<script>
+    window.addEventListener("load", function () {
+      const preloader = document.getElementById("preloader");
+  
+      // Add fade-out class
+      preloader.classList.add("fade-out");
+  
+      // Optional: remove the element after transition ends
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 3000); // Match the CSS animation time (3s)
+    });
+</script>
+  
 
 
     <!-- AOS JS -->
