@@ -5010,7 +5010,9 @@ body {
   background-color: var(--accent);
   padding: 30px;
   border-radius: 30px;
-}
+  
+} 
+
 .sector-swiper .overlay{
   text-align: center;
 }
@@ -5350,7 +5352,7 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   object-fit: contain;
 }
 /* ---------------------about section services ----------------------------------*/
-.service-box-wrapper {
+/* .service-box-wrapper {
   flex: 0 0 20%; 
   max-width: 20%;
 }
@@ -5367,6 +5369,24 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
     flex: 0 0 100%;
     max-width: 100%;
   }
+} */
+.service-box {
+  background-color: #fff;
+  border-top: 5px solid var(--info);
+  border-radius: 20px;
+  padding: 1rem;
+  transition: 0.5s all ease;
+}
+.service-box:hover {
+  scale: 1.03;
+  border-top: 7px solid var(--info);
+}
+.service-box a {
+  text-decoration: none;
+  color: var(--primary);
+}
+.service-box .fa-arrow-right {
+  color: var(--primary);
 }
 
 /*----------------------------------------------------------- products css  */
@@ -5786,3 +5806,4 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
     left: 100%;
   }
 }
+
