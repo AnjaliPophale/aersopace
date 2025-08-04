@@ -4817,7 +4817,7 @@ body {
   text-align: center;
 }
 
-/* Preloader */
+/* Preloader
 #preloader {
   position: fixed;
   top: 0;
@@ -4832,15 +4832,15 @@ body {
   transition: opacity 0.6s ease, visibility 0.6s ease;
 }
 
-/* Thin horizontal line */
+
 .horizontal-line {
   width: 0;
-  height: 1px; /* 🔧 Make it thin */
+  height: 1px; 
   background-color: #ffffff;
   animation: loadLine 1.2s ease-in-out forwards;
 }
 
-/* Animation */
+
 @keyframes loadLine {
   0% {
     width: 0;
@@ -4853,11 +4853,11 @@ body {
   }
 }
 
-/* Fade out preloader */
+
 #preloader.fade-out {
   opacity: 0;
   visibility: hidden;
-}
+} */
 /* breaddrume css */
 .slide-image {
   position: relative;
