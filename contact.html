@@ -394,7 +394,7 @@
                                     <span class="text-danger">*</span>
                                 </label>
                             </div>
-                            <button href="#" class="button mt-4" id="submit">
+                            <button href="#" class="button mt-4" id="submit" >
                                 <span class="button__icon-wrapper">
                                     <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
                                         class="button__icon-svg" width="10">
@@ -750,21 +750,21 @@
                 <p>Tell us what you’re building — we’ll help you how to get there, faster and smarter.
                     Response guaranteed within 24 hours.</p>
             </div>
-            <form action="" class="mt-4" id="contact-form">
+            <form action="" class="mt-4" id="enquiry-form">
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" required placeholder="First Name" id="FirstName">
-                    <input class="my-3" type="text" required placeholder="Last Name" id="LastName">
+                    <input class="my-3" type="text" required placeholder="First Name" id="txtFirstName">
+                    <input class="my-3" type="text" required placeholder="Last Name" id="txtLastName">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" required placeholder="Company" id="Company">
-                    <input class="my-3" type="text" required placeholder="Email Address" id="EmailAddress">
+                    <input class="my-3" type="text" required placeholder="Company" id="txtCompany">
+                    <input class="my-3" type="text" required placeholder="Email Address" id="txtEmailAddress">
                 </div>
                 <div class="form-group d-sm-flex gap-3 ">
-                    <input class="my-3" type="text" required placeholder="Phone No." id="PhoneNo">
-                    <input class="my-3" type="text" required placeholder="Industry" id="Industry">
+                    <input class="my-3" type="text" required placeholder="Phone No." id="txtPhoneNo">
+                    <input class="my-3" type="text" required placeholder="Industry" id="txtIndustry">
                 </div>
                 <div class="form-group">
-                    <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
+                    <textarea name="" placeholder="I want to know more about" id="txtInquiry"></textarea>
 
                 </div>
                 <div class="d-flex gap-3">
@@ -790,8 +790,8 @@
                     </span>
                     Submit
                 </button>
-                <div id="message" class="message"></div>
-                <div id="error" class="error"></div>
+                <div id="txtmessage" class="txtmessage"></div>
+                <div id="txterror" class="txterror"></div>
             </form>
         </div>
     </div>
@@ -1099,6 +1099,111 @@
     <script src="animations.js"></script>
     <script src="script.js"></script>
 
+
+
+
+
+
+
+
+
+<script>
+
+function customEncodeURI(str) {
+  return str.replace(/[@]/g, '%40')
+    .replace(/[:]/g, '%3A')
+    .replace(/[?]/g, '%3F')
+    .replace(/[/]/g, '%2F')
+    .replace(/[#]/g, '%23')
+    .replace(/[&]/g, '%26')
+    .replace(/[=]/g, '%3D')
+    .replace(/[+]/g, '%2B')
+    .replace(/[ ]/g, '%20');
+}
+
+document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+    debugger
+  e.preventDefault();
+  console.log('Form submitted');
+  const toEmail = document.getElementById('txtEmailAddress').value;
+  const firstname = document.getElementById('txtFirstName').value;
+  const lastname = document.getElementById('txtLastName').value;
+  const company = document.getElementById('txtCompany').value;
+  const phoneno = document.getElementById('txtPhoneNo').value;
+  const industry = document.getElementById('txtIndustry').value;
+  const email = document.getElementById('txtEmailAddress').value; // Same as toEmail
+  const inquiry = document.getElementById('txtInquiry').value;
+  const subject = "";
+  const htmlContent = "";
+  const messageDiv = document.getElementById('txtmessage');
+  const errorDiv = document.getElementById('txterror');
+
+  messageDiv.textContent = '';
+  errorDiv.textContent = '';
+
+  //const url = 'http://172.21.4.191:80/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + //testing 
+
+  const url = 'https://api.jkmaini.com/api/email/sendemail?firstname=' + customEncodeURI(firstname) +
+    '&lastname=' + customEncodeURI(lastname) +
+    '&company=' + customEncodeURI(company) +
+    '&phoneno=' + customEncodeURI(phoneno) +
+    '&industry=' + customEncodeURI(industry) +
+    '&email=' + customEncodeURI(email) +
+    '&inquiry=' + customEncodeURI(inquiry);
+
+  console.log('URL:', url);
+  console.log('Payload:', JSON.stringify({ subject, htmlContent }));
+  // For proxy: fetch('/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + '&firstname=' + customEncodeURI(firstname) + '&lastname=' + customEncodeURI(lastname) + '&company=' + customEncodeURI(company) + '&phoneno=' + customEncodeURI(phoneno) + '&industry=' + customEncodeURI(industry) + '&email=' + customEncodeURI(email) + '&inquiry=' + customEncodeURI(inquiry), {
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ subject, htmlContent })
+    // If API supports plain-text:
+    // body: JSON.stringify({ subject, htmlContent, textContent: `Hello ${firstname}! Thank you for your inquiry about ${company} services. Visit us at https://probus.co.in. To unsubscribe, visit https://probus.co.in/unsubscribe. Probus, 123 Business Street, City, Country` })
+  })
+    .then(function (response) {
+      console.log('Response status:', response.status);
+      return Promise.all([response.json(), response.ok, response.status]);
+    })
+    .then(function (jsonData, ok, status) {
+      console.log('Response data:', jsonData);
+      if (ok) {
+        messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
+      } else {
+        errorDiv.textContent = jsonData.error || 'Application submitted successfully.';
+      }
+    })
+    .catch(function (error) {
+      console.error('Fetch error:', error);
+      errorDiv.textContent = `Error: ${error.message}`;
+    })
+    .finally(function () {
+      document.getElementById('enquiry-form').reset();
+      console.log('Form cleared');
+    });
+  // Close the popup after successful submission
+  // const popupOverlay = document.getElementById('popupOverlay');
+  // if (popupOverlay) {
+  //   popupOverlay.style.display = 'none';
+  // }
+});
+
+</script>
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
 
 </html>

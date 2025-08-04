@@ -345,3 +345,26 @@ document.getElementById('ApplyNow').addEventListener('submit', function (e) {
 });
 
 
+// gsap animations starts here ......... 
+
+// GSAP slide-to-right animation for .foreword-left on scroll
+gsap.registerPlugin(ScrollTrigger, TextPlugin, SplitText);
+
+
+// GSAP highlight effect loop animation for .head
+gsap.to(".head-anim", {
+  backgroundColor: "#ffe066", // highlight color (light yellow)
+  color: "#222",              // text color during highlight
+  boxShadow: "0 0 20px 5px #ffe066",
+  duration: 0.5,
+  yoyo: true,
+  repeat: -1,
+  ease: "power1.inOut",
+  repeatDelay: 0.7,
+  onStart: function() {
+    // Optionally, ensure .head has transition for smoothness
+    document.querySelectorAll('.head-anim').forEach(el => {
+      el.style.transition = "background-color 0.5s, color 0.5s, box-shadow 0.5s";
+    });
+  }
+});
