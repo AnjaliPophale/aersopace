@@ -4837,7 +4837,7 @@ body {
   width: 0;
   height: 1px; /* 🔧 Make it thin */
   background-color: #ffffff;
-  animation: loadLine 3s ease-in-out forwards;
+  animation: loadLine 1.2s ease-in-out forwards;
 }
 
 /* Animation */
