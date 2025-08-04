@@ -533,8 +533,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide text-center">
                         <div class="sector-card first-card">
-                            <img src="./assets/images/precision delivered/8.png" alt="Design Engineering" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/8.jpg" alt="Design Engineering">
                             <div class="content text-center">
                                 <h2>Machining</h2>
                                 <h6>180+ Machines, 1200+ SKUs, Complext Engine Parts</h6>
@@ -545,8 +544,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/6.png" alt="Tool & Die" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/6.jpg" alt="Tool & Die" >
                             <div class="content text-center">
                                 <h2>Assembly</h2>
                                 <h6>Riveting, Bush & Helicoil, Sealing, Hydraulic Press</h6>
@@ -556,8 +554,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/9.png" alt="Forging" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/9.jpg" alt="Forging" >
                             <div class="content text-center">
                                 <h2>NDT & Welding</h2>
                                 <h6>NADCAP approved FPI, MPI, TIG, Resistance</h6>
@@ -567,8 +564,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/7.png" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/7.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>Metrology & Tooling</h2>
                                 <h6>Gauge Calibraion, 10X Zoom Inspections</h6>
@@ -578,8 +574,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/10.png" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/10.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>Raw Material</h2>
                                 <h6>500T annually, 110+ RM Types</h6>
@@ -590,8 +585,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/export.png" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/export.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>90%</h2>
                                 <h6>Exports</h6>
@@ -601,8 +595,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/customers.png" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/customers.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>25+</h2>
                                 <h6>Customers</h6>
@@ -612,8 +605,7 @@
 
                     <div class="swiper-slide">
                         <div class="sector-card text-center">
-                            <img src="./assets/images/precision delivered/decades.png" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/decades.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>2</h2>
                                 <h6>Decades Of Experience</h6>
@@ -623,8 +615,7 @@
 
                     <div class="swiper-slide text-center">
                         <div class="sector-card">
-                            <img src="./assets/images/precision delivered/skus.jpg" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/skus.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>1200+</h2>
                                 <h6>SKUs</h6>
@@ -634,8 +625,7 @@
 
                     <div class="swiper-slide text-center">
                         <div class="sector-card">
-                            <img src="./assets/images/precision delivered/5.png" alt="Testing" loading="lazy"
-                                decoding="async">
+                            <img src="./assets/images/precision delivered/5.jpg" alt="Testing">
                             <div class="content text-center">
                                 <h2>State of the Art facility</h2>
                                 <h6>High roof hangar, customer specific cells</h6>
@@ -646,7 +636,7 @@
                     <div class="swiper-slide text-center">
                         <div class="sector-card">
                             <img src="./assets/images/precision delivered/certifications.jpg" alt="Testing"
-                                loading="lazy" decoding="async">
+                              >
                             <div class="content text-center">
                                 <h2>Certifications</h2>
                                 <h6>AS9100D, ISO 9001/14001/45001, NADCAP</h6>
@@ -1492,85 +1482,9 @@
         });
     </script>
 
-    <!-- <script>
-        const counters = document.querySelectorAll('.count');
 
-        counters.forEach(counter => {
-            const updateCount = () => {
-                const target = +counter.getAttribute('data-target');
-                const current = +counter.innerText;
-                const increment = Math.ceil(target / 80); // speed
+   
 
-                if (current < target) {
-                    counter.innerText = current + increment;
-                    setTimeout(updateCount, 20);
-                } else {
-                    counter.innerText = target + (target === 25 || target === 10 ? '+' : '%');
-                }
-            };
-
-            updateCount();
-        });
-    </script> -->
-
-
-    <!-- Initialize Swiper -->
-
-
-
-
-    <script>
-        document.querySelectorAll('.count').forEach(counter => {
-            const target = +counter.getAttribute('data-target');
-            let count = 0;
-            const increment = target / 200;
-
-            const update = () => {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.floor(count);
-                    requestAnimationFrame(update);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-
-            update();
-        });
-
-    </script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const lazyImages = document.querySelectorAll('img[loading="lazy"]');
-  
-      if ("IntersectionObserver" in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting) {
-              const img = entry.target;
-              const src = img.getAttribute("src");
-              if (src) {
-                img.src = src;
-                img.removeAttribute("data-src");
-              }
-              observer.unobserve(img);
-            }
-          });
-        });
-  
-        lazyImages.forEach(img => {
-          imageObserver.observe(img);
-        });
-      } else {
-        // Fallback: Load all images immediately
-        lazyImages.forEach(img => {
-          img.src = img.getAttribute("src");
-        });
-      }
-    });
-  </script>
-  
 
 
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
@@ -1705,14 +1619,7 @@
    -->
 
 
-
     <!-- AOS JS -->
-
-
-
-
-
-
 
 
 </body>
