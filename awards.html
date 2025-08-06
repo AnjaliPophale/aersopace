@@ -16,6 +16,9 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+     <!-- AOS CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -375,8 +378,14 @@
         <div class="container mt-5">
             <div class="text-center mt-5" data-aos="fade-up">
                 <h6 class="award-title">Featured Awards</h6>
-                <h2 class="recognition-heading page-title-animate">Our Recognitions & Achievements</h2>
-                <p class="heading-animate">Over the years, JKMGAL has been honored with numerous awards and accolades
+                <!-- <h2 class="recognition-heading page-title-animate">Our Recognitions & Achievements</h2> -->
+                <h2 class="recognition-heading page-title-animate">
+                    <span data-aos="fade-up" data-aos-delay="0">Our</span>
+                    <span data-aos="fade-up" data-aos-delay="200">Recognitions</span>
+                    <span data-aos="fade-up" data-aos-delay="400">& Achievements</span><br>
+                </h2>
+                <p class="heading-animate" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    Over the years, JKMGAL has been honored with numerous awards and accolades
                     that reflect our
                     commitment to excellence, innovation, and quality in precision engineering. Our dedication to
                     delivering world-class solutions has earned us recognition from industry leaders, partners, and
@@ -1064,6 +1073,16 @@
 
         });
     </script>
+    <!-- AOS JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true,     // whether animation should happen only once - while scrolling down
+    });
+  </script>
+    
 
     <script src="animations.js"></script>
     <script src="script.js"></script>
