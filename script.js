@@ -150,6 +150,7 @@ function customEncodeURI(str) {
 }
 
 document.getElementById('contact-form').addEventListener('submit', function (e) {
+
   e.preventDefault();
   console.log('Form submitted');
   const toEmail = document.getElementById('EmailAddress').value;
@@ -165,8 +166,13 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
   const messageDiv = document.getElementById('message');
   const errorDiv = document.getElementById('error');
 
-  messageDiv.textContent = '';
-  errorDiv.textContent = '';
+  messageDiv.style.display = 'none';
+errorDiv.style.display = 'none';
+messageDiv.innerHTML = '';
+errorDiv.innerHTML = '';
+
+  // messageDiv.textContent = '';
+  // errorDiv.textContent = '';
 
   //const url = 'http://172.21.4.191:80/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + //testing 
 
@@ -189,30 +195,46 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
     // body: JSON.stringify({ subject, htmlContent, textContent: `Hello ${firstname}! Thank you for your inquiry about ${company} services. Visit us at https://probus.co.in. To unsubscribe, visit https://probus.co.in/unsubscribe. Probus, 123 Business Street, City, Country` })
   })
     .then(function (response) {
+      debugger
       console.log('Response status:', response.status);
+      console.log('Response headers:', [...response.headers.entries()]);
+      console.log('Response ok:', response.ok);
       return Promise.all([response.json(), response.ok, response.status]);
     })
-    .then(function (jsonData, ok, status) {
+    .then(function ([jsonData, ok, status]) {
+      debugger
       console.log('Response data:', jsonData);
+      // if (ok) {
+      //     debugger
+      //     messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
+      // } else {
+      //     errorDiv.textContent = jsonData.error || `Application not submitted successfully. Status: ${status}`;
+      // }
       if (ok) {
-        messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
+        messageDiv.style.display = 'block';
+        messageDiv.innerHTML = `<p>${jsonData.message || 'Response submitted successfully.'}</p>`;
+        errorDiv.style.display = 'none';
+        errorDiv.innerHTML = '';
       } else {
-        errorDiv.textContent = jsonData.error || 'Application submitted successfully.';
+        errorDiv.style.display = 'block';
+        errorDiv.innerHTML = `<p>${jsonData.error || 'Responce not Submitted.'}</p>`;
+        messageDiv.style.display = 'none';
+        messageDiv.innerHTML = '';
       }
     })
     .catch(function (error) {
       console.error('Fetch error:', error);
-      errorDiv.textContent = `Error: ${error.message}`;
+      // errorDiv.textContent = `Error: ${error.message}`;
+      errorDiv.style.display = 'block';
+      errorDiv.innerHTML = `<p>Error: ${error.message}</p>`;
+      messageDiv.style.display = 'none';
+      messageDiv.innerHTML = '';
     })
     .finally(function () {
       document.getElementById('contact-form').reset();
       console.log('Form cleared');
     });
-  // Close the popup after successful submission
-  // const popupOverlay = document.getElementById('popupOverlay');
-  // if (popupOverlay) {
-  //   popupOverlay.style.display = 'none';
-  // }
+
 });
 
 
