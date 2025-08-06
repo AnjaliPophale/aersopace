@@ -191,6 +191,11 @@ body {
     width: 100% !important;
   }
 }
+@media (max-width: 767px) {
+  .navbar-brand img {
+      width: 100% !important;
+  }
+}
 
 .mega-menu {
   position: absolute;
