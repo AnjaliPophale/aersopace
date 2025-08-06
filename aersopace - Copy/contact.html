@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon_io (1)/android-chrome-512x512.png">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!----------------------------------navbar ----------------------------------->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
+        <div class="container d-flex justify-content-between">
+            <div class="meta-header-left">
+                <ul class="navbar-nav-left" style="list-style: none;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link " aria-current="page" href="https://jkmaini.com/" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" title="JK Maini Group">
+                            JK Maini Group</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="https://auto.jkmaini.com/"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                            title="JK Maini Precision Technology Ltd.">
+                            JKMPTL</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active" aria-current="page" href="https://aero.jkmaini.com/"
+                            data-bs-toggle="tooltip" data-bs-placement="bottom" title="JK Maini Global Aerospace Ltd.">
+                            JKMGAL</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="meta-header-right">
+                <ul class="navbar-nav-right d-none d-md-flex" style="list-style: none;">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img style="width: 260px;" class="img-fluid"
+                    src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-md-2">
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="about.html"
+                            onclick="toggleMegaMenu(event)">
+                            About Us
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">About Aerospace</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">About Aerospace</h4>
+                                    <ul>
+                                        <li><a href="about.html#about_us">About US</a></li>
+                                        <li><a href="about.html#aerospace_horizon">Aerospace Horizon</a></li>
+                                        <li><a href="about.html#our_journey">Our Journey</a></li>
+                                        <li><a href="about.html#global_presence">Global Footprints</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item has-mega-menu">
+
+                        <a class="nav-link d-flex justify-content-between" href="capabilities.html"
+                            onclick="toggleMegaMenu(event)">Capabilities
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Capabilities</h4>
+                                    <ul>
+                                        <li><a href="capabilities.html#machining">Machining</a></li>
+                                        <li><a href="capabilities.html#assembly">Assembly</a></li>
+                                        <li><a href="capabilities.html#NDT_welding">NDT & Welding</a></li>
+                                        <li><a href="capabilities.html#metrology_tooling">Metrology & Tooling</a></li>
+                                        <!-- <li><a href="./capabilities.html">Raw Material Management</a></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- d-none d-lg-block products-desktop -->
+                    <li class="nav-item has-mega-menu ">
+                        <a class="nav-link d-flex justify-content-between" href="aircraft_product.html"
+                            onclick="toggleMegaMenu(event)">
+                            Products
+                            <span class="d-lg-none">+</span>
+                        </a>
+
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Aircraft Components</h4>
+                                    <ul>
+                                        <li><a href="aircraft_product.html#complex_engine_parts">Complex Engine
+                                                Parts</a></li>
+                                        <li><a href="aircraft_product.html#structure_parts">Structural Parts</a></li>
+                                        <li><a href="aircraft_product.html#system_parts">System Parts</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- <li class="nav-item has-mega-menu d-block d-lg-none products-mobile">
+                        <a class="nav-link d-flex justify-content-between" href="product.html"
+                            onclick="toggleMegaMenu(event)">
+                            Products
+                            <span class="d-lg-none">+</span>
+                        </a>
+
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Products</h4>
+                                    <ul>
+                                        <li><a href="product.html#engine">Complex Engine Parts</a></li>
+                                        <li><a href="product.html#structure">Structural Parts</a></li>
+                                        <li><a href="product.html#system">System Parts</a></li>
+                                        <li><a href="product.html#horizontal">Horizontal Deployments</a></li>
+                                        <li><a href="product.html#vanes">Vanes Family</a></li>
+                                        <li><a href="product.html#casings">Casings Family</a></li>
+                                        <li><a href="product.html#disc">Disc Family</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li> -->
+
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Engineering Excellence
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Engineering Excellence</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)"><a
+                                            style="text-decoration: none; color: var(--accent);"
+                                            href="engineering_excellence.html">Engineering Prowess</a></h4>
+                                    <ul>
+                                        <li><a href="engineering_excellence.html#advanced_NPD_cell">Advanced NPD
+                                                Cell</a></li>
+                                        <li><a href="engineering_excellence.html#from_design_to_build">Design to Build
+                                                Capability</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)"><a
+                                            style="text-decoration: none; color: var(--accent);"
+                                            href="workflow-management.html">Workflow Management</a></h4>
+                                    <ul>
+                                        <li><a href="workflow-management.html#rfq">RFQ Feasibility & Estimation</a></li>
+                                        <li><a href="workflow-management.html#connected-factory">Connected Factory</a>
+                                        </li>
+                                        <li><a href="workflow-management.html#fai">FAI / PPAP development</a></li>
+                                        <li><a href="workflow-management.html#quality">Quality</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item has-mega-menu">
+                        <a class="nav-link d-flex justify-content-between" href="#" onclick="toggleMegaMenu(event)">
+                            Beyond Business
+                            <span class="d-lg-none">+</span>
+                        </a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-content">
+                                <div class="mega-menu-column d-none d-lg-block">
+                                    <h4 onclick="toggleAccordion(this)">Beyond Business</h4>
+
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Purpose & Progress</h4>
+                                    <ul>
+                                        <li><a href="sustainability.html">Sustainability & ESG</a></li>
+                                        <li><a href="csr.html">CSR & Impact</a></li>
+                                        <li><a href="events.html">News & Events</a></li>
+                                    </ul>
+                                </div>
+                                <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Resources</h4>
+                                    <ul>
+                                        <!-- <li><a href="blog.html">Blogs & Insights</a></li> -->
+                                        <li><a href="awards.html">Awards</a></li>
+                                        <!-- <li><a href="#">White Papers</a></li> -->
+                                    </ul>
+                                </div>
+                                <!-- <div class="mega-menu-column">
+                                    <h4 onclick="toggleAccordion(this)">Recognition</h4>
+                                    <ul>
+                                        <li><a href="#">Awards</a></li>
+                                        <li><a href="#">Certifications</a></li>
+                                        <li><a href="#">Press Coverage</a></li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item d-block d-md-none">
+                        <a class="nav-link" aria-current="page" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item d-block d-md-none">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+                <ul class="navbar-nav ms-md-auto">
+                    <!-- <div class="group me-2">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+                            <g>
+                                <path
+                                    d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                                </path>
+                            </g>
+                        </svg>
+
+
+                    </div> -->
+
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="openPopup()" href="javascript:void(0)">
+                            <button class="enq-btn d-flex gap-2 align-items-center"><lord-icon
+                                    src="https://cdn.lordicon.com/fpvaxfly.json" trigger="loop" colors="primary:#ffffff"
+                                    style="width:20px;height:20px">
+                                </lord-icon> Enquiry </button>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------------------breadcrume----------------------------------->
+    <div class="container-fluid p-0 hero-section">
+        <div class="carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-image">
+                            <img src="./assets/images/contact.png" alt="">
+                        </div>
+                        <div class="container swiper-content">
+                            <div class="text-center mt-5">
+
+                                <h1 class="hero-title text-white text-center">
+                                    <span data-aos="fade-up" data-aos-delay="0">Contact</span>
+                                    <span data-aos="fade-up" data-aos-delay="150">Us</span>
+                                </h1>
+                                <p class="mt-3 mb-4" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                                    content provide Crafting the Future of Flight, With Every Detail Engineered
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!----------------------------------contact section----------------------------------->
+    <section class="contact-form" style="margin-top: 4rem;" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                    <div class="left-content">
+                        <h6 class="section-title-con">Connect With Us</h6>
+                        <h2 class="page-title-animate">Ready to Turn Your Manufacturing Vision into Reality?</h2>
+                        <p class="heading-animate">Join hands with JKMGAL, trusted by over 500+ global clients for
+                            precision engineering
+                            excellence. Our commitment to quality and innovation has made us a preferred partner for
+                            leading manufacturers worldwide.</p>
+                        <div class="contact-info mt-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <span
+                                    style="display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem; background: var(--accent); border-radius: 50%; margin-right: 0.5rem;">
+                                    <i class="fa-solid fa-phone" style="color: #fff; font-size: 1.3rem;"></i>
+                                </span>
+                                <span class="fw-bold">Phone:</span>
+                                <a href="tel:+912261527998" class="ms-2 text-decoration-none text-dark">+91
+                                    2261527998</a>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span
+                                    style="display: inline-flex; align-items: center; justify-content: center; width: 2.2rem; height: 2.2rem; background: var(--accent); border-radius: 50%; margin-right: 0.5rem;">
+                                    <i class="fa-solid fa-envelope" style="color: #fff; font-size: 1.3rem;"></i>
+                                </span>
+                                <span class="fw-bold">Email:</span>
+                                <a href="mailto:jkfiles.secretarial@raymond.in"
+                                    class="ms-2 text-decoration-none text-dark">jkfiles.secretarial@raymond.in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1500">
+                    <div class="right-form p-4">
+                        <div>
+                            <h2 class="page-title-animate">Get in Touch</h2>
+                            <p class="heading-animate">Tell us what you’re building — we’ll help you how to get there,
+                                faster and smarter.
+                                Response guaranteed within 24 hours.</p>
+                        </div>
+                        <form action="" class="mt-4" id="contact-form">
+                            <div class="form-group d-sm-flex gap-3 ">
+                                <input class="my-3" type="text" required placeholder="First Name" id="FirstName">
+                                <input class="my-3" type="text" required placeholder="Last Name" id="LastName">
+                            </div>
+                            <div class="form-group d-sm-flex gap-3 ">
+                                <input class="my-3" type="text" required placeholder="Company" id="Company">
+                                <input class="my-3" type="text" required placeholder="Email Address" id="EmailAddress">
+                            </div>
+                            <div class="form-group d-sm-flex gap-3 ">
+                                <input class="my-3" type="text" required placeholder="Phone No." id="PhoneNo">
+                                <input class="my-3" type="text" required placeholder="Industry" id="Industry">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
+
+                            </div>
+                            <div class="d-flex gap-3">
+                                <input required type="checkbox" name="" id="T&C" class="w-auto">
+                                <label class="w-auto" for="T&C">
+                                    I agree to the
+                                    <a href="privacy-policy.html" target="_blank"
+                                        class="text-decoration-underline">Privacy
+                                        Policy</a>
+                                    and
+                                    <a href="terms-and-conditions.html" target="_blank"
+                                        class="text-decoration-underline">Terms
+                                        &amp; Conditions</a>
+                                    <span class="text-danger">*</span>
+                                </label>
+                            </div>
+                            <button href="#" class="button mt-4" id="submit" >
+                                <span class="button__icon-wrapper">
+                                    <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                        class="button__icon-svg" width="10">
+                                        <path
+                                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                                Submit
+                            </button>
+                            <div id="message" class="message"></div>
+                            <div id="error" class="error"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------jk maini map----------------------------------->
+    <!-- <section class="office-locations my-5" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="200"
+        data-aos-duration="1500">
+        <div class="container">
+            <div class=" mt-5 mb-4">
+
+                <h2>JK Maini Global Aerospace Ltd. Factory Adress</h2>
+
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">Email Address</div>
+                            <a href="mailto:jkfiles.secretarial@raymond.in"
+                                class=" text-decoration-none text-dark">jkfiles.secretarial@raymond.in</a>
+                        </div>
+                    </div>
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">Phone Number</div>
+                            <a href="tel:+91226152700" class=" text-decoration-none text-dark">+91 2261527000</a>
+                        </div>
+                    </div>
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">Our Location</div>
+                            <div class="value">122/C Bommasandra Industrial Area, Off Hosur Road, Bangalore 560099</div>
+                        </div>
+                    </div>
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">CIN Number</div>
+                            <div class="value">U52520MH2021PLC354360</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="map">
+                       
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.395942588701!2d77.67028477372907!3d12.817671618237116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c6bdb28138b%3A0xb29604c8ad9b0dd4!2sMaini%20Aerospace!5e0!3m2!1sen!2sin!4v1753362041339!5m2!1sen!2sin" 
+                        width="100%" height="450" style="border:0; border-radius: 20px;" 
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                        </iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section> -->
+    <section class="office-locations my-5" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="200"
+        data-aos-duration="1500">
+        <div class="container">
+            <div class="mt-5 mb-4">
+                <h2 class="page-title-animate">JK Maini Global Aerospace Ltd. Factory Address</h2>
+            </div>
+
+            <div class="row g-3">
+                <!-- Info Cards -->
+                <div class="col-12 col-md-4 info-section" data-aos="fade-up">
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <div class="label">Email Address</div>
+                            <a href="mailto:jkfiles.secretarial@raymond.in"
+                                class="text-decoration-none text-dark">jkfiles.secretarial@raymond.in</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-phone"></i></div>
+                        <div class="info-text">
+                            <div class="label">Phone Number</div>
+                            <a href="tel:+91226152700" class="text-decoration-none text-dark">+91 2261527000</a>
+                        </div>
+                    </div>
+
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <div class="label">Our Location</div>
+                            <div class="value">122/C Bommasandra Industrial Area, Off Hosur Road, Bangalore 560099</div>
+                        </div>
+                    </div>
+
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-id-card"></i></div>
+                        <div class="info-text">
+                            <div class="label">CIN Number</div>
+                            <div class="value">U52520MH2021PLC354360</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map iframe -->
+                <div class="col-12 col-md-8 map-section" data-aos="fade-up">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.395942588701!2d77.67028477372907!3d12.817671618237116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6c6bdb28138b%3A0xb29604c8ad9b0dd4!2sMaini%20Aerospace!5e0!3m2!1sen!2sin!4v1753362041339!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0; border-radius: 20px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------jk maini head office----------------------------------->
+    <!-- <section class="office-locations my-5" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="200"
+        data-aos-duration="1500">
+        <div class="container">
+            <div class=" mt-5 mb-4">
+
+                <h2>JK Maini Global Aerospace Ltd. Head Office</h2>
+
+            </div>
+
+            <div class="row g-3">
+
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">Email Address</div>
+                            <a href="mailto:jkfiles.secretarial@raymond.in"
+                                class=" text-decoration-none text-dark">jkfiles.secretarial@raymond.in</a>
+                        </div>
+                    </div>
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">Phone Number</div>
+                            <a href="tel:+91226152700" class=" text-decoration-none text-dark">+91 2261527000</a>
+                        </div>
+                    </div>
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">Our Location</div>
+                            <div class="value">C/o Raymond Limited, Pokhran Road No.1, Jekegram, Near Cadbury Junction, Thane-400606, Maharashtra</div>
+                        </div>
+                    </div>
+                    <div class="info-card mb-3">
+                        <div class="icon-box">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="info-text">
+                            <div class="label">CIN Number</div>
+                            <div class="value">U52520MH2021PLC354360</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8" data-aos="fade-up">
+                    <div class="map">
+                      
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7535.362664103653!2d72.963581!3d19.209116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b914fe186931%3A0xde2bcbac688da751!2sThe%20Raymond%20Shop!5e0!3m2!1sen!2sin!4v1753763108343!5m2!1sen!2sin" 
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+                        </iframe>
+
+                        </iframe>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section> -->
+
+    <section class="office-locations my-5" data-aos="fade-up" data-aos="zoom-in" data-aos-delay="200"
+        data-aos-duration="1500">
+        <div class="container">
+            <div class="mt-5 mb-4">
+                <h2 class="page-title-animate">JK Maini Global Aerospace Ltd. Head Office</h2>
+            </div>
+
+            <div class="row g-3">
+                <!-- Info Section -->
+                <div class="col-12 col-md-4 info-section" data-aos="fade-up">
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                        <div class="info-text">
+                            <div class="label">Email Address</div>
+                            <a href="mailto:jkfiles.secretarial@raymond.in" class="text-decoration-none text-dark">
+                                jkfiles.secretarial@raymond.in
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-phone"></i></div>
+                        <div class="info-text">
+                            <div class="label">Phone Number</div>
+                            <a href="tel:+91226152700" class="text-decoration-none text-dark">
+                                +91 2261527000
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-location-dot"></i></div>
+                        <div class="info-text">
+                            <div class="label">Our Location</div>
+                            <div class="value">
+                                Ground Floor, Pokharan Rd Number 1, near BJP Office, J K Gram, Thane West, Thane,
+                                Maharashtra 400606
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card mb-3">
+                        <div class="icon-box"><i class="fas fa-id-card"></i></div>
+                        <div class="info-text">
+                            <div class="label">CIN Number</div>
+                            <div class="value">U52520MH2021PLC354360</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="col-12 col-md-8 map-section" data-aos="fade-up">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7535.362664103653!2d72.963581!3d19.209116!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b914fe186931%3A0xde2bcbac688da751!2sThe%20Raymond%20Shop!5e0!3m2!1sen!2sin!4v1753763108343!5m2!1sen!2sin"
+                            width="100%" height="450" style="border:0; border-radius: 20px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!----------------------------------get in touch----------------------------------->
+    <!-- <section class="get-in-touch-section py-5 text-center">
+        <div class="container">
+            <h6 class="section-title">Get in Touch</h6>
+            <h2>Want to collaborate on your next aerospace innovation?</h2>
+
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button class="hero-button btn-talk" onclick="openPopup()">Let’s Talk</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!----------------------------------get in touch ----------------------------------->
+    <section class="get-in-touch-section py-5 text-center" data-aos="fade-up">
+        <div class="container">
+            <h6 class="engineering-title">Get in Touch</h6>
+            <h2 style="font-size: 28px; color: black;" class="page-title-animate">Want to collaborate on your next
+                aerospace innovation?</h2>
+
+            <p class="mb-4 heading-animate">Whether you're looking for custom-engineered solutions or want to explore
+                how our
+                capabilities align with your needs, we're here to help.</p>
+            <div class="d-flex justify-content-center">
+                <button class="hero-button" onclick="openPopup()">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!----------------------------------pop up from ----------------------------------->
+    <!-- <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll show you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4" id="contact-form">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="First Name" id="FirstName">
+                    <input class="my-3" type="text" placeholder="Last Name" id="LastName">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Company" id="Company">
+                    <input class="my-3" type="text" placeholder="Email Address" id="EmailAddress">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" placeholder="Phone No." id="PhoneNo">
+                    <input class="my-3" type="text" placeholder="Industry" id="Industry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
+
+                </div>
+                 <div class="d-flex gap-3">
+                    <input type="checkbox" name="" id="t&c" class="w-auto">
+                    <label class="w-auto" for="t&c">I agree to the terms and conditions*</label>
+                </div> 
+                <button class="hero-button mt-4" id="submit">Submit</button>
+                <div id="message" class="message"></div>
+                <div id="error" class="error"></div>
+            </form>
+        </div>
+    </div> -->
+
+
+
+    <!----------------------------------popup from 1----------------------------------->
+    <div id="popupOverlay" class="popup-overlay">
+        <div class="right-form p-4">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Tell us what you’re building — we’ll help you how to get there, faster and smarter.
+                    Response guaranteed within 24 hours.</p>
+            </div>
+            <form action="" class="mt-4" id="enquiry-form">
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" required placeholder="First Name" id="txtFirstName">
+                    <input class="my-3" type="text" required placeholder="Last Name" id="txtLastName">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" required placeholder="Company" id="txtCompany">
+                    <input class="my-3" type="text" required placeholder="Email Address" id="txtEmailAddress">
+                </div>
+                <div class="form-group d-sm-flex gap-3 ">
+                    <input class="my-3" type="text" required placeholder="Phone No." id="txtPhoneNo">
+                    <input class="my-3" type="text" required placeholder="Industry" id="txtIndustry">
+                </div>
+                <div class="form-group">
+                    <textarea name="" placeholder="I want to know more about" id="txtInquiry"></textarea>
+
+                </div>
+                <div class="d-flex gap-3">
+                    <input required type="checkbox" name="" id="T&C" class="w-auto">
+                    <label class="w-auto" for="T&C">
+                        I agree to the
+                        <a href="privacy-policy.html" target="_blank" class="text-decoration-underline">Privacy
+                            Policy</a>
+                        and
+                        <a href="terms-and-conditions.html" target="_blank" class="text-decoration-underline">Terms
+                            &amp; Conditions</a>
+                        <span class="text-danger">*</span>
+                    </label>
+                </div>
+                <button href="#" class="button mt-4" id="submit">
+                    <span class="button__icon-wrapper">
+                        <svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__icon-svg"
+                            width="10">
+                            <path
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </span>
+                    Submit
+                </button>
+                <div id="txtmessage" class="txtmessage"></div>
+                <div id="txterror" class="txterror"></div>
+            </form>
+        </div>
+    </div>
+
+    <!------------------------------------- contact footer-------------------------------------------------->
+    <section class="contact-footer" data-aos="fade-up">
+        <div class="line"></div>
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <lord-icon src="https://cdn.lordicon.com/bpmglzll.json" trigger="loop" colors="primary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                        <h3 style="color: #ffffff; font-size: 28px;">Our Offices</h3>
+                        <p class="heading-animate">View our locations and find contact details to our nearest office.
+                        </p>
+                        <a href="contact.html">Explore Our Locations</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <lord-icon src="https://cdn.lordicon.com/vxzzdaaj.json" trigger="loop"
+                            colors="primary:#ffffff,secondary:#ebe6ef,tertiary:#e83a30,quaternary:#ffffff"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                        <h3 style="color: #ffffff; font-size: 28px;">Drop us a Line</h3>
+                        <p class="heading-animate">You can contact us by filling in this form any time you need
+                            professional support.</p>
+                        <a onclick="openPopup()" href="javascript:void(0)">Fill Our Form</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box text-center p-4">
+                        <lord-icon src="https://cdn.lordicon.com/abhwievu.json" trigger="loop"
+                            colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff,quaternary:#ebe6ef"
+                            style="width:50px;height:50px">
+                        </lord-icon>
+                        <h3 style="color: #ffffff; font-size: 28px;">Support</h3>
+                        <p class="heading-animate">Learn more about us and find resources that will help you with all of
+                            our products</p>
+                        <a href="tel:+912261527998">Call Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!------------------------------------- main footer-------------------------------------------------->
+
+
+    <footer class="pt-5 main-footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info Column -->
+                <div class="col-md-4 mb-4">
+                    <a href="index.html"><img style="width: 220px;" class="img-fluid"
+                            src="./assets/images/JK Aerospace Logo.svg" alt="JK Maini Precision Technology"></a>
+
+                    <p class="mb-1">
+
+                        <strong>CIN :</strong> U52520MH2021PLC354360
+                    </p>
+                    <p class="mb-1">
+                        <strong>Email :</strong>
+                        <a href="mailto:jkfiles.secretarial@raymond.in"
+                            class="text-decoration-none text-dark">jkfiles.secretarial@raymond.in</a>
+                    </p>
+                    <p class="mb-1">
+                        <strong>Address :</strong>
+                        122/C Bommasandra Industrial Area, Off Hosur Road, Bangalore 560099.
+                    </p>
+                    <p class="mb-1">
+                        <strong>Phone :</strong>
+                        <a href="tel:+912261527000" class="text-decoration-none text-dark">+91 2261527000</a>
+                    </p>
+
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-md-3 mb-4 quick-links">
+                    <h5 class="mb-3 section-title-footer">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jkmaini.com" class="text-decoration-none">JK
+                                Maini
+                                Group</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://aero.jkmaini.com"
+                                class="text-decoration-none">JK Maini
+                                Global Aerospace Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://auto.jkmaini.com"
+                                class="text-decoration-none">JK Maini
+                                Precision Technology Ltd.</a></li>
+                        <li class="mb-2"><a target="_blank" href="https://jksuperdrive.com"
+                                class="text-decoration-none">JK Files
+                                and Engineering Ltd.</a></li>
+
+
+                    </ul>
+                </div>
+
+
+                <!-- Contact Info Column -->
+                <div class="col-md-2 mb-4">
+                    <h5 class="mb-3 section-title-footer">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Privacy Policy</li>
+                        <li class="mb-2">Terms of Use</a></li>
+                        <!-- <li class="mb-2">Site Map</a></li> -->
+                        <!-- <li class="mb-2"><i class="fa-solid fa-clock me-2"></i> Mon - Sat: 9:00 AM - 6:00 PM</li> -->
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-md-3 mb-5">
+                    <div class="social-links">
+                        <h5 class="mb-3 section-title-footer">Follow us</h5>
+
+                        <!-- From Uiverse.io by javierBarroso -->
+                        <div class="social-login-icons">
+                            <a href="" class="facebook-icon">
+                                <div class="socialcontainer">
+                                    <div class="icon social-icon-3-3">
+                                        <svg viewBox="0 0 384 512" fill="white" height="1.6em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="social-icon-3">
+                                        <svg viewBox="0 0 384 512" fill="white" height="1.6em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- <a href="" class="twitter-icon">
+                            <div class="socialcontainer">
+                                <div class="icon social-icon-1-1">
+                                    <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                        class="svgIcontwit" fill="white">
+                                        <path
+                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="social-icon-1">
+                                    <svg viewBox="0 0 512 512" height="1.7em" xmlns="http://www.w3.org/2000/svg"
+                                        class="svgIcontwit" fill="white">
+                                        <path
+                                            d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a> -->
+                            <a href="" class="linkedin-icon">
+                                <div class="socialcontainer">
+                                    <div class="icon social-icon-4-4">
+                                        <svg fill="white" viewBox="0 0 448 512" height="1.6em">
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
+                                        </svg>
+                                    </div>
+                                    <div class="social-icon-4">
+                                        <svg fill="white" viewBox="0 0 448 512" height="1.6em">
+                                            <path
+                                                d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.09 107.3 0 83.2 0 53.6A53.6 53.6 0 0 1 53.6 0c29.6 0 53.7 24.09 53.7 53.6 0 29.6-24.1 53.7-53.7 53.7zM447.8 448h-92.4V302.4c0-34.7-12.4-58.4-43.3-58.4-23.6 0-37.6 15.9-43.8 31.3-2.3 5.6-2.8 13.4-2.8 21.2V448h-92.5s1.2-242.1 0-267.1h92.5v37.9c12.3-19 34.3-46.1 83.5-46.1 60.9 0 106.6 39.8 106.6 125.4V448z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="" class="instagram-icon">
+                                <div class="socialcontainer">
+                                    <div class="icon social-icon-2-2">
+                                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path style="fill: #000000;"
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="social-icon-2">
+                                        <svg fill="white" class="svgIcon" viewBox="0 0 448 512" height="1.5em"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright py-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p class="m-0">© 2025 JKMGAL All rights
+                            reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTopBtn" title="Back to top" type="button">
+        <svg class="svgIcon" viewBox="0 0 384 512">
+            <path
+                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z">
+            </path>
+        </svg>
+    </button>
+
+    <div id="cursor"></div>
+    <div id="cursor-border"></div>
+
+    <!-- script for cursor animation -->
+    <script>
+        const cursor = document.getElementById("cursor");
+        const cursorBorder = document.getElementById("cursor-border");
+
+        let cursorPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+        let cursorBorderPos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+
+        window.addEventListener("mousemove", (e) => {
+            cursorPos.x = e.clientX;
+            cursorPos.y = e.clientY;
+
+            // Center align
+            cursor.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+        });
+
+        function animateCursor() {
+            const ease = 8;
+            cursorBorderPos.x += (cursorPos.x - cursorBorderPos.x) / ease;
+            cursorBorderPos.y += (cursorPos.y - cursorBorderPos.y) / ease;
+
+            cursorBorder.style.transform = `translate(${cursorBorderPos.x}px, ${cursorBorderPos.y}px) translate(-50%, -50%)`;
+
+            requestAnimationFrame(animateCursor);
+        }
+
+        animateCursor();
+    </script>
+
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.7/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://unpkg.com/lenis@1.3.8/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="script.js"></script>
+    <script src="scriptlatest.js"></script> -->
+
+    <script>
+        var swiper = new Swiper(".sectors-swiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <!-- AOS JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+    <script src="animations.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+
+function customEncodeURI(str) {
+  return str.replace(/[@]/g, '%40')
+    .replace(/[:]/g, '%3A')
+    .replace(/[?]/g, '%3F')
+    .replace(/[/]/g, '%2F')
+    .replace(/[#]/g, '%23')
+    .replace(/[&]/g, '%26')
+    .replace(/[=]/g, '%3D')
+    .replace(/[+]/g, '%2B')
+    .replace(/[ ]/g, '%20');
+}
+
+document.getElementById('enquiry-form').addEventListener('submit', function (e) {
+    debugger
+  e.preventDefault();
+  console.log('Form submitted');
+  const toEmail = document.getElementById('txtEmailAddress').value;
+  const firstname = document.getElementById('txtFirstName').value;
+  const lastname = document.getElementById('txtLastName').value;
+  const company = document.getElementById('txtCompany').value;
+  const phoneno = document.getElementById('txtPhoneNo').value;
+  const industry = document.getElementById('txtIndustry').value;
+  const email = document.getElementById('txtEmailAddress').value; // Same as toEmail
+  const inquiry = document.getElementById('txtInquiry').value;
+  const subject = "";
+  const htmlContent = "";
+  const messageDiv = document.getElementById('txtmessage');
+  const errorDiv = document.getElementById('txterror');
+
+  messageDiv.textContent = '';
+  errorDiv.textContent = '';
+
+  //const url = 'http://172.21.4.191:80/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + //testing 
+
+  const url = 'https://api.jkmaini.com/api/email/sendemail?firstname=' + customEncodeURI(firstname) +
+    '&lastname=' + customEncodeURI(lastname) +
+    '&company=' + customEncodeURI(company) +
+    '&phoneno=' + customEncodeURI(phoneno) +
+    '&industry=' + customEncodeURI(industry) +
+    '&email=' + customEncodeURI(email) +
+    '&inquiry=' + customEncodeURI(inquiry);
+
+  console.log('URL:', url);
+  console.log('Payload:', JSON.stringify({ subject, htmlContent }));
+  // For proxy: fetch('/api/email/sendemail?toEmail=' + customEncodeURI(toEmail) + '&firstname=' + customEncodeURI(firstname) + '&lastname=' + customEncodeURI(lastname) + '&company=' + customEncodeURI(company) + '&phoneno=' + customEncodeURI(phoneno) + '&industry=' + customEncodeURI(industry) + '&email=' + customEncodeURI(email) + '&inquiry=' + customEncodeURI(inquiry), {
+  fetch(url, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ subject, htmlContent })
+    // If API supports plain-text:
+    // body: JSON.stringify({ subject, htmlContent, textContent: `Hello ${firstname}! Thank you for your inquiry about ${company} services. Visit us at https://probus.co.in. To unsubscribe, visit https://probus.co.in/unsubscribe. Probus, 123 Business Street, City, Country` })
+  })
+    .then(function (response) {
+      console.log('Response status:', response.status);
+      return Promise.all([response.json(), response.ok, response.status]);
+    })
+    .then(function (jsonData, ok, status) {
+      console.log('Response data:', jsonData);
+      if (ok) {
+        messageDiv.textContent = jsonData.message || 'Application submitted successfully.';
+      } else {
+        errorDiv.textContent = jsonData.error || 'Application submitted successfully.';
+      }
+    })
+    .catch(function (error) {
+      console.error('Fetch error:', error);
+      errorDiv.textContent = `Error: ${error.message}`;
+    })
+    .finally(function () {
+      document.getElementById('enquiry-form').reset();
+      console.log('Form cleared');
+    });
+  // Close the popup after successful submission
+  // const popupOverlay = document.getElementById('popupOverlay');
+  // if (popupOverlay) {
+  //   popupOverlay.style.display = 'none';
+  // }
+});
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
