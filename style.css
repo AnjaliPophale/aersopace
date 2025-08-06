@@ -325,7 +325,7 @@ body {
       #880088) no-repeat; */
       background: #FE6A00;
 /* background: linear-gradient(0deg,rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%); */
-background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
+  background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
   background-size: 300%;
   background-position: left center;
   transition: background 0.3s ease;
@@ -5544,7 +5544,9 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   width: 140px;
   border-radius: 50px;
   transition-duration: 0.3s;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background: #FE6A00;
+  background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1) 100%) no-repeat;
   align-items: center;
   display: flex !important;
   justify-content: center !important;
