@@ -106,7 +106,7 @@ body {
 
 /* Hidden on scroll down */
 .navbar.hidden {
-  top: -140px;
+  top: -180px;
 }
 
 /* Nav item spacing */
