@@ -2826,9 +2826,10 @@ section.infra-upgrade {
   padding-left: 0;
 }
 
+
 .csr-list li {
   position: relative;
-  padding-left: 32px; /* Space for icon */
+  padding-left: 32px; 
   margin-bottom: 8px;
   line-height: 1.6;
 }
@@ -4717,9 +4718,9 @@ h2.landing_mainheading {
  .engg_excellence {
       text-align: justify;
     }
-    .csr-text ul {
-      /* padding-left: 1.2rem; */
-    }
+    /* .csr-text ul {
+       padding-left: 1.2rem; 
+    } */
     .facility-image {
       border-radius: 6px;
     }
