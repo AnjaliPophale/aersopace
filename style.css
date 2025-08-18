@@ -6002,3 +6002,53 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   height: 50px !important;
   width: 50px !important;
 }
+
+.linkedin-Btn{
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  position: relative;
+  background: #0274b3;
+}
+
+.svgIcon {
+  transition-duration: 0.3s;
+  width: 15px;
+  height: 15px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.text {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  width: 120px;
+  font-weight: 400;
+  opacity: 0;
+  transition-duration: 0.4s;
+  font-size: 18px !important;
+}
+
+.linkedin-Btn:hover {
+  width: 110px;
+  transition-duration: 0.4s;
+  border-radius: 30px;
+}
+
+.linkedin-Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.linkedin-Btn:hover .svgIcon {
+  opacity: 0;
+  transition-duration: 0.3s;
+}
