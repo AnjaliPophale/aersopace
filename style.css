@@ -147,6 +147,14 @@ body {
 .navbar-nav-right {
   display: flex;
 }
+/* Apply only on small screens (mobile) */
+@media only screen and (max-width: 576px) {
+  .navbar-nav-left {
+    display: flex;
+    padding-left: 0px !important;
+  }
+}
+
 
 /* Target mobile screens only (up to 767px) */
  @media (max-width: 767px) {
