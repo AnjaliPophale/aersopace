@@ -4486,7 +4486,7 @@ ul.engg_excellence li {
     
   } */
 html, body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
   .info-card {
