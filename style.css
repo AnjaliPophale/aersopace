@@ -110,8 +110,8 @@ body {
 }
 
 /* Nav item spacing */
-.nav-item {
-  margin-right: 0px !important;
+.nav-item-left {
+  margin-right: 15px !important;
 }
 
 
