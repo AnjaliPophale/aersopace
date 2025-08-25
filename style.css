@@ -111,7 +111,7 @@ body {
 
 /* Nav item spacing */
 .nav-item {
-  margin-right: 15px;
+  margin-right: 0px !important;
 }
 
 
@@ -2829,11 +2829,10 @@ section.infra-upgrade {
     font-size: 1.3rem;
     line-height: 1;
   } */
-   .csr-list {
+.csr-list {
   list-style: none;
   padding-left: 0;
 }
-
 
 .csr-list li {
   position: relative;
@@ -4486,7 +4485,7 @@ ul.engg_excellence li {
     
   } */
 html, body {
-  overflow-x: hidden !important;
+  overflow-x: hidden;
 }
 
   .info-card {
