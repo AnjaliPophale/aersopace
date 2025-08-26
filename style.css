@@ -72,13 +72,13 @@ body {
   border-bottom: 1px solid #cdcdcd; 
 }
 #navbarNav {
-  flex-basis: unset !important; /* resets it */
-  /* OR */
-  flex-basis: initial !important; /* fallback to default */
-  /* OR */
-  flex-basis: 100% !important; /* if you want full width */
+  flex-basis: auto !important; 
+  width: 100%;
 }
-
+#navbarNav .navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Transparent (top of page) */
 .navbar.transparent {
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(237, 221, 83, 0) 100%); */
