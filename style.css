@@ -71,6 +71,13 @@ body {
   transition: top 0.3s ease, background 0.3s ease, color 0.3s ease;
   border-bottom: 1px solid #cdcdcd; 
 }
+#navbarNav {
+  flex-basis: unset !important; /* resets it */
+  /* OR */
+  flex-basis: initial !important; /* fallback to default */
+  /* OR */
+  flex-basis: 100% !important; /* if you want full width */
+}
 
 /* Transparent (top of page) */
 .navbar.transparent {
