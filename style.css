@@ -167,7 +167,7 @@ body {
   }
 
   .navbar-nav-left .nav-item-left {
-    text-align: center;   /* center align text */
+    text-align: left;   /* center align text */
     margin: 0;            /* reset bootstrap margin */
     white-space: normal;  /* allow text to wrap inside column */
   }
