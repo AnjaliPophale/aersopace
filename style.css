@@ -6159,3 +6159,54 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
     right: 15px;
   }
 } 
+/* linkdin in nav */
+.icon-content {
+  position: relative;
+}
+
+
+.icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #0274b3;
+  color: #0274b3;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+}
+.icon-content a:hover {
+  color: white;
+}
+.icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.icon-content a:hover .filled {
+  height: 100%;
+}
+
+.icon-content a[data-social="linkedin"] .filled,
+.icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+  
+}
