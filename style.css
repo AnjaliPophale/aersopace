@@ -154,6 +154,30 @@ body {
 .navbar-nav-right {
   display: flex;
 }
+
+/* Mobile: show 4 items in one row */
+@media (max-width: 768px) {
+  .navbar-nav-left {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 5px; /* spacing between items */
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .navbar-nav-left .nav-item-left {
+    text-align: center;   /* center align text */
+    margin: 0;            /* reset bootstrap margin */
+    white-space: normal;  /* allow text to wrap inside column */
+  }
+
+  .navbar-nav-left .nav-link {
+    font-size: 12px;      /* make text smaller for mobile */
+    display: block;
+  }
+}
+
 /* Apply only on small screens (mobile) */
 @media only screen and (max-width: 576px) {
   .navbar-nav-left {
