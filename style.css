@@ -1458,11 +1458,25 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
 
 .right-form{
    background-color: #F7F8FC;
+   width: 70%;
    border-radius: 20px;
    border-top: 4px solid var(--accent);
    position: relative;
     animation: fadeIn 0.3s ease;
 }
+@media(max-width : 768px){
+  .right-form{
+    background-color: #F7F8FC;
+    width: 100%;
+    border-radius: 20px;
+    border-top: 4px solid var(--accent);
+    position: relative;
+     animation: fadeIn 0.3s ease;
+     height: 100%;
+     overflow-y: scroll;
+ }
+}
+
 
 .right-form input{
   width: 100%;
