@@ -71,14 +71,14 @@ body {
   transition: top 0.3s ease, background 0.3s ease, color 0.3s ease;
   border-bottom: 1px solid #cdcdcd; 
 }
-#navbarNav {
+/* #navbarNav {
   flex-basis: auto !important; 
   width: 100%;
 }
 #navbarNav .navbar-nav {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 /* Transparent (top of page) */
 .navbar.transparent {
   /* background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(237, 221, 83, 0) 100%); */
@@ -1980,11 +1980,11 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   padding: 3rem 1rem;
 }
 
-.container {
+/* .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 16px;
-}
+} */
 
 .section-header {
   background: linear-gradient(90deg, #f48220 0%, #e64a19 100%);
