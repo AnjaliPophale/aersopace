@@ -20,7 +20,7 @@
 <body>
   <!----------------------------------navbar----------------------------------->
   <nav id="navbar" class="navbar navbar-expand-lg bg-transparent fixed-top flex-column">
-    <div class="container d-flex justify-content-between">
+    <div class="container d-flex justify-content-between" style=" max-width: 1200px; margin: auto; padding: 0 16px;">
      <div class="meta-header-left">
       <ul class="navbar-nav-left" style="list-style: none;">
         <li class="nav-item-left ms-2">
@@ -398,45 +398,45 @@
           </div>
         </div>
 
-        <div class="col-md-4 page-title-animate">
+        <div class="col-md-4">
           <div class="application-form p-4">
-            <h3>Apply Now</h3>
-            <form action="" class="mt-4" id="ApplyNow">
-              <div class="mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="fullName" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="phone" required>
-              </div>
-              <div class="mb-3">
-                <label for="education" class="form-label">Education</label>
-                <select class="form-select" id="education" required>
-                  <option value="">Select Education</option>
-                  <option value="btech">B.Tech</option>
-                  <option value="mtech">M.Tech</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="resume" class="form-label">Resume</label>
-                <input type="file" class="form-control" id="resume" required>
-              </div>
-              <div class="mb-3">
-                <label for="coverLetter" class="form-label">Cover Letter</label>
-                <textarea class="form-control" id="coverLetter" rows="4"></textarea>
-              </div>
-              <button type="submit" id="submit" class="btn btn-primary w-100">Submit Application</button>
-              <div id="message"></div>
-              <div id="error"></div>
-            </form>
+              <h3 class="page-title-animate">Apply Now</h3>
+              <form action="" class="mt-4" id="ApplyNow">
+                  <div class="mb-3">
+                      <label for="fullName" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="fullName" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="phone" class="form-label">Phone</label>
+                      <input type="tel" class="form-control" id="phone" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="education" class="form-label">Education</label>
+                      <select class="form-select" id="education" required>
+                          <option value="">Select Education</option>
+                          <option value="btech">B.Tech</option>
+                          <option value="mtech">M.Tech</option>
+                          <option value="other">Other</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="resume" class="form-label">Resume</label>
+                      <input type="file" class="form-control" id="resume" required>
+                  </div>
+                  <div class="mb-3">
+                      <label for="coverLetter" class="form-label">Cover Letter</label>
+                      <textarea class="form-control" id="coverLetter" rows="4"></textarea>
+                  </div>
+                  <button type="submit" id="submit" class="btn btn-primary w-100">Submit Application</button>
+                  <div id="message"></div>
+                  <div id="error"></div>
+              </form>
           </div>
-        </div>
+      </div>
       </div>
     </div>
   </section>
