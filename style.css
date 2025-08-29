@@ -6245,3 +6245,15 @@ background: linear-gradient(180deg, rgba(254, 106, 0, 1) 36%, rgba(230, 0, 0, 1)
   background-color: #0274b3;
   
 }
+.form-group select{
+  background-color: transparent;
+  color: #848484;
+  border: none;
+  border-radius: 0px;
+  border-bottom: 1px solid #ccc;
+}
+.form-group select:focus{
+  border-color: #ccc;
+  outline: 0;
+  box-shadow: none;
+}

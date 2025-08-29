@@ -459,8 +459,15 @@
         </div>
         <div class="form-group d-sm-flex gap-3 ">
           <input class="my-3" type="text" required placeholder="Phone No." id="PhoneNo">
-          <input class="my-3" type="text" required placeholder="Industry" id="Industry">
-        </div>
+          <select class="my-3 form-select" required id="Industry">
+              <option value="" disabled selected>Select Industry</option>
+              <option value="Automotive">Automotive</option>
+              <option value="Aerospace">Aerospace</option>
+              <option value="Medical Devices">Medical Devices</option>
+              <option value="General Engineering">General Engineering</option>
+              <option value="General Engineering">Other</option>
+          </select>
+      </div>
         <div class="form-group">
           <textarea name="" placeholder="I want to know more about" id="Inquiry"></textarea>
 
